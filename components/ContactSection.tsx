@@ -91,7 +91,7 @@ export default function ContactSection() {
                   </svg>
                 ),
                 title: "Email",
-                value: "sales@alignerpro.com",
+                value: "ban@grouprsh.com",
                 sub: "Reply within 24 hours",
                 bg: "bg-blue-50",
                 color: "text-blue-600",
@@ -103,7 +103,7 @@ export default function ContactSection() {
                   </svg>
                 ),
                 title: "WhatsApp",
-                value: "+86 138 0000 0000",
+                value: "+86 188 2288 5445",
                 sub: "Mon–Sat · 9 AM–6 PM CST",
                 bg: "bg-green-50",
                 color: "text-green-600",
@@ -116,14 +116,14 @@ export default function ContactSection() {
                   </svg>
                 ),
                 title: "Factory",
-                value: "Shenzhen, China",
+                value: "A309, Fanghua Industrial Area, Shenzhen",
                 sub: "Guangdong Province · Export Ready",
                 bg: "bg-orange-50",
                 color: "text-orange-500",
               },
             ].map((item) => (
               <div key={item.title} className="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl">
-                <div className={`w-11 h-11 ${item.bg} ${item.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                <div className={"w-11 h-11 " + item.bg + " " + item.color + " rounded-xl flex items-center justify-center flex-shrink-0"}>
                   {item.icon}
                 </div>
                 <div>
@@ -276,7 +276,7 @@ export default function ContactSection() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Please describe your requirements: product type, quantity, customization needs, target market, etc."
-                    className={`${inputCls} resize-none`}
+                    className={inputCls + " resize-none"}
                   />
                 </div>
 
@@ -316,4 +316,3 @@ export default function ContactSection() {
     </section>
   );
 }
-
