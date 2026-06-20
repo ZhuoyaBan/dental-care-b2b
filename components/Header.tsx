@@ -20,11 +20,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={"fixed top-0 left-0 right-0 z-50 transition-all duration-300 " + (
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-md border-b border-blue-50"
           : "bg-white/80 backdrop-blur-sm"
-      }`}
+      )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -47,7 +47,7 @@ export default function Header() {
             </div>
             <div className="leading-tight">
               <span className="block text-base font-bold text-gray-800 tracking-tight">
-                Aligner<span className="text-blue-600">Pro</span>
+                Uv<span className="text-blue-600">care</span>
               </span>
               <span className="block text-[9px] text-gray-400 font-semibold tracking-[0.15em] uppercase">
                 B2B Supply
@@ -124,4 +124,3 @@ export default function Header() {
     </header>
   );
 }
-
