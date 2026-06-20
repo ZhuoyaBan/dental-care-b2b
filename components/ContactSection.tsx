@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const productOptions = [
   "Aligner Case",
@@ -53,10 +54,26 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    // TODO: replace with your back-end / Formspree / EmailJS endpoint
-    await new Promise((r) => setTimeout(r, 1500));
-    setSubmitting(false);
-    setSubmitted(true);
+    try {
+      await emailjs.send(
+        'service_ybqavzp',
+        'template_q81jot6',
+        {
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          product: formData.product,
+          message: formData.message,
+        },
+        'NRSIOLM0NN0h_ZEbJ'
+      );
+      setSubmitted(true);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      alert('Failed to send inquiry. Please try again or contact us via WhatsApp.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
