@@ -9,10 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AlignerPro Supply — B2B Invisible Aligner Care Products",
-  description:
-    "Professional B2B supplier of premium invisible aligner care products. " +
-    "OEM/ODM solutions for dental clinics, orthodontists, and distributors worldwide.",
+  title: "Uvcare | Professional B2B Supplier for Aligner Care Accessories",
+  description: "Uvcare is a premier wholesale manufacturer of premium invisible aligner accessories, including UV sterilizers, ultrasonic cleaners, and custom cases. Support OEM/ODM with low MOQ.",
   keywords: [
     "aligner case",
     "UV sterilizer aligner case",
@@ -41,4 +39,3 @@ export default function RootLayout({
     </html>
   );
 }
-
