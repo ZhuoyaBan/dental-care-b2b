@@ -15,7 +15,7 @@ function ProductIcon({ type, className }: { type: string; className?: string }) 
     uv: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="4" />
-        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07 1234567890l1.41-1.41M17.66 6.34l1.41-1.41" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
       </svg>
     ),
     ultrasonic: (
@@ -92,6 +92,16 @@ function ProductCard({ product }: { product: Product }) {
       <span className="absolute top-4 right-4 text-[10px] font-bold text-gray-400 tracking-widest uppercase">
         {product.category}
       </span>
+
+      {product.imageUrl && (
+    <div className="aspect-square overflow-hidden rounded-xl mb-5">
+      <img 
+        src={product.imageUrl} 
+        alt={product.name}
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+    </div>
+  )}
 
       {/* Icon container */}
       <div
