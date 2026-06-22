@@ -15,9 +15,7 @@ const productOptions = [
   "Effervescent Cleaning Tablets",
   "Aligner Cleaning Brush",
   "Multiple Products / Custom OEM",
-];template_q81jot6template_q81j0t6template_q81j0t6
-
- 
+];
 
 const inputCls =
   "w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 " +
@@ -59,7 +57,7 @@ export default function ContactSection() {
     try {
       await emailjs.send(
         'service_ybqavzp',
-        'template_q81jot6',
+        'template_q81j0t6',
         {
           name: formData.name,
           email: formData.email,
@@ -72,7 +70,7 @@ export default function ContactSection() {
       setSubmitted(true);
     } catch (error) {
       console.error('EmailJS Error:', error);
-      alert('Failed to send inquiry. Please check your EmailJS dashboard for connection status or contact us via WhatsApp.');
+      alert('Failed to send inquiry. Please check your EmailJS settings or contact us via WhatsApp.');
     } finally {
       setSubmitting(false);
     }
@@ -145,29 +143,6 @@ export default function ContactSection() {
                 </div>
               </div>
             ))}
-
-            <div className="p-5 bg-blue-50 rounded-2xl border border-blue-100">
-              <h4 className="font-bold text-blue-800 mb-3 text-sm flex items-center gap-2">
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Why Choose Us?
-              </h4>
-              <ul className="space-y-2">
-                {[
-                  "Low MOQ starting from 100 pcs",
-                  "Free logo printing for 500+ orders",
-                  "Samples available before bulk order",
-                  "Shipping to 50+ countries worldwide",
-                  "30-day quality guarantee",
-                ].map((point) => (
-                  <li key={point} className="flex items-center gap-2 text-sm text-blue-700">
-                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           <div className="lg:col-span-3">
@@ -179,118 +154,40 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Inquiry Sent! 🎉</h3>
-                <p className="text-gray-500 max-w-sm">Thank you for reaching out. Our team will get back to you within 24 hours with a tailored quote and product catalog.</p>
-                <button
-                  className="mt-8 text-sm text-blue-600 hover:underline font-medium"
-                  onClick={() => {
-                    setSubmitted(false);
-                    setFormData(emptyForm);
-                  }}
-                >
-                  ← Send another inquiry
-                </button>
+                <p className="text-gray-500 max-w-sm">Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+                <button className="mt-8 text-sm text-blue-600 hover:underline font-medium" onClick={() => setSubmitted(false)}>← Send another inquiry</button>
               </div>
             ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm space-y-5"
-              >
-                <h3 className="text-xl font-bold text-gray-800">
-                  Send Us a Message
-                </h3>
-
+              <form onSubmit={handleSubmit} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm space-y-5">
+                <h3 className="text-xl font-bold text-gray-800">Send Us a Message</h3>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                      Full Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="John Smith"
-                      className={inputCls}
-                    />
+                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Full Name *</label>
+                    <input type="text" name="name" required value={formData.name} onChange={handleChange} placeholder="John Smith" className={inputCls} />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                      Email Address <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="john@company.com"
-                      className={inputCls}
-                    />
+                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Email Address *</label>
+                    <input type="email" name="email" required value={formData.email} onChange={handleChange} placeholder="john@company.com" className={inputCls} />
                   </div>
                 </div>
-
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                    Company Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="company"
-                    required
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Your Dental Clinic / Distributor"
-                    className={inputCls}
-                  />
+                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">Company Name *</label>
+                  <input type="text" name="company" required value={formData.company} onChange={handleChange} placeholder="Your Dental Clinic" className={inputCls} />
                 </div>
-
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                    Product of Interest
-                  </label>
-                  <select
-                    name="product"
-                    value={formData.product}
-                    onChange={handleChange}
-                    className={inputCls}
-                  >
-                    <option value="">— Select a product (optional) —</option>
-                    {productOptions.map((opt) => (
-                      <option key={opt} value={opt}>
-                        {opt}
-                      </option>
-                    ))}
+                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">Product of Interest</label>
+                  <select name="product" value={formData.product} onChange={handleChange} className={inputCls}>
+                    <option value="">— Select a product —</option>
+                    {productOptions.map((opt) => (<option key={opt} value={opt}>{opt}</option>))}
                   </select>
                 </div>
-
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-                    Requirements / Message{" "}
-                    <span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    name="message"
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Please describe your requirements..."
-                    className={`${inputCls} resize-none`}
-                  />
+                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">Requirements *</label>
+                  <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="Please describe your requirements..." className={`${inputCls} resize-none`} />
                 </div>
-
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-3.5 px-6 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2 text-sm"
-                >
+                <button type="submit" disabled={submitting} className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-3.5 px-6 rounded-xl transition-colors flex items-center justify-center gap-2">
                   {submitting ? "Sending..." : "Send Inquiry"}
                 </button>
-
-                <p className="text-center text-xs text-gray-400">
-                  By submitting, you agree to our privacy policy.
-                </p>
               </form>
             )}
           </div>
