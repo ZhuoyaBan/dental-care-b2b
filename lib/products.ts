@@ -11,6 +11,7 @@ export interface Product {
   category: "Storage" | "Hygiene" | "Cleaning" | "Accessories" | "Packaging";
   iconBg: string;
   iconColor: string;
+  imageUrl?: string;
 }
 
 export const products: Product[] = [
@@ -24,6 +25,7 @@ export const products: Product[] = [
     category: "Storage",
     iconBg: "bg-blue-50",
     iconColor: "text-blue-600",
+    imageUrl: "/images/products/一代牙套盒蓝色.jpg",
   },
   {
     id: 2,
@@ -35,6 +37,7 @@ export const products: Product[] = [
     category: "Hygiene",
     iconBg: "bg-yellow-50",
     iconColor: "text-yellow-600",
+    imageUrl: "/images/products/杀菌牙套盒黑色.jpg",
   },
   {
     id: 3,
@@ -46,6 +49,7 @@ export const products: Product[] = [
     category: "Cleaning",
     iconBg: "bg-teal-50",
     iconColor: "text-teal-600",
+    imageUrl: "/images/products/紫外超声波清洗机白色插电.jpg",
   },
   {
     id: 4,
@@ -57,6 +61,7 @@ export const products: Product[] = [
     category: "Cleaning",
     iconBg: "bg-cyan-50",
     iconColor: "text-cyan-600",
+    imageUrl: "/images/products/二代顶部带透气孔牙套盒白色.jpg",
   },
   {
     id: 5,
@@ -68,6 +73,7 @@ export const products: Product[] = [
     category: "Accessories",
     iconBg: "bg-purple-50",
     iconColor: "text-purple-600",
+    imageUrl: "/images/products/二合一取钩咬胶.png",
   },
   {
     id: 6,
@@ -79,6 +85,7 @@ export const products: Product[] = [
     category: "Accessories",
     iconBg: "bg-pink-50",
     iconColor: "text-pink-600",
+    imageUrl: "/images/products/二合一取钩咬胶.png",
   },
   {
     id: 7,
@@ -125,4 +132,3 @@ export const products: Product[] = [
     iconColor: "text-emerald-600",
   },
 ];
-
