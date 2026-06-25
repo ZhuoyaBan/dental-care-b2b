@@ -83,6 +83,23 @@ export const products: Product[] = [
     features: ["Double Silicon", "Shock Absorption"]
   },
   {
+    id: 12,
+    name: "Classic Silicon Retainer Case",
+    tagline: "Soft & Flexible Protection",
+    description: "Standard medical-grade silicon case for comfortable and safe retainer storage.",
+    images: [
+      "/images/products/silicon retainer case blue.webp",
+      "/images/products/silicon retainer case green.webp",
+      "/images/products/silicon retainer case pink.webp",
+      "/images/products/silicon retainer case purple.webp"
+    ],
+    category: "retainer-case",
+    moq: "100 PCS",
+    leadTime: "7-10 Days",
+    customLogo: true,
+    features: ["Soft Silicon", "BPA Free"]
+  },
+  {
     id: 20,
     name: "Planet Cleaning Box",
     tagline: "Orbital Design Soaking Box",
@@ -93,7 +110,7 @@ export const products: Product[] = [
       "/images/products/Planet cleaning box white.webp"
     ],
     category: "cleaning-box",
-    moq: "100 PCS",
+    moq: "200 PCS",
     leadTime: "7-12 Days",
     customLogo: true,
     features: ["BPA-Free", "Unique Shape", "Easy Drain"]
@@ -104,15 +121,31 @@ export const products: Product[] = [
     tagline: "Enhanced Airflow Hygiene",
     description: "Denture and aligner soaking box with high-performance ventilation design.",
     images: [
-      "/images/products/Vented cleaning box black.webp",
-      "/images/products/Vented cleaning box brown.webp",
-      "/images/products/Vented cleaning box white.webp"
+      "/images/products/Vented cleaning box black brown.webp",
+      "/images/products/Vented cleaning box white brown.webp",
+      "/images/products/Vented cleaning box white green.webp"
     ],
     category: "cleaning-box",
-    moq: "100 PCS",
+    moq: "200 PCS",
     leadTime: "7-12 Days",
     customLogo: true,
     features: ["Side Vents", "Compact Storage", "Durable PP"]
+  },
+  {
+    id: 22,
+    name: "Classic Denture Cleaning Box",
+    tagline: "Standard Soaking Solution",
+    description: "Classic design for daily cleaning and soaking of dentures and aligners.",
+    images: [
+      "/images/products/Dental cleaning box blue v1.webp",
+      "/images/products/Dental cleaning box purple v1.webp",
+      "/images/products/Dental cleaning box white v1.webp"
+    ],
+    category: "cleaning-box",
+    moq: "200 PCS",
+    leadTime: "7-10 Days",
+    customLogo: true,
+    features: ["Standard Size", "Secure Lid"]
   },
   {
     id: 30,
@@ -120,8 +153,8 @@ export const products: Product[] = [
     tagline: "Premium Orthodontic Packaging",
     description: "Luxury kit box for aligner delivery. High-quality presentation to elevate the patient unboxing experience.",
     images: [
-      "/images/products/Dental Gift box v1.webp",
-      "/images/products/Dental Gift box v1-1.webp"
+      "/images/products/Dental Gift box v1-1.webp",
+      "/images/products/Dental Gift box v1-2.webp"
     ],
     category: "gift-box",
     moq: "100 PCS",
@@ -136,7 +169,7 @@ export const products: Product[] = [
     description: "Precision tool designed for easy and safe removal of clear aligners without manual contact.",
     images: ["/images/products/Dental hook-1.webp"],
     category: "dental-accessories",
-    moq: "100 PCS",
+    moq: "1000 PCS",
     leadTime: "5-7 Days",
     customLogo: true,
     features: ["Ergonomic Grip", "High strength", "BPA Free"]
@@ -148,7 +181,7 @@ export const products: Product[] = [
     description: "Specialized silicone chewie to ensure perfect seating of invisible aligners for optimal results.",
     images: ["/images/products/Dental Teether-1.webp"],
     category: "dental-accessories",
-    moq: "100 PCS",
+    moq: "1000 PCS",
     leadTime: "5-7 Days",
     customLogo: true,
     features: ["Medical Grade Silicone", "Multiple Flavors", "Anti-slip"]
