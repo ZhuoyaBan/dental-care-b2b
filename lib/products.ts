@@ -18,10 +18,10 @@ export const products: Product[] = [
     tagline: "Slim & Durable with Mirror",
     description: "Our most popular classic design. Built-in high-definition mirror and magnetic closure.",
     images: [
-      "/images/products/aligner-case-v1-blue.jpg",
-      "/images/products/aligner-case-v1-black.jpg",
-      "/images/products/aligner-case-v1-pink.jpg",
-      "/images/products/aligner-case-v1-white.jpg"
+      "/images/products/aligner-case-v1-blue.webp",
+      "/images/products/aligner-case-v1-black.webp",
+      "/images/products/aligner-case-v1-pink.webp",
+      "/images/products/aligner-case-v1-white.webp"
     ],
     category: "retainer-case",
     moq: "100 PCS",
@@ -35,10 +35,10 @@ export const products: Product[] = [
     tagline: "Advanced Ventilation System",
     description: "Premium circular design with adjustable ventilation port. Sleek matte finish.",
     images: [
-      "/images/products/aligner-case-pro-black.png",
-      "/images/products/aligner-case-pro-white.png",
-      "/images/products/aligner-case-pro-pink.png",
-      "/images/products/aligner-case-pro-blue.png"
+      "/images/products/aligner-case-pro-black.webp",
+      "/images/products/aligner-case-pro-white.webp",
+      "/images/products/aligner-case-pro-pink.webp",
+      "/images/products/aligner-case-pro-blue.webp"
     ],
     category: "retainer-case",
     moq: "100 PCS",
@@ -52,8 +52,8 @@ export const products: Product[] = [
     tagline: "99.9% Bacteria Elimination",
     description: "USB rechargeable UV-C LED technology. Kills 99.9% of germs in 3 minutes.",
     images: [
-      "/images/products/uv-sterilizer-case-black.jpg",
-      "/images/products/uv-sterilizer-case-white.jpg"
+      "/images/products/uv-sterilizer-case-black.webp",
+      "/images/products/uv-sterilizer-case-white.webp"
     ],
     category: "retainer-case",
     moq: "1000 PCS",
@@ -66,7 +66,7 @@ export const products: Product[] = [
     name: "Ultrasonic Cleaner (Digital White)",
     tagline: "Professional Deep Cleaning",
     description: "45,000Hz ultrasonic waves for thorough plaque removal.",
-    images: ["/images/products/ultrasonic-cleaner-white-plug.jpg"],
+    images: ["/images/products/ultrasonic-cleaner-white-plug.webp"],
     category: "cleaning-box",
     moq: "1000 PCS",
     leadTime: "15-20 Days",
@@ -78,7 +78,7 @@ export const products: Product[] = [
     name: "Ultrasonic Cleaner (Black)",
     tagline: "High-Frequency Tech",
     description: "Powerful ultrasonic cleaning with professional black finish.",
-    images: ["/images/products/ultrasonic-cleaner-black-plug.jpg"],
+    images: ["/images/products/ultrasonic-cleaner-black-plug.webp"],
     category: "cleaning-box",
     moq: "1000 PCS",
     leadTime: "15-20 Days",
@@ -90,7 +90,7 @@ export const products: Product[] = [
     name: "2-in-1 Aligner Remover & Chewie",
     tagline: "Hygienic Tool",
     description: "Dual-purpose tool for easy detachment and proper seating.",
-    images: ["/images/products/aligner-remover-chewie.png"],
+    images: ["/images/products/aligner-remover-chewie.webp"],
     category: "dental-accessories",
     moq: "1000 PCS",
     leadTime: "5-7 Days",
