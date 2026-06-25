@@ -1,5 +1,3 @@
-"use client";
-
 export interface Product {
   id: number;
   name: string;
@@ -18,7 +16,7 @@ export const products: Product[] = [
     id: 1,
     name: "Classic Aligner Case",
     tagline: "Slim & Durable with Mirror",
-    description: "Our most popular classic design. Built-in high-definition mirror and magnetic closure. Food-grade materials.",
+    description: "Our most popular classic design. Built-in high-definition mirror and magnetic closure.",
     images: [
       "/images/products/aligner-case-v1-blue.jpg",
       "/images/products/aligner-case-v1-black.jpg",
@@ -29,7 +27,7 @@ export const products: Product[] = [
     moq: "100 PCS",
     leadTime: "7-10 Days",
     customLogo: true,
-    features: ["BPA-Free", "Integrated Mirror"]
+    features: ["BPA-Free", "Magnetic Closure"]
   },
   {
     id: 2,
@@ -52,7 +50,7 @@ export const products: Product[] = [
     id: 3,
     name: "UV-C Sterilizer Case",
     tagline: "99.9% Bacteria Elimination",
-    description: "USB rechargeable UV-C LED technology. Kills 99.9% of germs in 3 minutes. (Image 4 Left)",
+    description: "USB rechargeable UV-C LED technology. Kills 99.9% of germs in 3 minutes.",
     images: [
       "/images/products/uv-sterilizer-case-black.jpg",
       "/images/products/uv-sterilizer-case-white.jpg"
@@ -66,64 +64,37 @@ export const products: Product[] = [
   {
     id: 4,
     name: "Ultrasonic Cleaner (Digital White)",
-    tagline: "High-Frequency Professional Deep Cleaning",
-    description: "45,000Hz ultrasonic waves for thorough plaque removal. White digital display version.",
+    tagline: "Professional Deep Cleaning",
+    description: "45,000Hz ultrasonic waves for thorough plaque removal.",
     images: ["/images/products/ultrasonic-cleaner-white-plug.jpg"],
     category: "cleaning-box",
     moq: "1000 PCS",
     leadTime: "15-20 Days",
     customLogo: true,
-    features: ["45kHz Frequency", "Stainless Steel Tank"]
+    features: ["45kHz Frequency", "Stainless Tank"]
   },
   {
     id: 5,
-    name: "Ultrasonic Cleaner (Professional Black)",
-    tagline: "Deep Cleaning with UV-C Support",
-    description: "Powerful ultrasonic cleaning for aligners. Professional black finish with ergonomic design.",
+    name: "Ultrasonic Cleaner (Black)",
+    tagline: "High-Frequency Tech",
+    description: "Powerful ultrasonic cleaning with professional black finish.",
     images: ["/images/products/ultrasonic-cleaner-black-plug.jpg"],
     category: "cleaning-box",
     moq: "1000 PCS",
     leadTime: "15-20 Days",
     customLogo: true,
-    features: ["Professional Grade", "One-Button Operation"]
+    features: ["One-Button Control"]
   },
   {
     id: 6,
     name: "2-in-1 Aligner Remover & Chewie",
-    tagline: "Hygienic Removal & Seating",
-    description: "Dual-purpose tool for easy aligner detachment and proper seating. (Image 4 Right)",
+    tagline: "Hygienic Tool",
+    description: "Dual-purpose tool for easy detachment and proper seating.",
     images: ["/images/products/aligner-remover-chewie.png"],
     category: "dental-accessories",
     moq: "1000 PCS",
     leadTime: "5-7 Days",
     customLogo: true,
-    features: ["Medical Grade", "Non-Slip"]
-  },
-  {
-    id: 7,
-    name: "Vented Aligner Case (V2)",
-    tagline: "Breathable Daily Protection",
-    description: "Enhanced ventilation holes prevent moisture build-up. Compact design.",
-    images: [
-      "/images/products/aligner-case-v2-white.jpg",
-      "/images/products/aligner-case-v2-black.jpg"
-    ],
-    category: "retainer-case",
-    moq: "100 PCS",
-    leadTime: "7-12 Days",
-    customLogo: true,
-    features: ["Top Ventilation", "Slim Design"]
-  },
-  {
-    id: 8,
-    name: "Rectangular Vented Case (V3)",
-    tagline: "Modern Rectangular Form Factor",
-    description: "Sleek rectangular profile with ventilation design.",
-    images: ["/images/products/aligner-case-v3-white.jpg"],
-    category: "retainer-case",
-    moq: "100 PCS",
-    leadTime: "10-14 Days",
-    customLogo: true,
-    features: ["Rectangular Design", "Side Vents"]
+    features: ["Medical Grade"]
   }
 ];
