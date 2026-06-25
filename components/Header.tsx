@@ -29,7 +29,7 @@ export default function Header() {
               <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C8 2 5 5 5 9c0 6 3 13 7 13s7-7 7-13c0-4-3-7-7-7z"/><path d="M9 9c0 2 1.5 3 3 3s3-1 3-3"/></svg>
             </div>
             <div className="leading-tight">
-              <span className="block text-base font-bold text-gray-800">Uv<span className="text-blue-600">care</span></span>
+              <span className="block text-base font-bold text-gray-800 tracking-tight">Uv<span className="text-blue-600">care</span></span>
               <span className="block text-[9px] text-gray-400 font-semibold tracking-[0.15em] uppercase">B2B Supply</span>
             </div>
           </Link>
@@ -37,10 +37,10 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <Link href="/" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Home</Link>
             <div className="relative" onMouseEnter={() => setProductsOpen(true)} onMouseLeave={() => setProductsOpen(false)}>
-              <button className="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
+              <Link href="/products" className="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
                 Products
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6"/></svg>
-              </button>
+              </Link>
               {productsOpen && (
                 <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
                   {productCategories.map((cat) => (
@@ -65,11 +65,12 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-1 shadow-lg">
           <Link href="/" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/products" className="block py-2.5 px-3 text-sm font-bold text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>All Products</Link>
           {productCategories.map((cat) => (
-            <Link key={cat.href} href={cat.href} className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>{cat.label}</Link>
+            <Link key={cat.href} href={cat.href} className="block py-2.5 px-3 pl-6 text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>{cat.label}</Link>
           ))}
-          <Link href="/about" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="/faq" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>FAQ</Link>
+          <Link href="/about" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/faq" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>FAQ</Link>
           <Link href="https://wa.me/8618822885445" className="block text-center bg-blue-600 text-white text-sm font-semibold px-5 py-3 rounded-lg mt-2" onClick={() => setMenuOpen(false)}>Get a Quote</Link>
         </div>
       )}
