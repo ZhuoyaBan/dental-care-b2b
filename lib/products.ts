@@ -105,9 +105,9 @@ export const products: Product[] = [
     tagline: "Orbital Design Soaking Box",
     description: "Unique planetary-inspired soaking box for aligner hygiene. Durable and stylish.",
     images: [
-      "/images/products/Planet cleaning box black.webp",
-      "/images/products/Planet cleaning box blue.webp",
-      "/images/products/Planet cleaning box white.webp"
+      "/images/products/planet-cleaning-box-black.webp",
+      "/images/products/planet-cleaning-box-blue.webp",
+      "/images/products/planet-cleaning-box-white.webp"
     ],
     category: "cleaning-box",
     moq: "200 PCS",
@@ -121,9 +121,9 @@ export const products: Product[] = [
     tagline: "Enhanced Airflow Hygiene",
     description: "Denture and aligner soaking box with high-performance ventilation design.",
     images: [
-      "/images/products/Vented cleaning box black brown.webp",
-      "/images/products/Vented cleaning box white brown.webp",
-      "/images/products/Vented cleaning box white green.webp"
+      "/images/products/vented-cleaning-box-black-brown.webp",
+      "/images/products/vented-cleaning-box-white-brown.webp",
+      "/images/products/vented-cleaning-box-white-green.webp"
     ],
     category: "cleaning-box",
     moq: "200 PCS",
@@ -137,9 +137,9 @@ export const products: Product[] = [
     tagline: "Standard Soaking Solution",
     description: "Classic design for daily cleaning and soaking of dentures and aligners.",
     images: [
-      "/images/products/Dental cleaning box blue v1.webp",
-      "/images/products/Dental cleaning box purple v1.webp",
-      "/images/products/Dental cleaning box white v1.webp"
+      "/images/products/dental-cleaning-box-blue-v1.webp",
+      "/images/products/dental-cleaning-box-purple-v1.webp",
+      "/images/products/dental-cleaning-box-white-v1.webp"
     ],
     category: "cleaning-box",
     moq: "200 PCS",
@@ -153,8 +153,8 @@ export const products: Product[] = [
     tagline: "Premium Orthodontic Packaging",
     description: "Luxury kit box for aligner delivery. High-quality presentation to elevate the patient unboxing experience.",
     images: [
-      "/images/products/Dental Gift box v1-1.webp",
-      "/images/products/Dental Gift box v1-2.webp"
+      "/images/products/dental-gift-box-v1-1.webp",
+      "/images/products/dental-gift-box-v1-2.webp"
     ],
     category: "gift-box",
     moq: "100 PCS",
@@ -167,7 +167,7 @@ export const products: Product[] = [
     name: "Professional Dental Hook",
     tagline: "Hygienic Aligner Removal",
     description: "Precision tool designed for easy and safe removal of clear aligners without manual contact.",
-    images: ["/images/products/Dental hook-1.webp"],
+    images: ["/images/products/dental-hook-1.webp"],
     category: "dental-accessories",
     moq: "1000 PCS",
     leadTime: "5-7 Days",
@@ -179,7 +179,7 @@ export const products: Product[] = [
     name: "Orthodontic Teether",
     tagline: "Comfortable Seating Solution",
     description: "Specialized silicone chewie to ensure perfect seating of invisible aligners for optimal results.",
-    images: ["/images/products/Dental Teether-1.webp"],
+    images: ["/images/products/orthodontic-teether-1.webp"],
     category: "dental-accessories",
     moq: "1000 PCS",
     leadTime: "5-7 Days",
