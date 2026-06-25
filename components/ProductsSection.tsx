@@ -1,3 +1,4 @@
+"use client";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 
@@ -29,6 +30,9 @@ export default function ProductsSection() {
             href="https://wa.me/8618822885445"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors shadow-sm"
           >
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+            </svg>
             Discuss Custom Requirements
           </a>
         </div>
