@@ -16,7 +16,7 @@ export const products: Product[] = [
     id: 1,
     name: "Classic Aligner Case (V1)",
     tagline: "Slim & Durable with Mirror",
-    description: "Our most popular classic design with a high-definition mirror and magnetic closure.",
+    description: "Our most popular classic design with a high-definition mirror and magnetic closure. Premium medical-grade materials.",
     images: [
       "/images/products/aligner-case-v1-blue.webp",
       "/images/products/aligner-case-v1-black.webp",
