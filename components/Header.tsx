@@ -68,19 +68,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-
-      {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-1 shadow-lg">
-          <Link href="/" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>Home</Link>
-          {productCategories.map((cat) => (
-            <Link key={cat.href} href={cat.href} className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>{cat.label}</Link>
-          ))}
-          <Link href="/about" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="/insights" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>Insights</Link>
-          <Link href="/faq" className="block py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg" onClick={() => setMenuOpen(false)}>FAQ</Link>
-          <Link href="/#contact" className="block text-center bg-blue-600 text-white text-sm font-semibold px-5 py-3 rounded-lg hover:bg-blue-700 transition-colors mt-2" onClick={() => setMenuOpen(false)}>Get a Quote</Link>
-        </div>
-      )}
     </header>
   );
 }
