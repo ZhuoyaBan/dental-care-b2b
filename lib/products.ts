@@ -47,16 +47,45 @@ export const products: Product[] = [
     features: ["Switchable Vent", "Premium Matte Finish"]
   },
   {
+    id: 7,
+    name: "Aligner Case (V2)",
+    tagline: "Sleek Modern Design",
+    description: "Modern aligner case with a sleek slim profile. Available in black and white for professional clinics.",
+    images: [
+      "/images/products/aligner-case-v2-black.webp",
+      "/images/products/aligner-case-v2-white.webp"
+    ],
+    category: "retainer-case",
+    moq: "100 PCS",
+    leadTime: "7-10 Days",
+    customLogo: true,
+    features: ["Compact Profile", "Durable Build"]
+  },
+  {
+    id: 8,
+    name: "Aligner Case (V3)",
+    tagline: "Ultra-Slim Storage",
+    description: "Ultra-slim aligner case in white. Perfect for on-the-go storage with a minimal footprint.",
+    images: [
+      "/images/products/aligner-case-v3-white.webp"
+    ],
+    category: "retainer-case",
+    moq: "100 PCS",
+    leadTime: "7-10 Days",
+    customLogo: true,
+    features: ["Ultra-Slim", "Lightweight"]
+  },
+  {
     id: 10,
     name: "Premium Round Retainer Case with Mirror",
     tagline: "Elegant Circular Design",
     description: "Sleek round profile with a high-quality mirror. Available in a variety of colors.",
     images: [
-      "/images/products/Round Retainer case black with mirrow.webp",
-      "/images/products/Round Retainer case white with mirrow.webp",
-      "/images/products/Round Retainer case pink with mirrow.webp",
-      "/images/products/Round Retainer case green with mirrow.webp",
-      "/images/products/Round Retainer case yellow with mirrow.webp"
+      "/images/products/round-retainer-case-black-with-mirror.webp",
+      "/images/products/round-retainer-case-white-with-mirror.webp",
+      "/images/products/round-retainer-case-pink-with-mirror.webp",
+      "/images/products/round-retainer-case-green-with-mirror.webp",
+      "/images/products/round-retainer-case-yellow-with-mirror.webp"
     ],
     category: "retainer-case",
     moq: "100 PCS",
@@ -70,11 +99,11 @@ export const products: Product[] = [
     tagline: "Double Silicon Protection",
     description: "Enhanced protection with a double silicon interior to keep retainers secure.",
     images: [
-      "/images/products/Round Retainer case black double silicon.webp",
-      "/images/products/Round Retainer case white double silicon.webp",
-      "/images/products/Round Retainer case pink double silicon.webp",
-      "/images/products/Round Retainer case green double silicon.webp",
-      "/images/products/Round Retainer case yellow double silicon.webp"
+      "/images/products/round-retainer-case-black-double-silicon.webp",
+      "/images/products/round-retainer-case-white-double-silicon.webp",
+      "/images/products/round-retainer-case-pink-double-silicon.webp",
+      "/images/products/round-retainer-case-green-double-silicon.webp",
+      "/images/products/round-retainer-case-yellow-double-silicon.webp"
     ],
     category: "retainer-case",
     moq: "100 PCS",
@@ -88,10 +117,10 @@ export const products: Product[] = [
     tagline: "Soft & Flexible Protection",
     description: "Standard medical-grade silicon case for comfortable and safe retainer storage.",
     images: [
-      "/images/products/silicon retainer case blue.webp",
-      "/images/products/silicon retainer case green.webp",
-      "/images/products/silicon retainer case pink.webp",
-      "/images/products/silicon retainer case purple.webp"
+      "/images/products/silicon-retainer-case-blue.webp",
+      "/images/products/silicon-retainer-case-green.webp",
+      "/images/products/silicon-retainer-case-pink.webp",
+      "/images/products/silicon-retainer-case-purple.webp"
     ],
     category: "retainer-case",
     moq: "100 PCS",
@@ -187,9 +216,21 @@ export const products: Product[] = [
     features: ["Medical Grade Silicone", "Multiple Flavors", "Anti-slip"]
   },
   {
+    id: 42,
+    name: "Aligner Remover & Chewie",
+    tagline: "Complete Aligner Tool Kit",
+    description: "Combination tool for easy aligner removal and perfect seating. Essential for every aligner wearer.",
+    images: ["/images/products/aligner-remover-chewie.webp"],
+    category: "dental-accessories",
+    moq: "500 PCS",
+    leadTime: "7-10 Days",
+    customLogo: true,
+    features: ["2-in-1 Design", "Ergonomic Grip", "Medical Grade"]
+  },
+  {
     id: 4,
-    name: "Professional Ultrasonic Cleaner",
-    tagline: "Deep Cleaning Technology (Plug-in)",
+    name: "Professional Ultrasonic Cleaner (Plug-in)",
+    tagline: "Deep Cleaning Technology",
     description: "45,000Hz high-frequency waves for clinical-grade cleaning. Multiple professional colors.",
     images: [
       "/images/products/ultrasonic-cleaner-white-plug.webp",
@@ -201,6 +242,30 @@ export const products: Product[] = [
     leadTime: "15-20 Days",
     customLogo: true,
     features: ["45kHz Frequency", "Stainless Steel"]
+  },
+  {
+    id: 5,
+    name: "Professional Ultrasonic Cleaner (Battery - Black)",
+    tagline: "Portable Deep Cleaning Technology",
+    description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use.",
+    images: ["/images/products/ultrasonic-cleaner-black-battery.webp"],
+    category: "cleaning-box",
+    moq: "500 PCS",
+    leadTime: "15-20 Days",
+    customLogo: true,
+    features: ["45kHz Frequency", "Battery Powered", "Portable"]
+  },
+  {
+    id: 6,
+    name: "Professional Ultrasonic Cleaner (Battery - White)",
+    tagline: "Portable Deep Cleaning Technology",
+    description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use.",
+    images: ["/images/products/ultrasonic-cleaner-white-battery.webp"],
+    category: "cleaning-box",
+    moq: "500 PCS",
+    leadTime: "15-20 Days",
+    customLogo: true,
+    features: ["45kHz Frequency", "Battery Powered", "Portable"]
   },
   {
     id: 3,
