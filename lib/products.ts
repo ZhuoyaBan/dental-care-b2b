@@ -11,6 +11,10 @@ export interface Product {
   features: string[];
 }
 
+export function getProductById(id: number): Product | undefined {
+  return products.find(p => p.id === id);
+}
+
 export const products: Product[] = [
   {
     id: 1,

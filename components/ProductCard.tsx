@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Product } from '@/lib/products';
 import { ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react';
 
@@ -28,23 +29,25 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
-      <div className="relative aspect-square bg-gray-50 overflow-hidden">
+      <Link href={`/products/${product.id}`} className="relative aspect-square bg-gray-50 overflow-hidden block">
         <Image
           src={product.images[currentImageIndex]}
           alt={`${product.name} - Wholesale Dental Supply by Uvcare`}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {product.images.length > 1 && (
           <>
-            <button onClick={prevImage} className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity"><ChevronLeft size={20} /></button>
-            <button onClick={nextImage} className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity"><ChevronRight size={20} /></button>
+            <button onClick={prevImage} className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity z-10"><ChevronLeft size={20} /></button>
+            <button onClick={nextImage} className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity z-10"><ChevronRight size={20} /></button>
           </>
         )}
-      </div>
+      </Link>
       <div className="p-5 flex flex-col flex-grow">
-        <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600">{product.name}</h3>
+        <Link href={`/products/${product.id}`}>
+          <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600">{product.name}</h3>
+        </Link>
         <p className="text-sm text-blue-600 font-medium mb-2">{product.tagline}</p>
         <div className="grid grid-cols-3 gap-2 py-4 border-y border-gray-50 my-4">
           <div className="text-center"><span className="block text-[10px] text-gray-400 font-bold">MOQ</span><span className="text-xs font-bold">{product.moq}</span></div>
