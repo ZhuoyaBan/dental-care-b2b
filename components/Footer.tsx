@@ -33,11 +33,13 @@ const categories = [
   },
 ];
 
-// Show all product names as a flat list
-const footerProducts = products.map(p => ({
-  name: p.name,
-  href: `/products/${p.id}`,
-}));
+// Show product categories instead of individual products
+const footerProducts = [
+  { label: "Retainer Cases", href: "/products/retainer-case" },
+  { label: "Cleaning Boxes", href: "/products/cleaning-box" },
+  { label: "Gift Boxes", href: "/products/gift-box" },
+  { label: "Dental Accessories", href: "/products/dental-accessories" },
+];
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -117,7 +119,7 @@ export default function Footer() {
                       href={item.href}
                       className="text-sm text-gray-400 hover:text-blue-400 transition-colors duration-150"
                     >
-                      {item.name}
+                      {item.label}
                     </Link>
                   </li>
                 ))}
