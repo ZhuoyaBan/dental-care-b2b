@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -43,6 +43,15 @@ function ProductDetailContent({
   nextProduct: ReturnType<typeof getProductById> | null;
 }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Dynamic SEO: update document title & meta description when product loads
+  useEffect(() => {
+    document.title = `${product.name} | Uvcare - Wholesale Aligner Accessories`;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", `${product.name} - ${product.tagline}. ${product.description} Wholesale B2B supply with OEM/ODM options. Low MOQ available.`);
+    }
+  }, [product]);
 
   const handlePrevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + product.images.length) % product.images.length);

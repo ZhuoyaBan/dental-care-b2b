@@ -54,7 +54,7 @@ export const products: Product[] = [
     id: 7,
     name: "Aligner Case (V2)",
     tagline: "Sleek Modern Design",
-    description: "Modern aligner case with a sleek slim profile. Available in black and white for professional clinics.",
+    description: "Modern aligner case with a sleek slim profile. Features a compact design perfect for dental clinics to offer as a stylish alternative. BPA-free, food-grade materials with ODM customization available. Available in black and white.",
     images: [
       "/images/products/aligner-case-v2-black.webp",
       "/images/products/aligner-case-v2-white.webp"
@@ -69,7 +69,7 @@ export const products: Product[] = [
     id: 8,
     name: "Aligner Case (V3)",
     tagline: "Ultra-Slim Storage",
-    description: "Ultra-slim aligner case in white. Perfect for on-the-go storage with a minimal footprint.",
+    description: "Ultra-slim aligner case in white. Perfect for on-the-go storage with a minimal footprint. Medical-grade, BPA-free materials designed for dental clinics and distributors. ODM customization and low MOQ available.",
     images: [
       "/images/products/aligner-case-v3-white.webp"
     ],
@@ -223,7 +223,7 @@ export const products: Product[] = [
     id: 42,
     name: "Aligner Remover & Chewie",
     tagline: "Complete Aligner Tool Kit",
-    description: "Combination tool for easy aligner removal and perfect seating. Essential for every aligner wearer.",
+    description: "Combination tool for easy aligner removal and perfect seating. Essential for every aligner wearer. BPA-free, medical-grade silicone. Wholesale supply for dental clinics with custom branding options.",
     images: ["/images/products/aligner-remover-chewie.webp"],
     category: "dental-accessories",
     moq: "500 PCS",
@@ -251,7 +251,7 @@ export const products: Product[] = [
     id: 5,
     name: "Professional Ultrasonic Cleaner (Battery - Black)",
     tagline: "Portable Deep Cleaning Technology",
-    description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use.",
+    description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use. Stainless steel tank, portable design. BPA-free and food-grade. Wholesale supply for dental clinics with ODM options.",
     images: ["/images/products/ultrasonic-cleaner-black-battery.webp"],
     category: "cleaning-box",
     moq: "500 PCS",
@@ -263,7 +263,7 @@ export const products: Product[] = [
     id: 6,
     name: "Professional Ultrasonic Cleaner (Battery - White)",
     tagline: "Portable Deep Cleaning Technology",
-    description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use.",
+    description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use. Stainless steel tank, portable design. BPA-free and food-grade. Wholesale supply for dental clinics with ODM options.",
     images: ["/images/products/ultrasonic-cleaner-white-battery.webp"],
     category: "cleaning-box",
     moq: "500 PCS",
