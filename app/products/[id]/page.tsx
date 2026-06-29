@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getProductById, products } from "@/lib/products";
@@ -42,6 +43,7 @@ function ProductDetailContent({
   prevProduct: ReturnType<typeof getProductById> | null;
   nextProduct: ReturnType<typeof getProductById> | null;
 }) {
+  const router = useRouter();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Dynamic SEO: update document title & meta description when product loads
@@ -61,11 +63,22 @@ function ProductDetailContent({
     setCurrentImageIndex((prev) => (prev + 1) % product.images.length);
   };
 
+  // Click background → go back to /products
+  const handleBackgroundClick = useCallback(() => {
+    router.push("/products");
+  }, [router]);
+
+  // Stop clicks inside the product card from propagating
+  const handleCardClick = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation();
+  }, []);
+
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-white pt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Full-page backdrop: click anywhere outside the card → go to /products */}
+      <div className="min-h-screen bg-white pt-20 cursor-pointer" onClick={handleBackgroundClick}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 cursor-default" onClick={handleCardClick}>
           {/* Breadcrumb */}
           <nav className="text-sm text-gray-400 mb-6">
             <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
