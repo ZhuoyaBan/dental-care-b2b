@@ -53,6 +53,55 @@ function ProductDetailContent({
     if (metaDesc) {
       metaDesc.setAttribute("content", `${product.name} - ${product.tagline}. ${product.description} Wholesale B2B supply with OEM/ODM options. Low MOQ available.`);
     }
+
+    // Inject Product + BreadcrumbList structured data (JSON-LD)
+    const schema = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": product.name,
+          "description": product.description,
+          "image": product.images.map(img => `https://dentalcarepack.com${img}`),
+          "brand": { "@type": "Brand", "name": "Uvcare" },
+          "category": product.category,
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "Uvcare" },
+          },
+          "additionalProperty": [
+            { "@type": "PropertyValue", "name": "MOQ", "value": product.moq },
+            { "@type": "PropertyValue", "name": "Lead Time", "value": product.leadTime },
+            { "@type": "PropertyValue", "name": "Custom Logo", "value": "OEM/ODM Available" },
+          ],
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentalcarepack.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://dentalcarepack.com/products" },
+            { "@type": "ListItem", "position": 3, "name": product.name, "item": `https://dentalcarepack.com/products/${product.id}` },
+          ],
+        },
+      ],
+    };
+
+    const scriptId = "product-schema-jsonld";
+    let scriptEl = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!scriptEl) {
+      scriptEl = document.createElement("script");
+      scriptEl.id = scriptId;
+      scriptEl.type = "application/ld+json";
+      document.head.appendChild(scriptEl);
+    }
+    scriptEl.textContent = JSON.stringify(schema);
+
+    return () => {
+      const el = document.getElementById(scriptId);
+      if (el) el.remove();
+    };
   }, [product]);
 
   const handlePrevImage = () => {
