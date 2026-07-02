@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getProductById, products } from "@/lib/products";
+import { posts } from "@/lib/insights";
 import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
 import Link from "next/link";
 
@@ -28,6 +29,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   return (
     <ProductDetailContent
       product={product}
+      productId={productId}
       prevProduct={prevProduct}
       nextProduct={nextProduct}
     />
@@ -36,10 +38,12 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
 function ProductDetailContent({
   product,
+  productId,
   prevProduct,
   nextProduct,
 }: {
   product: NonNullable<ReturnType<typeof getProductById>>;
+  productId: number;
   prevProduct: ReturnType<typeof getProductById> | null;
   nextProduct: ReturnType<typeof getProductById> | null;
 }) {
@@ -256,6 +260,30 @@ function ProductDetailContent({
               </div>
             </div>
           </div>
+
+          {/* Related Articles — internal linking */}
+          {(() => {
+            const relatedPosts = posts.filter(p => p.relatedProductIds.includes(productId));
+            if (relatedPosts.length === 0) return null;
+            return (
+              <div className="mt-12 pt-8 border-t border-gray-100">
+                <h2 className="text-lg font-bold text-gray-900 mb-5">Learn More in Our Blog</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {relatedPosts.map(article => (
+                    <Link
+                      key={article.id}
+                      href={`/insights/${article.id}`}
+                      className="block p-5 border border-gray-200 rounded-2xl hover:border-blue-300 hover:shadow-md transition-all group bg-white"
+                    >
+                      <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wider">{article.category}</span>
+                      <h3 className="font-semibold text-gray-900 mt-2 text-sm leading-snug group-hover:text-blue-600 transition-colors">{article.title}</h3>
+                      <p className="text-xs text-gray-400 mt-2">Read article →</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
         </div>
       </div>
       <Footer />
