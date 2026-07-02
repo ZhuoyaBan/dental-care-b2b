@@ -24,14 +24,11 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-md border-b border-blue-50" : "bg-white/80 backdrop-blur-sm"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-sm">
-              <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2C8 2 5 5 5 9c0 6 3 13 7 13s7-7 7-13c0-4-3-7-7-7z" />
-                <path d="M9 9c0 2 1.5 3 3 3s3-1 3-3" />
-              </svg>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="h-12 w-auto">
+              <img src="/logo.png" alt="Uvcare Logo" className="h-full w-auto object-contain" />
             </div>
-            <div className="leading-tight">
+            <div className="leading-tight hidden sm:block">
               <span className="block text-base font-bold text-gray-800 tracking-tight">Uv<span className="text-blue-600">care</span></span>
               <span className="block text-[9px] text-gray-400 font-semibold tracking-[0.15em] uppercase">B2B Supply</span>
             </div>
