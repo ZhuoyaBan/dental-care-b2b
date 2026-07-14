@@ -26,7 +26,7 @@ export default function InsightsPage() {
             {posts.map((post) => (
               <article key={post.id} className="flex flex-col border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative aspect-video">
-                  <Image src={post.image} alt={post.title} fill className="object-cover" />
+                  <Image src={post.image} alt={`${post.title} | Uvcare Dental Care Guide`} fill className="object-cover" />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 mb-3">

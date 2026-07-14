@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://dentalcarepack.com/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- About & FAQ -->
   <url>
     <loc>https://dentalcarepack.com/about</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -79,19 +79,19 @@
   <!-- Insights / Blog -->
   <url>
     <loc>https://dentalcarepack.com/insights</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dentalcarepack.com/insights/ultrasonic-cleaner-guide</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dentalcarepack.com/insights/aligner-case-buying-guide</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -100,5 +100,25 @@
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dentalcarepack.com/insights/do-uv-aligner-cases-work</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dentalcarepack.com/insights/wholesale-aligner-cases-guide</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- llms.txt for AI crawlers -->
+  <url>
+    <loc>https://dentalcarepack.com/llms.txt</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

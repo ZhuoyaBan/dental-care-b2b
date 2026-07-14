@@ -5,7 +5,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img 
           src="/images/hero-bg.webp" 
-          alt="Uvcare Aligner Care Collection" 
+          alt="Wholesale aligner care accessories collection - UV sterilizers, ultrasonic cleaners, retainer cases by Uvcare"
           className="w-full h-full object-cover object-right sm:object-center opacity-90 scale-105"
         />
         {/* 增加一个从左到右的白色渐变，确保文字清晰 */}

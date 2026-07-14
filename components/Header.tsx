@@ -26,7 +26,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="h-12 w-auto">
-              <img src="/logo.png" alt="Uvcare Logo" className="h-full w-auto object-contain" />
+              <img src="/logo.png" alt="Uvcare B2B Supply Logo - Wholesale Dental Aligner Accessories" className="h-full w-auto object-contain" />
             </div>
             <div className="leading-tight hidden sm:block">
               <span className="block text-base font-bold text-gray-800 tracking-tight">Uv<span className="text-blue-600">care</span></span>
