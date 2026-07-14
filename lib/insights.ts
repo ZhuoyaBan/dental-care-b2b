@@ -145,7 +145,7 @@ export const posts: Post[] = [
       <p>This guide breaks down the real differences so you can make the right wholesale decision.</p>
       
       <h3>How They Work</h3>
-      <p><strong>UV-C Sterilizer:</strong> Uses ultraviolet-C light (around 254nm wavelength) to destroy bacteria, viruses, and fungi at the DNA level. It <em>sanitizes</em> but does not physically remove debris or plaque. A typical cycle takes 3-5 minutes.</p>
+      <p><strong>UV-C Sterilizer:</strong> Uses ultraviolet-C light (typically 254nm, 265nm, or 275nm wavelength) to destroy bacteria, viruses, and fungi at the DNA level. It <em>sanitizes</em> but does not physically remove debris or plaque. A typical cycle takes 3-5 minutes.</p>
       <p><strong>Ultrasonic Cleaner:</strong> Uses 45,000Hz high-frequency sound waves to create microscopic cavitation bubbles in water. These bubbles physically blast away plaque, stains, and buildup from every crevice. It <em>deep cleans</em> the surface.</p>
       
       <h3>Side-by-Side Comparison</h3>
@@ -200,7 +200,7 @@ export const posts: Post[] = [
       <p>Contact us today for free samples and wholesale pricing.</p>
     `,
     keyFacts: [
-      "UV-C sterilizers use 254nm wavelength light to kill 99.9% of bacteria, viruses, and fungi",
+      "UV-C sterilizers use 254nm, 265nm, or 275nm wavelength light to kill 99.9% of bacteria, viruses, and fungi",
       "Ultrasonic cleaners use 45,000Hz sound waves to physically remove plaque and debris",
       "UV-C sterilizers are dry and portable; ultrasonic cleaners require water",
       "Both have a 3-5 minute cycle time",
@@ -210,7 +210,7 @@ export const posts: Post[] = [
     faq: [
       {
         question: "Do UV aligner cases actually work?",
-        answer: "Yes. UV-C sterilizer cases use 254nm ultraviolet light to destroy bacteria, viruses, and fungi at the DNA level, killing 99.9% of microorganisms in 3-5 minutes. However, UV-C light sanitizes but does not physically remove plaque or debris — for that, you need an ultrasonic cleaner."
+        answer: "Yes. UV-C sterilizer cases use 254nm, 265nm, or 275nm ultraviolet light to destroy bacteria, viruses, and fungi at the DNA level, killing 99.9% of microorganisms in 3-5 minutes. However, UV-C light sanitizes but does not physically remove plaque or debris - for that, you need an ultrasonic cleaner."
       },
       {
         question: "Is a UV sterilizer case worth it for Invisalign?",
@@ -242,10 +242,10 @@ export const posts: Post[] = [
       <p>If you browse Reddit's r/Invisalign community, you'll see the same question pop up every week: <em>"Do UV aligner cases actually work, or is it just a gimmick?"</em> As a company that manufactures UV-C sterilizer cases, we're in a unique position to give you an honest answer — because we know exactly what the technology can and cannot do.</p>
 
       <h3>The Short Answer</h3>
-      <p><strong>Yes, UV-C sterilizer cases work — but only for what they're designed to do.</strong> They kill 99.9% of bacteria, viruses, and fungi on the surface of your aligners using UV-C light at 254nm wavelength. What they <em>don't</em> do is physically remove plaque, food debris, or visible stains. For that, you need mechanical cleaning (brushing or ultrasonic).</p>
+      <p><strong>Yes, UV-C sterilizer cases work - but only for what they're designed to do.</strong> They kill 99.9% of bacteria, viruses, and fungi on the surface of your aligners using UV-C light (effective germicidal wavelengths range from 254nm to 275nm). What they <em>don't</em> do is physically remove plaque, food debris, or visible stains. For that, you need mechanical cleaning (brushing or ultrasonic).</p>
 
       <h3>What UV-C Light Actually Does</h3>
-      <p>UV-C light at 254nm damages the DNA and RNA of microorganisms, preventing them from reproducing. This is the same technology used in hospital sterilization rooms and water treatment plants. In a compact aligner case, a UV-C LED shines on the aligner surface for 3-5 minutes, destroying:</p>
+      <p>UV-C light in the germicidal range (254nm–275nm) damages the DNA and RNA of microorganisms, preventing them from reproducing. Wavelengths at 254nm, 265nm, and 275nm are all clinically proven to be effective for sterilization — anything above 280nm has minimal germicidal effect. This is the same technology used in hospital sterilization rooms and water treatment plants. In a compact aligner case, a UV-C LED shines on the aligner surface for 3-5 minutes, destroying:</p>
       <ul>
         <li><strong>Bacteria:</strong> Including Streptococcus mutans (the main cavity-causing bacteria)</li>
         <li><strong>Viruses:</strong> Including influenza and common cold strains</li>
@@ -268,7 +268,7 @@ export const posts: Post[] = [
         <li><strong>Neutral (25%):</strong> Some users feel it's a "nice to have" but not essential, especially if they already brush and soak regularly.</li>
         <li><strong>Negative (15%):</strong> Complaints are mostly about cheap knockoff brands with weak UV bulbs that stop working after a month — not about the technology itself.</li>
       </ul>
-      <p>The key takeaway: quality matters. A well-built UV-C case with genuine 254nm LEDs is effective. A $5 knockoff with a purple light bulb is not.</p>
+      <p>The key takeaway: quality matters. A well-built UV-C case with genuine germicidal LEDs (254nm, 265nm, or 275nm) is effective. A $5 knockoff with a purple light bulb is not.</p>
 
       <h3>How to Tell a Real UV-C Case from a Fake</h3>
       <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
@@ -279,7 +279,7 @@ export const posts: Post[] = [
         </tr>
         <tr>
           <td>Wavelength</td>
-          <td>254nm (germicidal UV-C)</td>
+          <td>254nm–275nm (germicidal UV-C)</td>
           <td>395nm+ (UV-A "blacklight" — no sterilization effect)</td>
         </tr>
         <tr>
@@ -326,29 +326,29 @@ export const posts: Post[] = [
       <p>Have questions about wholesale UV-C sterilizer cases? Contact us for free samples and OEM pricing.</p>
     `,
     keyFacts: [
-      "UV-C light at 254nm destroys bacteria, viruses, and fungi by damaging their DNA",
+      "UV-C light in the 254nm–275nm range destroys bacteria, viruses, and fungi by damaging their DNA",
       "UV-C sterilization kills 99.9% of microorganisms in 3-5 minutes",
       "UV-C light does NOT physically remove plaque, food debris, or stains — it only sanitizes surfaces",
-      "Genuine UV-C LEDs emit at 254nm; cheap knockoffs use 395nm+ UV-A which has no germicidal effect",
+      "Genuine UV-C LEDs emit at 254nm, 265nm, or 275nm; wavelengths above 280nm have minimal germicidal effect; cheap knockoffs use 395nm+ UV-A",
       "Reddit analysis: 60% of UV case users report positive experiences; 15% negative (mostly due to cheap knockoffs)",
       "Uvcare UV-C Sterilizer Case MOQ: 1000 PCS with OEM logo printing available"
     ],
     faq: [
       {
         question: "Do UV aligner cases actually work?",
-        answer: "Yes — genuine UV-C cases with 254nm LEDs kill 99.9% of bacteria, viruses, and fungi in 3-5 minutes. However, they only sanitize surfaces and do not remove physical plaque or stains. For complete cleaning, pair UV sterilization with daily brushing and weekly ultrasonic cleaning."
+        answer: "Yes - genuine UV-C cases with germicidal LEDs (254nm, 265nm, or 275nm) kill 99.9% of bacteria, viruses, and fungi in 3-5 minutes. However, they only sanitize surfaces and do not remove physical plaque or stains. For complete cleaning, pair UV sterilization with daily brushing and weekly ultrasonic cleaning."
       },
       {
         question: "Is the UV sterilizer case worth it for Invisalign?",
-        answer: "Yes, if you want convenient on-the-go sanitizing without water. It's especially useful for busy professionals and travelers. The key is buying a quality case with genuine 254nm UV-C LEDs, not a cheap knockoff. Look for auto-shutoff safety, USB rechargeable battery, and FDA/CE compliance."
+        answer: "Yes, if you want convenient on-the-go sanitizing without water. It's especially useful for busy professionals and travelers. The key is buying a quality case with genuine germicidal UV-C LEDs (254nm, 265nm, or 275nm), not a cheap knockoff. Look for auto-shutoff safety, USB rechargeable battery, and FDA/CE compliance."
       },
       {
         question: "Why do some Reddit users say UV cases don't work?",
-        answer: "Most negative reviews come from users who bought cheap knockoff cases ($5-15) that use UV-A purple light (395nm+) instead of genuine germicidal UV-C (254nm). UV-A light has no sterilization effect. Genuine UV-C cases from reputable brands are effective."
+        answer: "Most negative reviews come from users who bought cheap knockoff cases ($5-15) that use UV-A purple light (395nm+) instead of genuine germicidal UV-C (254nm–275nm). UV-A light has no sterilization effect. Genuine UV-C cases from reputable brands are effective."
       },
       {
         question: "Can UV light damage clear aligners?",
-        answer: "No. UV-C light at 254nm does not damage the medical-grade PETG or polyurethane materials used in clear aligners. The exposure time is only 3-5 minutes per cycle. However, prolonged exposure to direct sunlight (which contains UV-A and UV-B) can cause discoloration over time."
+        answer: "No. UV-C light in the germicidal range (254nm–275nm) does not damage the medical-grade PETG or polyurethane materials used in clear aligners. The exposure time is only 3-5 minutes per cycle. However, prolonged exposure to direct sunlight (which contains UV-A and UV-B) can cause discoloration over time."
       },
       {
         question: "What's the difference between UV-C sterilizing and ultrasonic cleaning?",
