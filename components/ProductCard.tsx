@@ -39,8 +39,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         />
         {product.images.length > 1 && (
           <>
-            <button onClick={prevImage} className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity z-10"><ChevronLeft size={20} /></button>
-            <button onClick={nextImage} className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity z-10"><ChevronRight size={20} /></button>
+            <button onClick={prevImage} aria-label={`Previous image of ${product.name}`} className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity z-10"><ChevronLeft size={20} aria-hidden="true" /></button>
+            <button onClick={nextImage} aria-label={`Next image of ${product.name}`} className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 transition-opacity z-10"><ChevronRight size={20} aria-hidden="true" /></button>
           </>
         )}
       </Link>
@@ -50,12 +50,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </Link>
         <p className="text-sm text-blue-600 font-medium mb-2">{product.tagline}</p>
         <div className="grid grid-cols-3 gap-2 py-4 border-y border-gray-50 my-4">
-          <div className="text-center"><span className="block text-[10px] text-gray-400 font-bold">MOQ</span><span className="text-xs font-bold">{product.moq}</span></div>
-          <div className="text-center border-x"><span className="block text-[10px] text-gray-400 font-bold">LEAD TIME</span><span className="text-xs font-bold">{product.leadTime}</span></div>
-          <div className="text-center"><span className="block text-[10px] text-gray-400 font-bold">CUSTOM</span><span className="text-xs font-bold text-green-600">✓ Logo</span></div>
+          <div className="text-center"><span className="block text-[10px] text-gray-500 font-bold">MOQ</span><span className="text-xs font-bold">{product.moq}</span></div>
+          <div className="text-center border-x"><span className="block text-[10px] text-gray-500 font-bold">LEAD TIME</span><span className="text-xs font-bold">{product.leadTime}</span></div>
+          <div className="text-center"><span className="block text-[10px] text-gray-500 font-bold">CUSTOM</span><span className="text-xs font-bold text-green-600">✓ Logo</span></div>
         </div>
-        <button onClick={openWhatsApp} className="w-full bg-blue-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 mt-auto hover:bg-blue-700 transition-colors">
-          <MessageCircle size={18} /> Send Inquiry
+        <button onClick={openWhatsApp} aria-label={`Send WhatsApp inquiry about ${product.name}`} className="w-full bg-blue-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 mt-auto hover:bg-blue-700 transition-colors">
+          <MessageCircle size={18} aria-hidden="true" /> Send Inquiry
         </button>
       </div>
     </div>

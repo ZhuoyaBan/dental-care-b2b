@@ -6,6 +6,8 @@ export default function HeroSection() {
         <img 
           src="/images/hero-bg.webp" 
           alt="Wholesale aligner care accessories collection - UV sterilizers, ultrasonic cleaners, retainer cases by Uvcare"
+          width={1920}
+          height={1080}
           className="w-full h-full object-cover object-right sm:object-center opacity-90 scale-105"
         />
         {/* 增加一个从左到右的白色渐变，确保文字清晰 */}

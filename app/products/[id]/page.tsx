@@ -160,15 +160,17 @@ function ProductDetailContent({
                 <>
                   <button
                     onClick={handlePrevImage}
+                    aria-label="Previous product image"
                     className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center hover:bg-white transition-all z-10"
                   >
-                    <ChevronLeft size={22} className="text-gray-700" />
+                    <ChevronLeft size={22} className="text-gray-700" aria-hidden="true" />
                   </button>
                   <button
                     onClick={handleNextImage}
+                    aria-label="Next product image"
                     className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center hover:bg-white transition-all z-10"
                   >
-                    <ChevronRight size={22} className="text-gray-700" />
+                    <ChevronRight size={22} className="text-gray-700" aria-hidden="true" />
                   </button>
                 </>
               )}
@@ -180,6 +182,8 @@ function ProductDetailContent({
                     <button
                       key={idx}
                       onClick={() => setCurrentImageIndex(idx)}
+                      aria-label={`View image ${idx + 1} of ${product.images.length}`}
+                      aria-current={idx === currentImageIndex}
                       className={`w-2.5 h-2.5 rounded-full transition-all ${
                         idx === currentImageIndex ? "bg-blue-600 w-6" : "bg-gray-300"
                       }`}
@@ -237,9 +241,10 @@ function ProductDetailContent({
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Send WhatsApp inquiry about ${product.name}`}
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition-all shadow-lg shadow-blue-600/25 text-base"
               >
-                <MessageCircle size={20} />
+                <MessageCircle size={20} aria-hidden="true" />
                 Get Free Samples
               </a>
 

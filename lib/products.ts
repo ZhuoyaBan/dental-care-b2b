@@ -20,7 +20,7 @@ export const products: Product[] = [
     id: 1,
     name: "Classic Aligner Case (V1)",
     tagline: "Slim & Durable with Mirror",
-    description: "Our most popular classic design with a high-definition mirror and magnetic closure. Premium medical-grade materials.",
+    description: "Our most popular aligner storage case — the industry standard for dental clinics worldwide. Features a built-in high-definition mirror and secure magnetic closure that won't pop open in bags or pockets. Made from BPA-free, food-grade polypropylene (PP) that's safe for oral contact. Available in blue, black, pink, and white. Custom logo printing available with 100 PCS MOQ. Ideal for patient starter kits, retail distribution, and clinic branding. Dimensions: 82×62×18mm. Compatible with Invisalign, Angel Aligner, and all major clear aligner brands.",
     images: [
       "/images/products/aligner-case-v1-blue.webp",
       "/images/products/aligner-case-v1-black.webp",
@@ -235,7 +235,7 @@ export const products: Product[] = [
     id: 4,
     name: "Professional Ultrasonic Cleaner (Plug-in)",
     tagline: "Deep Cleaning Technology",
-    description: "45,000Hz high-frequency waves for clinical-grade cleaning. Multiple professional colors.",
+    description: "Professional-grade ultrasonic cleaner operating at 45,000Hz for clinical-level aligner cleaning. Cavitation bubbles physically blast away plaque, stains, and biofilm that manual brushing cannot reach. Plug-in design with stainless steel tank (150ml capacity). 5-minute auto-shutoff cycle. Available in white, black, and blue. BPA-free, food-grade construction. MOQ 1000 PCS with OEM/ODM logo customization. Ideal for dental clinics, orthodontic distributors, and clear aligner brands looking to offer a premium deep-cleaning solution. Compatible with all clear aligners, retainers, mouth guards, and dentures.",
     images: [
       "/images/products/ultrasonic-cleaner-white-plug.webp",
       "/images/products/ultrasonic-cleaner-black-plug.webp",
@@ -275,7 +275,7 @@ export const products: Product[] = [
     id: 3,
     name: "UV-C Sterilizer Case",
     tagline: "99.9% Bacteria Elimination",
-    description: "Rechargeable case using hospital-grade UV-C LED to sanitize your aligners in 3 minutes.",
+    description: "Rechargeable UV-C sterilizer case that kills 99.9% of bacteria, viruses, and fungi in 3-5 minutes using germicidal UV-C LED technology (254nm–275nm wavelength). USB Type-C charging with a 500mAh battery that lasts up to 1 week on a single charge. Compact and portable — perfect for patients on the go. Auto-shutoff safety feature when lid opens. BPA-free, food-grade materials. Available in black and white with custom logo printing (MOQ 1000 PCS). Ideal for dental clinics offering premium hygiene upgrades and patients who want convenient daily sanitizing without water.",
     images: [
       "/images/products/uv-sterilizer-case-black.webp",
       "/images/products/uv-sterilizer-case-white.webp"

@@ -197,17 +197,19 @@ export default function Footer() {
             <p className="text-sm text-gray-500">
               &copy; {year} Uvcare Supply. All rights reserved.
             </p>
+          <nav aria-label="Footer legal links">
             <div className="flex gap-5">
               {["Privacy Policy", "Terms of Service", "Sitemap"].map((item) => (
                 <a
                   key={item}
-                  href="#"
-                  className="text-xs text-gray-600 hover:text-gray-300 transition-colors"
+                  href={item === "Sitemap" ? "/sitemap.xml" : "#"}
+                  className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
                 >
                   {item}
                 </a>
               ))}
             </div>
+          </nav>
           </div>
         </div>
       </footer>
