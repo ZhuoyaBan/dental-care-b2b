@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dentalcarepack.com"),
   title: "Uvcare | Professional B2B Supplier for Aligner Care Accessories",
   description: "Uvcare is a premier wholesale manufacturer of premium invisible aligner accessories, including UV sterilizers, ultrasonic cleaners, and custom cases. Support OEM/ODM with low MOQ.",
   keywords: [
@@ -38,8 +39,8 @@ export default function RootLayout({
     "@type": "Organization",
     name: "Uvcare B2B Supply",
     description: "Professional B2B manufacturer of invisible aligner care accessories. OEM/ODM solutions for dental clinics and distributors worldwide.",
-    url: "https://dentalcarepack.com",
-    logo: "https://dentalcarepack.com/logo.png",
+    url: "https://www.dentalcarepack.com",
+    logo: "https://www.dentalcarepack.com/logo.png",
     email: "ban@grouprsh.com",
     telephone: "+86 188 2288 5445",
     address: {

@@ -45,4 +45,4 @@ Disallow: /
 User-agent: CloudflareBrowserRenderingCrawler
 Disallow: /
 
-Sitemap: https://dentalcarepack.com/sitemap.xml
+Sitemap: https://www.dentalcarepack.com/sitemap.xml

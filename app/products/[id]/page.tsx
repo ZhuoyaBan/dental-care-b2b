@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
@@ -9,8 +9,36 @@ import { getProductById, products } from "@/lib/products";
 import { posts } from "@/lib/insights";
 import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
 import Link from "next/link";
+import ProductCard from "@/components/ProductCard";
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
+  const category = [
+    {
+      slug: "retainer-case",
+      name: "Wholesale Retainer Cases",
+      description: "Custom retainer and aligner cases for dental clinics, orthodontic distributors, and clear aligner brands.",
+    },
+    {
+      slug: "cleaning-box",
+      name: "Wholesale Aligner Cleaning Boxes",
+      description: "UV sterilizer cases, ultrasonic cleaners, and soaking boxes for complete aligner and retainer care.",
+    },
+    {
+      slug: "gift-box",
+      name: "Custom Orthodontic Gift Boxes",
+      description: "Patient welcome-kit packaging and custom orthodontic gift boxes for clinics and aligner brands.",
+    },
+    {
+      slug: "dental-accessories",
+      name: "Wholesale Aligner Accessories",
+      description: "Aligner removal hooks, chewies, and practical orthodontic accessories with custom branding.",
+    },
+  ].find((item) => item.slug === params.id);
+
+  if (category) {
+    return <CategoryPage category={category} />;
+  }
+
   const productId = parseInt(params.id, 10);
   const product = getProductById(productId);
 
@@ -36,6 +64,50 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   );
 }
 
+function CategoryPage({
+  category,
+}: {
+  category: { slug: string; name: string; description: string };
+}) {
+  const categoryProducts = products.filter((product) => product.category === category.slug);
+
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50 pt-24">
+        <section className="border-b border-gray-100 bg-white px-4 py-16">
+          <div className="mx-auto max-w-7xl">
+            <nav className="mb-5 text-sm text-gray-400" aria-label="Breadcrumb">
+              <Link href="/" className="hover:text-blue-600">Home</Link>
+              <span className="mx-2">/</span>
+              <Link href="/products" className="hover:text-blue-600">Products</Link>
+              <span className="mx-2">/</span>
+              <span className="text-gray-600">{category.name}</span>
+            </nav>
+            <h1 className="max-w-3xl text-3xl font-bold text-gray-900 md:text-5xl">{category.name}</h1>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-gray-600">{category.description} OEM/ODM support, low MOQs, and worldwide shipping available.</p>
+            <a href="#category-products" className="mt-8 inline-flex rounded-xl bg-blue-600 px-6 py-3 font-bold text-white transition-colors hover:bg-blue-700">Browse Products</a>
+          </div>
+        </section>
+
+        <section id="category-products" className="mx-auto max-w-7xl px-4 py-16">
+          <div className="mb-8 flex items-end justify-between gap-4">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wider text-blue-600">OEM / ODM Wholesale</p>
+              <h2 className="mt-2 text-2xl font-bold text-gray-900">Products for dental professionals</h2>
+            </div>
+            <Link href="/products" className="text-sm font-semibold text-blue-600 hover:underline">View all products →</Link>
+          </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {categoryProducts.map((product) => <ProductCard key={product.id} product={product} />)}
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
 function ProductDetailContent({
   product,
   productId,
@@ -49,64 +121,6 @@ function ProductDetailContent({
 }) {
   const router = useRouter();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // Dynamic SEO: update document title & meta description when product loads
-  useEffect(() => {
-    document.title = `${product.name} | Uvcare - Wholesale Aligner Accessories`;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", `${product.name} - ${product.tagline}. ${product.description} Wholesale B2B supply with OEM/ODM options. Low MOQ available.`);
-    }
-
-    // Inject Product + BreadcrumbList structured data (JSON-LD)
-    const schema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Product",
-          "name": product.name,
-          "description": product.description,
-          "image": product.images.map(img => `https://dentalcarepack.com${img}`),
-          "brand": { "@type": "Brand", "name": "Uvcare" },
-          "category": product.category,
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "seller": { "@type": "Organization", "name": "Uvcare" },
-          },
-          "additionalProperty": [
-            { "@type": "PropertyValue", "name": "MOQ", "value": product.moq },
-            { "@type": "PropertyValue", "name": "Lead Time", "value": product.leadTime },
-            { "@type": "PropertyValue", "name": "Custom Logo", "value": "OEM/ODM Available" },
-          ],
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dentalcarepack.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://dentalcarepack.com/products" },
-            { "@type": "ListItem", "position": 3, "name": product.name, "item": `https://dentalcarepack.com/products/${product.id}` },
-          ],
-        },
-      ],
-    };
-
-    const scriptId = "product-schema-jsonld";
-    let scriptEl = document.getElementById(scriptId) as HTMLScriptElement | null;
-    if (!scriptEl) {
-      scriptEl = document.createElement("script");
-      scriptEl.id = scriptId;
-      scriptEl.type = "application/ld+json";
-      document.head.appendChild(scriptEl);
-    }
-    scriptEl.textContent = JSON.stringify(schema);
-
-    return () => {
-      const el = document.getElementById(scriptId);
-      if (el) el.remove();
-    };
-  }, [product]);
 
   const handlePrevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + product.images.length) % product.images.length);
