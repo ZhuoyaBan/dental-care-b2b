@@ -3,6 +3,13 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wholesale Aligner Accessories | Orthodontic Tools OEM | Uvcare",
+  description: "Wholesale aligner removal hooks, chewies, and orthodontic accessories for dental clinics and distributors. OEM/ODM branding and global delivery.",
+  alternates: { canonical: "https://www.dentalcarepack.com/products/dental-accessories" },
+};
 
 export default function DentalAccessoriesPage() {
   const filtered = products.filter(p => p.category === "dental-accessories");

@@ -3,6 +3,13 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wholesale Retainer Cases | Custom Aligner Cases | Uvcare",
+  description: "Wholesale retainer and aligner cases for dental clinics, orthodontic distributors, and clear aligner brands. Low MOQ, custom logo printing, and OEM/ODM support.",
+  alternates: { canonical: "https://www.dentalcarepack.com/products/retainer-case" },
+};
 
 export default function RetainerCasePage() {
   const filtered = products.filter(p => p.category === "retainer-case");

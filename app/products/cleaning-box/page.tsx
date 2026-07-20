@@ -3,6 +3,13 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wholesale Aligner Cleaning Boxes | UV & Ultrasonic Solutions | Uvcare",
+  description: "Wholesale aligner and retainer cleaning boxes, UV sterilizer cases, and ultrasonic cleaner solutions. OEM/ODM supply for dental clinics and distributors.",
+  alternates: { canonical: "https://www.dentalcarepack.com/products/cleaning-box" },
+};
 
 export default function CleaningBoxPage() {
   const filtered = products.filter(p => p.category === "cleaning-box");
