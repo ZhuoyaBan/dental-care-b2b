@@ -21,11 +21,15 @@ export const metadata: Metadata = {
     "B2B dental supply",
     "OEM aligner accessories",
   ],
+  alternates: {
+    canonical: "https://www.dentalcarepack.com/",
+  },
   openGraph: {
     title: "Uvcare | B2B Wholesale Aligner Care Accessories Manufacturer",
     description:
       "Trusted B2B supplier for invisible aligner care accessories. UV sterilizers, ultrasonic cleaners, retainer cases. Low MOQ, OEM/ODM custom branding.",
     type: "website",
+    url: "https://www.dentalcarepack.com/",
   },
 };
 

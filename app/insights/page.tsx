@@ -3,15 +3,44 @@ import Footer from "@/components/Footer";
 import { posts } from "@/lib/insights";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 
-export const metadata = {
+const siteUrl = "https://www.dentalcarepack.com";
+
+export const metadata: Metadata = {
   title: "Industry Insights & Dental Care Guides | Uvcare",
-  description: "Stay updated with the latest trends in dental accessories, orthodontic care technology, and professional hygiene solutions."
+  description: "Stay updated with the latest trends in dental accessories, orthodontic care technology, and professional hygiene solutions.",
+  alternates: {
+    canonical: `${siteUrl}/insights`,
+  },
+  openGraph: {
+    title: "Industry Insights & Dental Care Guides | Uvcare",
+    description: "Professional guides and technology updates from Uvcare's dental experts.",
+    url: `${siteUrl}/insights`,
+    type: "website",
+  },
 };
 
 export default function InsightsPage() {
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Uvcare Industry Insights",
+    description: "Professional guides and technology updates from Uvcare's dental experts.",
+    itemListElement: posts.map((post, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: post.title,
+      url: `${siteUrl}/insights/${post.id}`,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
       <Header />
       <main className="pt-24 pb-20 min-h-screen bg-white">
         <section className="bg-white border-b border-gray-100 py-16 px-4">

@@ -88,6 +88,18 @@ export default function ProductRouteLayout({ children, params }: ProductRouteLay
             image: product.images.map((image) => `${siteUrl}${image}`),
             brand: { "@type": "Brand", name: "Uvcare" },
             category: product.category,
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "USD",
+              price: "0",
+              availability: "https://schema.org/InStock",
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                valueAddedTaxIncluded: false,
+              },
+              description: "Contact for wholesale pricing. MOQ starts at " + product.moq + ".",
+              seller: { "@type": "Organization", name: "Uvcare B2B Supply" },
+            },
             additionalProperty: [
               { "@type": "PropertyValue", name: "MOQ", value: product.moq },
               { "@type": "PropertyValue", name: "Lead Time", value: product.leadTime },
