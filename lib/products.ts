@@ -71,7 +71,7 @@ export const products: Product[] = [
     tagline: "Ultra-Slim Storage",
     description: "Ultra-slim aligner case in white. Perfect for on-the-go storage with a minimal footprint. Medical-grade, BPA-free materials designed for dental clinics and distributors. ODM customization and low MOQ available.",
     images: [
-      "/images/products/aligner-case-v3-white.webp"
+      "/images/products/aligner-case-v3-white-background.png"
     ],
     category: "retainer-case",
     moq: "100 PCS",
