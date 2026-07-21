@@ -27,6 +27,8 @@ interface FormData {
   email: string;
   company: string;
   product: string;
+  quantity: string;
+  customization: string;
   message: string;
 }
 
@@ -35,6 +37,8 @@ const emptyForm: FormData = {
   email: "",
   company: "",
   product: "",
+  quantity: "",
+  customization: "",
   message: "",
 };
 
@@ -63,7 +67,7 @@ export default function ContactSection() {
           email: formData.email,
           company: formData.company,
           product: formData.product,
-          message: formData.message,
+          message: `Estimated order volume: ${formData.quantity || "Not specified"}\nBranding / packaging: ${formData.customization || "Not specified"}\n\nRequirements:\n${formData.message}`,
         },
         'eIl_NgNmKxDja7-iv'
       );
@@ -84,10 +88,10 @@ export default function ContactSection() {
             Get In Touch
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Start Your Inquiry Today
+            Send a Clear Sourcing Brief
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">
-            Our team responds within 24 hours with a personalised quote and full product catalog.
+            Tell us the product direction, approximate quantity and branding needs. We will use those details to prepare the right quotation path.
           </p>
         </div>
 
@@ -153,11 +157,11 @@ export default function ContactSection() {
               </h4>
               <ul className="space-y-2">
                 {[
-                  "Low MOQ starting from 100 pcs",
-                  "Free logo printing for 500+ orders",
-                  "Samples available before bulk order",
-                  "Shipping to 50+ countries worldwide",
-                  "30-day quality guarantee",
+                  "MOQ starts from 100 PCS on selected products",
+                  "Logo, color and packaging discussions for OEM / ODM projects",
+                  "Sample requirements can be included in your inquiry",
+                  "Current product lead times range from 5–20 days",
+                  "Share your delivery needs for a more relevant quote",
                 ].map((point) => (
                   <li key={point} className="flex items-center gap-2 text-sm text-blue-700">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0" />
@@ -182,7 +186,10 @@ export default function ContactSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm space-y-5">
-                <h3 className="text-xl font-bold text-gray-800">Send Us a Message</h3>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800">Request a Wholesale Quote</h3>
+                  <p className="mt-1 text-sm text-gray-500">The more sourcing details you provide, the more accurately we can respond.</p>
+                </div>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">Full Name *</label>
@@ -204,12 +211,36 @@ export default function ContactSection() {
                     {productOptions.map((opt) => (<option key={opt} value={opt}>{opt}</option>))}
                   </select>
                 </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Estimated Order Volume</label>
+                    <select name="quantity" value={formData.quantity} onChange={handleChange} className={inputCls}>
+                      <option value="">— Select quantity —</option>
+                      <option value="100–499 PCS">100–499 PCS</option>
+                      <option value="500–999 PCS">500–999 PCS</option>
+                      <option value="1,000–4,999 PCS">1,000–4,999 PCS</option>
+                      <option value="5,000+ PCS">5,000+ PCS</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Branding / Packaging</label>
+                    <select name="customization" value={formData.customization} onChange={handleChange} className={inputCls}>
+                      <option value="">— Select requirement —</option>
+                      <option value="No customization">No customization</option>
+                      <option value="Logo printing">Logo printing</option>
+                      <option value="Custom color">Custom color</option>
+                      <option value="Custom packaging">Custom packaging</option>
+                      <option value="Multiple custom requirements">Multiple custom requirements</option>
+                    </select>
+                  </div>
+                </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">Requirements *</label>
-                  <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="Please describe your requirements..." className={`${inputCls} resize-none`} />
+                  <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="For example: target market, reference product, preferred material, target delivery date or sample request." className={`${inputCls} resize-none`} />
                 </div>
                 <button type="submit" disabled={submitting} className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-3.5 px-6 rounded-xl transition-colors flex items-center justify-center gap-2">
-                  {submitting ? "Sending..." : "Send Inquiry"}
+                  {submitting ? "Sending..." : "Request a Quote"}
                 </button>
               </form>
             )}

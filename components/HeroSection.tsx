@@ -1,41 +1,52 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative pt-16 min-h-screen flex items-center bg-white overflow-hidden">
-      {/* Background Image with Light Overlay */}
+    <section id="hero" className="relative pt-16 min-h-[720px] flex items-center bg-white overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img 
+        <Image
           src="/images/hero-bg.webp" 
-          alt="Wholesale aligner care accessories collection - UV sterilizers, ultrasonic cleaners, retainer cases by Uvcare"
-          width={1920}
-          height={1080}
+          alt="Wholesale retainer cases, cleaning boxes and dental accessories by Uvcare"
+          fill
+          priority
+          sizes="100vw"
           className="w-full h-full object-cover object-right sm:object-center opacity-90 scale-105"
         />
-        {/* 增加一个从左到右的白色渐变，确保文字清晰 */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/15" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full text-gray-900">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-600 text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">
-              <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-              Trusted by 500+ Dental Clinics Worldwide
+          <div className="space-y-7">
+            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">
+              OEM / ODM Dental Accessory Manufacturer
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-gray-900">
-              Your <span className="text-blue-600">Premier B2B</span><br />
-              Partner for <span className="relative inline-block">Aligner Care<span className="absolute -bottom-2 left-0 right-0 h-1.5 bg-blue-500/20 rounded-full" /></span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-gray-900">
+              Dental &amp; Aligner Care Accessories <span className="text-blue-600">Built for Your Brand</span>
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-              Precision-engineered invisible aligner accessories. From UV-C sterilizers to ultrasonic cleaners, we provide complete wholesale solutions with custom branding.
+            <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">
+              Source ready-to-brand retainer cases, cleaning boxes, gift packaging and orthodontic accessories from one B2B supplier. Tell us your quantity, branding and delivery needs — we will help match the right products and quotation path.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="/products" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-200 text-center">
-                Explore Full Catalog
+              <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-200 text-center">
+                Request a Wholesale Quote
               </a>
-              <a href="https://wa.me/8618822885445" className="bg-white/80 hover:bg-white border border-gray-200 text-gray-700 font-bold py-4 px-8 rounded-xl backdrop-blur-sm transition-all shadow-sm text-center">
-                Send Inquiry via WhatsApp
+              <a href="#products" className="bg-white/80 hover:bg-white border border-gray-200 text-gray-700 font-bold py-4 px-8 rounded-xl backdrop-blur-sm transition-all shadow-sm text-center">
+                Browse Product Categories
               </a>
             </div>
+            <dl className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 max-w-2xl">
+              {[
+                ["MOQ", "From 100 PCS"],
+                ["Customization", "Logo & Packaging"],
+                ["Lead Time", "5–20 Days"],
+              ].map(([label, value]) => (
+                <div key={label} className="rounded-xl border border-white/70 bg-white/75 backdrop-blur-sm px-4 py-3 shadow-sm">
+                  <dt className="text-[11px] font-bold uppercase tracking-wider text-gray-500">{label}</dt>
+                  <dd className="mt-1 text-sm font-bold text-gray-900">{value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </div>
