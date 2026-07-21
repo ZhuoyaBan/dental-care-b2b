@@ -22,7 +22,7 @@ export default function HeroSection() {
               OEM / ODM Dental Accessory Manufacturer
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-gray-900">
-              Dental &amp; Aligner Care Accessories <span className="text-blue-600">Built for Your Brand</span>
+              Dental Gift Box &amp; Retainer Case Manufacturer, <span className="text-blue-600">Built for Your Brand</span>
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">
               Source ready-to-brand retainer cases, cleaning boxes, gift packaging and orthodontic accessories from one B2B supplier. Tell us your quantity, branding and delivery needs — we will help match the right products and quotation path.

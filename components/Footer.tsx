@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { products } from "@/lib/products";
 
 const companyLinks = [
@@ -73,12 +74,8 @@ export default function Footer() {
             {/* Brand column */}
             <div className="space-y-5">
               <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center" role="img" aria-label="Uvcare B2B Supply logo">
-                  <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <title>Uvcare B2B Supply</title>
-                    <path d="M12 2C8 2 5 5 5 9c0 6 3 13 7 13s7-7 7-13c0-4-3-7-7-7z" />
-                    <path d="M9 9c0 2 1.5 3 3 3s3-1 3-3" />
-                  </svg>
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white p-1.5" role="img" aria-label="Uvcare logo">
+                  <Image src="/logo.png" alt="Uvcare" width={44} height={44} className="h-full w-full object-contain" />
                 </div>
                 <div>
                   <span className="block text-base font-bold text-white">
