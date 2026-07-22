@@ -1,5 +1,7 @@
 export interface Product {
   id: number;
+  /** Stable, keyword-focused URL segment. Required for every future product. */
+  slug: string;
   name: string;
   tagline: string;
   description: string;
@@ -15,9 +17,22 @@ export function getProductById(id: number): Product | undefined {
   return products.find(p => p.id === id);
 }
 
+export function getProductBySlug(slug: string): Product | undefined {
+  return products.find(p => p.slug === slug);
+}
+
+export function getProductByRouteValue(value: string): Product | undefined {
+  return getProductBySlug(value) ?? (/^\d+$/.test(value) ? getProductById(Number(value)) : undefined);
+}
+
+export function getProductUrl(product: Pick<Product, "slug">): string {
+  return `/products/${product.slug}`;
+}
+
 export const products: Product[] = [
   {
     id: 1,
+    slug: "classic-aligner-case-v1",
     name: "Classic Aligner Case (V1)",
     tagline: "Slim & Durable with Mirror",
     description: "Our most popular aligner storage case — the industry standard for dental clinics worldwide. Features a built-in high-definition mirror and secure magnetic closure that won't pop open in bags or pockets. Made from BPA-free, food-grade polypropylene (PP) that's safe for oral contact. Available in blue, black, pink, and white. Custom logo printing available with 100 PCS MOQ. Ideal for patient starter kits, retail distribution, and clinic branding. Dimensions: 82×62×18mm. Compatible with Invisalign, Angel Aligner, and all major clear aligner brands.",
@@ -35,6 +50,7 @@ export const products: Product[] = [
   },
   {
     id: 2,
+    slug: "pro-round-switchable-aligner-case",
     name: "Pro Round Switchable Case",
     tagline: "Advanced Ventilation Port",
     description: "High-end circular design featuring an adjustable ventilation port for optimal airflow control.",
@@ -52,6 +68,7 @@ export const products: Product[] = [
   },
   {
     id: 7,
+    slug: "aligner-case-v2",
     name: "Aligner Case (V2)",
     tagline: "Sleek Modern Design",
     description: "Modern aligner case with a sleek slim profile. Features a compact design perfect for dental clinics to offer as a stylish alternative. BPA-free, food-grade materials with ODM customization available. Available in black and white.",
@@ -67,6 +84,7 @@ export const products: Product[] = [
   },
   {
     id: 8,
+    slug: "aligner-case-v3",
     name: "Aligner Case (V3)",
     tagline: "Ultra-Slim Storage",
     description: "Ultra-slim aligner case in white. Perfect for on-the-go storage with a minimal footprint. Medical-grade, BPA-free materials designed for dental clinics and distributors. ODM customization and low MOQ available.",
@@ -81,6 +99,7 @@ export const products: Product[] = [
   },
   {
     id: 9,
+    slug: "uv-c-retainer-sterilizer-case-with-mirror",
     name: "UV-C Retainer Sterilizer Case with Mirror",
     tagline: "Compact UV-C Hygiene Upgrade",
     description: "Compact rechargeable UV-C retainer sterilizer case for Invisalign retainers and night guards. Designed to deliver up to 99.99% UV-C sanitization performance under validated use conditions. The food-grade ABS case combines three UV-C LEDs, a 300mAh rechargeable battery, USB-C charging, and a mirror-finish aluminum lid. Square 86×86×26.6mm design with 16.4mm internal height. Available in white and black; custom colors are available from 3,000 PCS. OEM logo printing, color customization, and custom color-box packaging are supported. MOQ: 1,000 PCS. Lead time: 30 days.",
@@ -96,6 +115,7 @@ export const products: Product[] = [
   },
   {
     id: 10,
+    slug: "round-retainer-case-with-mirror",
     name: "Premium Round Retainer Case with Mirror",
     tagline: "Elegant Circular Design",
     description: "Sleek round profile with a high-quality mirror. Available in a variety of colors.",
@@ -114,6 +134,7 @@ export const products: Product[] = [
   },
   {
     id: 11,
+    slug: "round-retainer-case-double-silicone",
     name: "Premium Round Retainer Case with Silicon",
     tagline: "Double Silicon Protection",
     description: "Enhanced protection with a double silicon interior to keep retainers secure.",
@@ -132,6 +153,7 @@ export const products: Product[] = [
   },
   {
     id: 12,
+    slug: "silicone-retainer-case",
     name: "Classic Silicon Retainer Case",
     tagline: "Soft & Flexible Protection",
     description: "Standard medical-grade silicon case for comfortable and safe retainer storage.",
@@ -149,6 +171,7 @@ export const products: Product[] = [
   },
   {
     id: 20,
+    slug: "planet-aligner-cleaning-box",
     name: "Planet Cleaning Box",
     tagline: "Orbital Design Soaking Box",
     description: "Unique planetary-inspired soaking box for aligner hygiene. Durable and stylish.",
@@ -165,6 +188,7 @@ export const products: Product[] = [
   },
   {
     id: 21,
+    slug: "vented-aligner-cleaning-box",
     name: "Vented Cleaning Box",
     tagline: "Enhanced Airflow Hygiene",
     description: "Denture and aligner soaking box with high-performance ventilation design.",
@@ -181,6 +205,7 @@ export const products: Product[] = [
   },
   {
     id: 22,
+    slug: "classic-denture-cleaning-box",
     name: "Classic Denture Cleaning Box",
     tagline: "Standard Soaking Solution",
     description: "Classic design for daily cleaning and soaking of dentures and aligners.",
@@ -197,6 +222,7 @@ export const products: Product[] = [
   },
   {
     id: 30,
+    slug: "orthodontic-gift-box-v1",
     name: "Dental Gift Box V1",
     tagline: "Premium Orthodontic Packaging",
     description: "Luxury kit box for aligner delivery. High-quality presentation to elevate the patient unboxing experience.",
@@ -212,6 +238,7 @@ export const products: Product[] = [
   },
   {
     id: 40,
+    slug: "professional-dental-hook",
     name: "Professional Dental Hook",
     tagline: "Hygienic Aligner Removal",
     description: "Precision tool designed for easy and safe removal of clear aligners without manual contact.",
@@ -224,6 +251,7 @@ export const products: Product[] = [
   },
   {
     id: 41,
+    slug: "orthodontic-teether",
     name: "Orthodontic Teether",
     tagline: "Comfortable Seating Solution",
     description: "Specialized silicone chewie to ensure perfect seating of invisible aligners for optimal results.",
@@ -236,6 +264,7 @@ export const products: Product[] = [
   },
   {
     id: 42,
+    slug: "aligner-remover-and-chewie",
     name: "Aligner Remover & Chewie",
     tagline: "Complete Aligner Tool Kit",
     description: "Combination tool for easy aligner removal and perfect seating. Essential for every aligner wearer. BPA-free, medical-grade silicone. Wholesale supply for dental clinics with custom branding options.",
@@ -248,6 +277,7 @@ export const products: Product[] = [
   },
   {
     id: 4,
+    slug: "professional-ultrasonic-cleaner-plug-in",
     name: "Professional Ultrasonic Cleaner (Plug-in)",
     tagline: "Deep Cleaning Technology",
     description: "Professional-grade ultrasonic cleaner operating at 45,000Hz for clinical-level aligner cleaning. Cavitation bubbles physically blast away plaque, stains, and biofilm that manual brushing cannot reach. Plug-in design with stainless steel tank (150ml capacity). 5-minute auto-shutoff cycle. Available in white, black, and blue. BPA-free, food-grade construction. MOQ 1000 PCS with OEM/ODM logo customization. Ideal for dental clinics, orthodontic distributors, and clear aligner brands looking to offer a premium deep-cleaning solution. Compatible with all clear aligners, retainers, mouth guards, and dentures.",
@@ -264,6 +294,7 @@ export const products: Product[] = [
   },
   {
     id: 5,
+    slug: "portable-ultrasonic-cleaner-black",
     name: "Professional Ultrasonic Cleaner (Battery - Black)",
     tagline: "Portable Deep Cleaning Technology",
     description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use. Stainless steel tank, portable design. BPA-free and food-grade. Wholesale supply for dental clinics with ODM options.",
@@ -276,6 +307,7 @@ export const products: Product[] = [
   },
   {
     id: 6,
+    slug: "portable-ultrasonic-cleaner-white",
     name: "Professional Ultrasonic Cleaner (Battery - White)",
     tagline: "Portable Deep Cleaning Technology",
     description: "45,000Hz high-frequency waves for clinical-grade cleaning. Battery-powered for on-the-go use. Stainless steel tank, portable design. BPA-free and food-grade. Wholesale supply for dental clinics with ODM options.",
@@ -288,6 +320,7 @@ export const products: Product[] = [
   },
   {
     id: 3,
+    slug: "uv-c-sterilizer-case",
     name: "UV-C Sterilizer Case",
     tagline: "99.9% Bacteria Elimination",
     description: "Rechargeable UV-C sterilizer case that kills 99.9% of bacteria, viruses, and fungi in 3-5 minutes using germicidal UV-C LED technology (254nm–275nm wavelength). USB Type-C charging with a 500mAh battery that lasts up to 1 week on a single charge. Compact and portable — perfect for patients on the go. Auto-shutoff safety feature when lid opens. BPA-free, food-grade materials. Available in black and white with custom logo printing (MOQ 1000 PCS). Ideal for dental clinics offering premium hygiene upgrades and patients who want convenient daily sanitizing without water.",

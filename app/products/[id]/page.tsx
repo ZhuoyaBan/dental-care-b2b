@@ -5,14 +5,13 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getProductById, products } from "@/lib/products";
+import { getProductByRouteValue, getProductUrl, products, type Product } from "@/lib/products";
 import { posts } from "@/lib/insights";
 import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const productId = parseInt(params.id, 10);
-  const product = getProductById(productId);
+  const product = getProductByRouteValue(params.id);
 
   if (!product) {
     return (
@@ -22,14 +21,14 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     );
   }
 
-  const currentIndex = products.findIndex(p => p.id === productId);
+  const currentIndex = products.findIndex(p => p.id === product.id);
   const prevProduct = currentIndex > 0 ? products[currentIndex - 1] : null;
   const nextProduct = currentIndex < products.length - 1 ? products[currentIndex + 1] : null;
 
   return (
     <ProductDetailContent
       product={product}
-      productId={productId}
+      productId={product.id}
       prevProduct={prevProduct}
       nextProduct={nextProduct}
     />
@@ -42,10 +41,10 @@ function ProductDetailContent({
   prevProduct,
   nextProduct,
 }: {
-  product: NonNullable<ReturnType<typeof getProductById>>;
+  product: Product;
   productId: number;
-  prevProduct: ReturnType<typeof getProductById> | null;
-  nextProduct: ReturnType<typeof getProductById> | null;
+  prevProduct: Product | null;
+  nextProduct: Product | null;
 }) {
   const router = useRouter();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -193,13 +192,13 @@ function ProductDetailContent({
               {/* Prev / Next navigation */}
               <div className="flex justify-between mt-6 pt-6 border-t border-white/10">
                 {prevProduct ? (
-                  <Link href={`/products/${prevProduct.id}`} className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group">
+                  <Link href={getProductUrl(prevProduct)} className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group">
                     <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
                     <span className="truncate max-w-[160px]">{prevProduct.name}</span>
                   </Link>
                 ) : <div />}
                 {nextProduct ? (
-                  <Link href={`/products/${nextProduct.id}`} className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group">
+                  <Link href={getProductUrl(nextProduct)} className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group">
                     <span className="truncate max-w-[160px]">{nextProduct.name}</span>
                     <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </Link>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { products } from "@/lib/products";
+import { getProductByRouteValue, getProductUrl } from "@/lib/products";
+import { permanentRedirect } from "next/navigation";
 
 const siteUrl = "https://www.dentalcarepack.com";
 
@@ -44,16 +45,13 @@ export function generateMetadata({ params }: ProductRouteLayoutProps): Metadata 
     };
   }
 
-  const productId = Number(params.id);
-  const product = Number.isInteger(productId)
-    ? products.find((item) => item.id === productId)
-    : undefined;
+  const product = getProductByRouteValue(params.id);
 
   if (!product) {
     return { title: "Product Not Found | Uvcare B2B Supply", robots: { index: false, follow: false } };
   }
 
-  const url = `${siteUrl}/products/${product.id}`;
+  const url = `${siteUrl}${getProductUrl(product)}`;
   const description = `${product.name} — ${product.tagline}. Wholesale B2B supply with OEM/ODM custom branding, ${product.moq} MOQ, and ${product.leadTime.toLowerCase()} lead time.`;
 
   return {
@@ -71,11 +69,12 @@ export function generateMetadata({ params }: ProductRouteLayoutProps): Metadata 
 }
 
 export default function ProductRouteLayout({ children, params }: ProductRouteLayoutProps) {
-  const productId = Number(params.id);
-  const product = Number.isInteger(productId)
-    ? products.find((item) => item.id === productId)
-    : undefined;
+  const product = getProductByRouteValue(params.id);
   const category = categories[params.id as keyof typeof categories];
+
+  if (product && params.id === String(product.id)) {
+    permanentRedirect(getProductUrl(product));
+  }
 
   const schema = product
     ? {
@@ -99,7 +98,7 @@ export default function ProductRouteLayout({ children, params }: ProductRouteLay
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
               { "@type": "ListItem", position: 2, name: "Products", item: `${siteUrl}/products` },
-              { "@type": "ListItem", position: 3, name: product.name, item: `${siteUrl}/products/${product.id}` },
+              { "@type": "ListItem", position: 3, name: product.name, item: `${siteUrl}${getProductUrl(product)}` },
             ],
           },
         ],

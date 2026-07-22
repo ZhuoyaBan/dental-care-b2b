@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { posts } from "@/lib/insights";
-import { products } from "@/lib/products";
+import { getProductUrl, products } from "@/lib/products";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -119,7 +119,7 @@ export default function ArticleDetailPage({ params }: { params: { id: string } }
                 {relatedProducts.map(product => (
                   <Link
                     key={product.id}
-                    href={`/products/${product.id}`}
+                    href={getProductUrl(product)}
                     className="block border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-blue-300 transition-all group"
                   >
                     <div className="relative aspect-square bg-gray-50">

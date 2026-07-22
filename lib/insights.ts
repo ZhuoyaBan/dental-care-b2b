@@ -33,7 +33,7 @@ export const posts: Post[] = [
         <li><strong>Longevity:</strong> Preserves the clarity and structural integrity of the aligners throughout the treatment period.</li>
       </ul>
       
-      <p>As a leading supplier of dental accessories, Uvcare provides customizable ultrasonic solutions with low MOQ for clinics and distributors worldwide. <a href="/products/4">View our Professional Ultrasonic Cleaner (Plug-in) →</a> or <a href="/products/5">browse the battery-powered version →</a></p>
+      <p>As a leading supplier of dental accessories, Uvcare provides customizable ultrasonic solutions with low MOQ for clinics and distributors worldwide. <a href="/products/professional-ultrasonic-cleaner-plug-in">View our Professional Ultrasonic Cleaner (Plug-in) →</a> or <a href="/products/portable-ultrasonic-cleaner-black">browse the battery-powered version →</a></p>
       
       <p>Contact us today to learn more about our OEM capabilities.</p>
     `,
@@ -78,19 +78,19 @@ export const posts: Post[] = [
       
       <h3>1. Classic Aligner Cases (V1 Style)</h3>
       <p>The classic slim case is the industry standard. Featuring a built-in mirror and magnetic closure, these cases are lightweight, durable, and patient-friendly. Ideal for everyday carry. Most clinics start with these because of their universal appeal and low MOQ (typically 100 PCS).</p>
-      <p><strong>Best for:</strong> General distribution, starter kits, and retail. <a href="/products/1">View Classic Aligner Case V1 →</a></p>
+      <p><strong>Best for:</strong> General distribution, starter kits, and retail. <a href="/products/classic-aligner-case-v1">View Classic Aligner Case V1 →</a></p>
       
       <h3>2. Round Premium Cases (With Mirror or Silicon)</h3>
       <p>Round cases offer a more premium unboxing experience. The mirror version includes a high-definition mirror inside the lid, while the silicon version adds double-layer silicon protection for extra shock absorption. Available in multiple colors, these cases elevate your branding.</p>
-      <p><strong>Best for:</strong> Premium treatment plans, brand differentiation, gift kits. <a href="/products/10">View Round Retainer Case with Mirror →</a> or <a href="/products/11">View Round Case with Silicon →</a></p>
+      <p><strong>Best for:</strong> Premium treatment plans, brand differentiation, gift kits. <a href="/products/round-retainer-case-with-mirror">View Round Retainer Case with Mirror →</a> or <a href="/products/round-retainer-case-double-silicone">View Round Case with Silicon →</a></p>
       
       <h3>3. Silicon Retainer Cases</h3>
       <p>Soft, flexible, and BPA-free. Silicon cases are ideal for patients who want a gentler storage option. They're compact, come in fun colors, and are easy to clean. The medical-grade silicon won't scratch or damage aligners.</p>
-      <p><strong>Best for:</strong> Pediatric patients, color-customization, budget-friendly options. <a href="/products/12">View Silicon Retainer Case →</a></p>
+      <p><strong>Best for:</strong> Pediatric patients, color-customization, budget-friendly options. <a href="/products/silicone-retainer-case">View Silicon Retainer Case →</a></p>
       
       <h3>4. Specialty Cases (V2 & V3)</h3>
       <p>Newer designs like the V2 (sleek modern profile, available in black and white) and the V3 (ultra-slim for on-the-go storage) fill specific niches. These are great additions when you want to offer something different from the standard V1.</p>
-      <p><strong>Best for:</strong> Modern clinics, patient choice expansion, travel-friendly options. <a href="/products/7">View Aligner Case V2 →</a> or <a href="/products/8">View Aligner Case V3 →</a></p>
+      <p><strong>Best for:</strong> Modern clinics, patient choice expansion, travel-friendly options. <a href="/products/aligner-case-v2">View Aligner Case V2 →</a> or <a href="/products/aligner-case-v3">View Aligner Case V3 →</a></p>
       
       <h3>Key Factors to Consider When Stocking</h3>
       <ul>
@@ -195,7 +195,7 @@ export const posts: Post[] = [
         <li><strong>Certifications:</strong> Look for ISO, CE, and FDA compliance.</li>
       </ul>
       
-      <p>At Uvcare, we manufacture both UV-C sterilizer cases and professional ultrasonic cleaners (plug-in and battery-powered) with full OEM/ODM support and worldwide shipping. <a href="/products/3">View UV-C Sterilizer Case →</a> &nbsp;|&nbsp; <a href="/products/4">View Ultrasonic Cleaner (Plug-in) →</a> &nbsp;|&nbsp; <a href="/products/5">View Ultrasonic Cleaner (Battery) →</a></p>
+      <p>At Uvcare, we manufacture both UV-C sterilizer cases and professional ultrasonic cleaners (plug-in and battery-powered) with full OEM/ODM support and worldwide shipping. <a href="/products/uv-c-sterilizer-case">View UV-C Sterilizer Case →</a> &nbsp;|&nbsp; <a href="/products/professional-ultrasonic-cleaner-plug-in">View Ultrasonic Cleaner (Plug-in) →</a> &nbsp;|&nbsp; <a href="/products/portable-ultrasonic-cleaner-black">View Ultrasonic Cleaner (Battery) →</a></p>
       
       <p>Contact us today for free samples and wholesale pricing.</p>
     `,
@@ -311,7 +311,7 @@ export const posts: Post[] = [
         <li><strong>Hygiene compliance:</strong> Patients who invest in a UV case tend to be more hygiene-conscious — which means better treatment outcomes.</li>
         <li><strong>Brand visibility:</strong> Custom logo UV cases keep your clinic brand on the patient's desk every day.</li>
       </ul>
-      <p><a href="/products/3">View our UV-C Sterilizer Case →</a></p>
+      <p><a href="/products/uv-c-sterilizer-case">View our UV-C Sterilizer Case →</a></p>
 
       <h3>The Bottom Line</h3>
       <p>UV-C sterilizer cases are not a gimmick — they're a legitimate sanitizing tool backed by established microbiology. But they're not a magic wand either. For complete aligner care, the ideal routine is:</p>
@@ -321,7 +321,7 @@ export const posts: Post[] = [
         <li><strong>UV-C sterilize</strong> for 3-5 minutes (daily, on-the-go)</li>
         <li><strong>Ultrasonic deep clean</strong> with water + tablet (weekly)</li>
       </ol>
-      <p>Stock both UV-C cases and ultrasonic cleaners to give your patients the complete solution. <a href="/products/4">View Ultrasonic Cleaner →</a></p>
+      <p>Stock both UV-C cases and ultrasonic cleaners to give your patients the complete solution. <a href="/products/professional-ultrasonic-cleaner-plug-in">View Ultrasonic Cleaner →</a></p>
 
       <p>Have questions about wholesale UV-C sterilizer cases? Contact us for free samples and OEM pricing.</p>
     `,
@@ -608,7 +608,7 @@ export const posts: Post[] = [
         <li><strong>Low MOQ:</strong> Start with 500-1000 PCS. Test the market without a huge upfront investment.</li>
         <li><strong>ISO 9001, CE, FDA compliant:</strong> Same safety standards as any medical-grade product.</li>
       </ul>
-      <p><a href="/products/3">View UV-C Sterilizer Case →</a> &nbsp;|&nbsp; <a href="/products/4">View Ultrasonic Cleaner (Plug-in) →</a> &nbsp;|&nbsp; <a href="/products/5">View Ultrasonic Cleaner (Battery) →</a></p>
+      <p><a href="/products/uv-c-sterilizer-case">View UV-C Sterilizer Case →</a> &nbsp;|&nbsp; <a href="/products/professional-ultrasonic-cleaner-plug-in">View Ultrasonic Cleaner (Plug-in) →</a> &nbsp;|&nbsp; <a href="/products/portable-ultrasonic-cleaner-black">View Ultrasonic Cleaner (Battery) →</a></p>
 
       <h3>What About Patients Who Just Want a Cheaper Alternative?</h3>
       <p>If you're a patient (not a clinic) reading this, here's our honest advice:</p>

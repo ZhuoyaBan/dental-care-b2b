@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Product } from '@/lib/products';
+import { getProductUrl, Product } from '@/lib/products';
 import { ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react';
 
 interface ProductCardProps {
@@ -29,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
-      <Link href={`/products/${product.id}`} className="relative aspect-square bg-gray-50 overflow-hidden block">
+      <Link href={getProductUrl(product)} className="relative aspect-square bg-gray-50 overflow-hidden block">
         <Image
           src={product.images[currentImageIndex]}
           alt={`${product.name} - Wholesale Dental Supply by Uvcare`}
@@ -45,7 +45,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         )}
       </Link>
       <div className="p-5 flex flex-col flex-grow">
-        <Link href={`/products/${product.id}`}>
+        <Link href={getProductUrl(product)}>
           <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600">{product.name}</h3>
         </Link>
         <p className="text-sm text-blue-600 font-medium mb-2">{product.tagline}</p>
