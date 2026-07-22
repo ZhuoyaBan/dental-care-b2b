@@ -80,6 +80,21 @@ export const products: Product[] = [
     features: ["Ultra-Slim", "Lightweight"]
   },
   {
+    id: 9,
+    name: "UV-C Retainer Sterilizer Case with Mirror",
+    tagline: "Compact UV-C Hygiene Upgrade",
+    description: "Compact rechargeable UV-C retainer sterilizer case for Invisalign retainers and night guards. Designed to deliver up to 99.99% UV-C sanitization performance under validated use conditions. The food-grade ABS case combines three UV-C LEDs, a 300mAh rechargeable battery, USB-C charging, and a mirror-finish aluminum lid. Square 86×86×26.6mm design with 16.4mm internal height. Available in white and black; custom colors are available from 3,000 PCS. OEM logo printing, color customization, and custom color-box packaging are supported. MOQ: 1,000 PCS. Lead time: 30 days.",
+    images: [
+      "/images/products/uvc-retainer-sterilizer-case-white-logo.webp",
+      "/images/products/uvc-retainer-sterilizer-case-open.webp"
+    ],
+    category: "retainer-case",
+    moq: "1000 PCS",
+    leadTime: "30 Days",
+    customLogo: true,
+    features: ["3 UV-C LEDs", "300mAh Battery", "Mirror-Finish Lid", "USB-C Charging", "86×86×26.6mm"]
+  },
+  {
     id: 10,
     name: "Premium Round Retainer Case with Mirror",
     tagline: "Elegant Circular Design",
