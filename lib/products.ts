@@ -29,6 +29,25 @@ export function getProductUrl(product: Pick<Product, "slug">): string {
   return `/products/${product.slug}`;
 }
 
+/**
+ * Every product returns to its own collection page. New products inherit this
+ * behaviour as soon as their required `category` is set.
+ */
+export function getProductCategoryUrl(product: Pick<Product, "category">): string {
+  return `/products/${product.category}`;
+}
+
+export function getProductCategoryName(product: Pick<Product, "category">): string {
+  const names = {
+    "retainer-case": "Retainer Cases",
+    "cleaning-box": "Cleaning Boxes",
+    "gift-box": "Gift Boxes",
+    "dental-accessories": "Dental Accessories",
+  } as const;
+
+  return names[product.category];
+}
+
 export const products: Product[] = [
   {
     id: 1,

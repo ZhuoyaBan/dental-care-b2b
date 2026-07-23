@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getProductByRouteValue, getProductUrl, products, type Product } from "@/lib/products";
+import { getProductByRouteValue, getProductCategoryName, getProductCategoryUrl, getProductUrl, products, type Product } from "@/lib/products";
 import { posts } from "@/lib/insights";
 import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
 import Link from "next/link";
@@ -48,6 +48,8 @@ function ProductDetailContent({
 }) {
   const router = useRouter();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const categoryUrl = getProductCategoryUrl(product);
+  const categoryName = getProductCategoryName(product);
 
   const handlePrevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + product.images.length) % product.images.length);
@@ -57,10 +59,10 @@ function ProductDetailContent({
     setCurrentImageIndex((prev) => (prev + 1) % product.images.length);
   };
 
-  // Click background → go back to /products
+  // Click background → return to this product's category.
   const handleBackgroundClick = useCallback(() => {
-    router.push("/products");
-  }, [router]);
+    router.push(categoryUrl);
+  }, [categoryUrl, router]);
 
   // Stop clicks inside the product card from propagating
   const handleCardClick = useCallback((e: React.MouseEvent) => {
@@ -70,14 +72,14 @@ function ProductDetailContent({
   return (
     <>
       <Header />
-      {/* Full-page backdrop: click anywhere outside the card → go to /products */}
+      {/* Full-page backdrop: click anywhere outside the card → return to its category. */}
       <div className="min-h-screen bg-white pt-20 cursor-pointer" onClick={handleBackgroundClick}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 cursor-default" onClick={handleCardClick}>
           {/* Breadcrumb */}
           <nav className="text-sm text-gray-400 mb-6">
             <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/products" className="hover:text-blue-600 transition-colors">Products</Link>
+            <Link href={categoryUrl} className="hover:text-blue-600 transition-colors">{categoryName}</Link>
             <span className="mx-2">/</span>
             <span className="text-gray-600">{product.name}</span>
           </nav>

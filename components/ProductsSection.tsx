@@ -66,7 +66,10 @@ export default function ProductsSection() {
           <p className="text-gray-500 mb-5 text-sm">
             Need a product combination or custom development plan? Share your market and target quantity with us.
           </p>
-          <a href="#contact"
+          <a
+            href="https://wa.me/8618822885445?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20dental%20accessory%20sourcing%20plan."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors shadow-sm"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

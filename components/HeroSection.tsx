@@ -28,7 +28,12 @@ export default function HeroSection() {
               Source ready-to-brand retainer cases, cleaning boxes, gift packaging and orthodontic accessories from one B2B supplier. Tell us your quantity, branding and delivery needs — we will help match the right products and quotation path.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-200 text-center">
+              <a
+                href="https://wa.me/8618822885445?text=Hi%2C%20I%27d%20like%20a%20wholesale%20quote%20for%20dental%20accessories."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-200 text-center"
+              >
                 Request a Wholesale Quote
               </a>
               <a href="#products" className="bg-white/80 hover:bg-white border border-gray-200 text-gray-700 font-bold py-4 px-8 rounded-xl backdrop-blur-sm transition-all shadow-sm text-center">

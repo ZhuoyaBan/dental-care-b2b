@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getProductByRouteValue, getProductUrl } from "@/lib/products";
+import { getProductByRouteValue, getProductCategoryName, getProductCategoryUrl, getProductUrl } from "@/lib/products";
 import { permanentRedirect } from "next/navigation";
 
 const siteUrl = "https://www.dentalcarepack.com";
@@ -97,7 +97,7 @@ export default function ProductRouteLayout({ children, params }: ProductRouteLay
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
-              { "@type": "ListItem", position: 2, name: "Products", item: `${siteUrl}/products` },
+              { "@type": "ListItem", position: 2, name: getProductCategoryName(product), item: `${siteUrl}${getProductCategoryUrl(product)}` },
               { "@type": "ListItem", position: 3, name: product.name, item: `${siteUrl}${getProductUrl(product)}` },
             ],
           },
