@@ -6,13 +6,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wholesale Aligner Cleaning Boxes | UV & Ultrasonic Solutions | Uvcare",
-  description: "Wholesale aligner and retainer cleaning boxes, UV sterilizer cases, and ultrasonic cleaner solutions. OEM/ODM supply for dental clinics and distributors.",
-  alternates: { canonical: "https://www.dentalcarepack.com/products/cleaning-box" },
+  title: "Dental Impression Kits | Putty & Digital Scan ODM | Uvcare",
+  description: "Wholesale putty dental impression kits for clear aligner and night guard workflows, plus ODM-ready dental scan box concepts. Custom logo and packaging support.",
+  alternates: { canonical: "https://www.dentalcarepack.com/products/dental-impression-kit" },
 };
 
-export default function CleaningBoxPage() {
-  const filtered = products.filter(p => p.category === "cleaning-box");
+export default function DentalImpressionKitPage() {
+  const filtered = products.filter(p => p.category === "dental-impression-kit");
   const categories = [
     { name: "Retainer Cases", slug: "retainer-case" },
     { name: "Cleaning Boxes", slug: "cleaning-box" },
@@ -27,8 +27,8 @@ export default function CleaningBoxPage() {
       <main className="pt-24 bg-gray-50 min-h-screen">
         <section className="bg-white border-b border-gray-100 py-16 px-4">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-blue-600">Cleaning Boxes</h1>
-            <p className="text-gray-500 text-lg max-w-2xl">Professional cleaning solutions for aligners, retainers and dentures. Including soaking boxes, ultrasonic cleaners and UV sterilizers.</p>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-blue-600">Dental Impression Kits</h1>
+            <p className="text-gray-500 text-lg max-w-2xl">Putty impression kits for clear aligner and night guard workflows, alongside ODM-ready dental scan box concepts for compatible software projects.</p>
           </div>
         </section>
 
@@ -37,7 +37,7 @@ export default function CleaningBoxPage() {
             <div className="flex space-x-8 py-4 whitespace-nowrap">
               <Link href="/products" className="text-gray-500 hover:text-blue-600 transition-colors uppercase">ALL PRODUCTS</Link>
               {categories.map(cat => (
-                <Link key={cat.slug} href={`/products/${cat.slug}`} className={cat.slug === "cleaning-box" ? "text-blue-600 border-b-2 border-blue-600 pb-4 -mb-4 uppercase" : "text-gray-500 hover:text-blue-600 transition-colors uppercase"}>{cat.name}</Link>
+                <Link key={cat.slug} href={`/products/${cat.slug}`} className={cat.slug === "dental-impression-kit" ? "text-blue-600 border-b-2 border-blue-600 pb-4 -mb-4 uppercase" : "text-gray-500 hover:text-blue-600 transition-colors uppercase"}>{cat.name}</Link>
               ))}
             </div>
           </div>

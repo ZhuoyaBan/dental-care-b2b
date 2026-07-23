@@ -6,7 +6,7 @@ export interface Product {
   tagline: string;
   description: string;
   images: string[];
-  category: "retainer-case" | "cleaning-box" | "gift-box" | "dental-accessories";
+  category: "retainer-case" | "cleaning-box" | "gift-box" | "dental-accessories" | "dental-impression-kit";
   moq: string;
   leadTime: string;
   customLogo: boolean;
@@ -43,6 +43,7 @@ export function getProductCategoryName(product: Pick<Product, "category">): stri
     "cleaning-box": "Cleaning Boxes",
     "gift-box": "Gift Boxes",
     "dental-accessories": "Dental Accessories",
+    "dental-impression-kit": "Dental Impression Kit",
   } as const;
 
   return names[product.category];
@@ -352,5 +353,39 @@ export const products: Product[] = [
     leadTime: "10-15 Days",
     customLogo: true,
     features: ["UV-C LED Tech", "Type-C Charging"]
+  },
+  {
+    id: 50,
+    slug: "putty-impression-kit",
+    name: "Putty Impression Kit",
+    tagline: "Private-Label Dental Impression Set",
+    description: "Private-label dental impression kit for clear aligner and night guard workflows. A typical set includes four putty base cups with matching catalyst cups, upper and lower impression trays, gloves, and a presentation gift box. The base and catalyst are mixed, placed in a tray, and bitten into to capture a dental impression. Custom logo printing and branded gift-box packaging are available for qualifying orders.",
+    images: [
+      "/images/products/putty-impression-kit-main.webp",
+      "/images/products/putty-impression-kit-components.webp",
+      "/images/products/putty-impression-kit-materials.webp",
+      "/images/products/putty-impression-kit-open-box.webp"
+    ],
+    category: "dental-impression-kit",
+    moq: "500 Sets",
+    leadTime: "From 15 Days",
+    customLogo: true,
+    features: ["Putty Base & Catalyst", "Upper & Lower Trays", "Gloves Included", "Custom Gift Box"]
+  },
+  {
+    id: 51,
+    slug: "dental-scan-box",
+    name: "Dental Scan Box",
+    tagline: "ODM Digital Impression Concept",
+    description: "ODM-ready dental scan box concept for use with compatible dental scanning software. The device captures dental images with a camera; compatible software is intended to analyse the image data and create a digital dental impression model. Software compatibility, technical specifications, and project requirements are defined during ODM development.",
+    images: [
+      "/images/products/dental-scan-box-main.webp",
+      "/images/products/dental-scan-box-detail.webp"
+    ],
+    category: "dental-impression-kit",
+    moq: "2000 Sets",
+    leadTime: "From 30 Days",
+    customLogo: true,
+    features: ["ODM Development", "Camera Capture", "Software Integration"]
   }
 ];

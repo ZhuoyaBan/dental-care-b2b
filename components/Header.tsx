@@ -7,6 +7,7 @@ const productCategories = [
   { label: "Cleaning Boxes", href: "/products/cleaning-box" },
   { label: "Gift Boxes", href: "/products/gift-box" },
   { label: "Dental Accessories", href: "/products/dental-accessories" },
+  { label: "Dental Impression Kit", href: "/products/dental-impression-kit" },
 ];
 
 export default function Header() {

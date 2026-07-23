@@ -18,6 +18,7 @@ export default function GiftBoxPage() {
     { name: "Cleaning Boxes", slug: "cleaning-box" },
     { name: "Gift Boxes", slug: "gift-box" },
     { name: "Dental Accessories", slug: "dental-accessories" },
+    { name: "Dental Impression Kit", slug: "dental-impression-kit" },
   ];
 
   return (

@@ -32,6 +32,11 @@ const categories = [
     slug: "dental-accessories",
     items: products.filter(p => p.category === "dental-accessories"),
   },
+  {
+    name: "Dental Impression Kit",
+    slug: "dental-impression-kit",
+    items: products.filter(p => p.category === "dental-impression-kit"),
+  },
 ];
 
 // Show product categories instead of individual products
@@ -40,6 +45,7 @@ const footerProducts = [
   { label: "Cleaning Boxes", href: "/products/cleaning-box" },
   { label: "Gift Boxes", href: "/products/gift-box" },
   { label: "Dental Accessories", href: "/products/dental-accessories" },
+  { label: "Dental Impression Kit", href: "/products/dental-impression-kit" },
 ];
 
 export default function Footer() {

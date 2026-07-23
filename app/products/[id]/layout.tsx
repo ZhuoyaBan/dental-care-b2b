@@ -25,6 +25,11 @@ const categories = {
     description:
       "Wholesale aligner removal tools, chewies, and dental accessories for orthodontic clinics and distributors. Custom branding and OEM/ODM support.",
   },
+  "dental-impression-kit": {
+    name: "Dental Impression Kits",
+    description:
+      "Wholesale putty dental impression kits and ODM digital scan box concepts for clear aligner and night guard workflows. OEM logo and packaging options.",
+  },
 } as const;
 
 type ProductRouteLayoutProps = {

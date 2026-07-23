@@ -30,6 +30,13 @@ const categories = [
     href: "/products/dental-accessories",
     image: "/images/products/aligner-remover-chewie.webp",
   },
+  {
+    name: "Dental Impression Kit",
+    description: "Putty impression kits and ODM-ready digital scan concepts for clear aligner and night guard workflows.",
+    detail: "MOQ from 500 sets · OEM / ODM support",
+    href: "/products/dental-impression-kit",
+    image: "/images/products/putty-impression-kit-main.webp",
+  },
 ] as const;
 
 export default function ProductsSection() {
@@ -47,11 +54,11 @@ export default function ProductsSection() {
             Start with a proven product category, then tailor materials, colors, logo printing and packaging around your market.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
           {categories.map((category) => (
             <Link key={category.href} href={category.href} className="group overflow-hidden rounded-2xl bg-white border border-gray-100 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                <Image src={category.image} alt={`${category.name} wholesale products`} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw" />
+                <Image src={category.image} alt={`${category.name} wholesale products`} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 20vw" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600">{category.name}</h3>
