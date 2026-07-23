@@ -652,5 +652,71 @@ export const posts: Post[] = [
         answer: "For basic ultrasonic cleaning, yes. A $20 Amazon ultrasonic cleaner uses the same cavitation technology as the $90 Zima Pod. The difference is in design, build quality, and brand. For dental clinics buying in bulk, Uvcare offers better build quality than cheap Amazon options at wholesale pricing."
       }
     ]
+  },
+  {
+    id: "oem-retainer-cases-for-aligner-brands",
+    title: "OEM Retainer Cases for Clear Aligner Brands: A Procurement Brief",
+    excerpt: "A practical sourcing brief for clear aligner brands and dental groups: case formats, logo and color customization, MOQ, samples, and how to evaluate a reference design.",
+    date: "July 23, 2026",
+    category: "OEM / ODM Guide",
+    image: "/images/products/aligner-case-v1-blue.webp",
+    relatedProductIds: [1, 2, 7, 8, 9, 10, 12],
+    content: `
+      <p>Clear aligner brands and dental groups need more than a generic plastic box. A retainer case is part of the patient kit, a daily brand touchpoint, and a practical storage solution for aligners, retainers, and night guards. This brief explains how to source an OEM case without creating avoidable quality, branding, or supply-chain problems.</p>
+
+      <h3>Start with a Proven Case Format</h3>
+      <p>For a first order, many buyers begin with an existing case format rather than funding a new mold. Uvcare's current range includes classic cases with mirror options, round mirror or silicone designs, compact V2 and V3 formats, and UV-C electronic cases. Selecting a proven format helps a brand validate fit, user feedback, and retail presentation before considering a fully new product design.</p>
+      <p>When comparing a reference product, send clear photos, required dimensions, target material, hinge or closure requirements, and the intended device to be stored. We assess the requested functional requirements and recommend an available format or a custom-development path. Uvcare is not affiliated with, endorsed by, or an official manufacturer for any third-party clear aligner brand.</p>
+
+      <h3>What Can Be Customized?</h3>
+      <ul>
+        <li><strong>Logo:</strong> Add a clinic or aligner-brand logo to an existing case design.</li>
+        <li><strong>Color:</strong> Choose from available colors; custom color development depends on the product and order quantity.</li>
+        <li><strong>Packaging:</strong> Use a branded color box or patient-kit packaging to create a consistent unboxing experience.</li>
+        <li><strong>Product development:</strong> For a new shape or construction, request an ODM discussion that covers tooling, drawings, samples, and production volume.</li>
+      </ul>
+
+      <h3>MOQ and Lead-Time Expectations</h3>
+      <p>Standard non-electronic retainer cases in the current range can start from <strong>100 PCS</strong>, subject to the selected product and customization. Electronic UV-C cases have a higher MOQ of <strong>1,000 PCS</strong>. Standard case lead times are generally shown as 7–15 days; electronic products and more complex customization require a separate production plan. A quote should always confirm the exact MOQ, artwork method, color, packaging, and destination before an order is placed.</p>
+
+      <h3>A Better RFQ for Aligner-Brand Buyers</h3>
+      <ol>
+        <li>Share the case format or reference photos and the item it needs to store.</li>
+        <li>State the target quantity, delivery market, and launch date.</li>
+        <li>Provide logo artwork and desired color or packaging requirements.</li>
+        <li>Request a sample and confirm fit, material, finish, and branding before bulk production.</li>
+      </ol>
+      <p><a href="/products/retainer-case">Browse retainer case formats →</a> &nbsp;|&nbsp; <a href="/#contact">Request an OEM sourcing review →</a></p>
+    `,
+    keyFacts: [
+      "Uvcare supplies B2B retainer and aligner cases for dental clinics, distributors, and clear aligner brands",
+      "Standard existing case formats can start from 100 PCS, depending on product and customization",
+      "Electronic UV-C cases have a 1,000 PCS MOQ",
+      "Logo, color, and color-box packaging can be discussed for OEM projects",
+      "Reference photos and dimensions are used to assess fit and manufacturability; third-party brand affiliation is not implied",
+      "A sample and written specification should be approved before bulk production"
+    ],
+    faq: [
+      {
+        question: "Can Uvcare make a custom retainer case for a clear aligner brand?",
+        answer: "Yes. Uvcare can add a logo, discuss colors and branded packaging for existing case formats, and can discuss ODM development for a new design. The exact route depends on the required format, quantity, and tooling needs."
+      },
+      {
+        question: "What is the MOQ for private-label aligner cases?",
+        answer: "Selected standard non-electronic cases can start from 100 PCS. Electronic UV-C cases have a 1,000 PCS MOQ. The final MOQ depends on the selected product and customization scope."
+      },
+      {
+        question: "Can you copy a case from another clear aligner brand?",
+        answer: "Uvcare can evaluate reference photos, dimensions, and functional requirements to recommend a suitable existing format or a custom-development path. We do not claim affiliation with third-party brands or reproduce protected branding and design elements."
+      },
+      {
+        question: "Can a retainer case hold Invisalign aligners or a night guard?",
+        answer: "Case fit depends on the chosen format and the dimensions of the appliance. Share the target item or measurements during the RFQ process so fit can be confirmed before bulk production."
+      },
+      {
+        question: "What should an aligner brand send when requesting a quote?",
+        answer: "Send the preferred case format or reference photos, target quantity, market and delivery date, logo artwork, color or packaging requirements, and the dimensions of the appliance to be stored."
+      }
+    ]
   }
 ];

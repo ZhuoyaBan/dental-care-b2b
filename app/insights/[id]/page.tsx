@@ -6,12 +6,24 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
+const siteUrl = "https://www.dentalcarepack.com";
+
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const post = posts.find(p => p.id === params.id);
   if (!post) return { title: "Article Not Found" };
   return {
     title: `${post.title} | Uvcare Insights`,
-    description: post.excerpt
+    description: post.excerpt,
+    alternates: {
+      canonical: `${siteUrl}/insights/${post.id}`
+    },
+    openGraph: {
+      type: "article",
+      url: `${siteUrl}/insights/${post.id}`,
+      title: `${post.title} | Uvcare Insights`,
+      description: post.excerpt,
+      images: [{ url: `${siteUrl}${post.image}` }]
+    }
   };
 }
 
@@ -34,7 +46,14 @@ export default function ArticleDetailPage({ params }: { params: { id: string } }
       "@type": "Article",
       headline: post.title,
       description: post.excerpt,
+      url: `${siteUrl}/insights/${post.id}`,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `${siteUrl}/insights/${post.id}`
+      },
       datePublished: post.date,
+      inLanguage: "en",
+      image: `${siteUrl}${post.image}`,
       author: { "@type": "Organization", name: "Uvcare" },
       publisher: { "@type": "Organization", name: "Uvcare B2B Supply" }
     },
