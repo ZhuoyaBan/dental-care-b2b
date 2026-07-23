@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
+import CategoryDescription from "@/components/CategoryDescription";
 import { products } from "@/lib/products";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -50,6 +51,7 @@ export default function GiftBoxPage() {
             ))}
           </div>
         </section>
+        <CategoryDescription categoryKey="gift-box" />
       </main>
       <Footer />
     </>
