@@ -53,9 +53,13 @@ export default function InsightsPage() {
         <section className="py-16 px-4 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
-              <article key={post.id} className="flex flex-col border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative aspect-video">
-                  <Image src={post.image} alt={`${post.title} | Uvcare Dental Care Guide`} fill className="object-cover" />
+              <Link
+                key={post.id}
+                href={`/insights/${post.id}`}
+                className="group flex flex-col border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all"
+              >
+                <div className="relative aspect-video overflow-hidden">
+                  <Image src={post.image} alt={`${post.title} | Uvcare Dental Care Guide`} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 mb-3">
@@ -63,16 +67,14 @@ export default function InsightsPage() {
                     <span className="text-gray-300">•</span>
                     <span className="text-xs text-gray-500">{post.date}</span>
                   </div>
-                  <h2 className="text-xl font-bold text-gray-900 mb-3">{post.title}</h2>
+                  <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">{post.title}</h2>
                   <p className="text-gray-500 text-sm mb-6 line-clamp-3">{post.excerpt}</p>
-                  <Link 
-                    href={`/insights/${post.id}`}
-                    className="mt-auto text-blue-600 font-bold text-sm hover:text-blue-700 inline-flex items-center gap-1"
-                  >
-                    Read Full Article →
-                  </Link>
+                  <span className="mt-auto text-blue-600 font-bold text-sm inline-flex items-center gap-1">
+                    Read Full Article
+                    <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+                  </span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </section>
