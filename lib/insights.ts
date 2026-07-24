@@ -69,7 +69,7 @@ export const posts: Post[] = [
     excerpt: "Compare classic V1 cases, round premium cases, silicon cases and more. Find the best aligner storage solution for your clinic's needs.",
     date: "June 29, 2026",
     category: "Buying Guide",
-    image: "/images/products/aligner-case-v1-blue.webp",
+    image: "/images/products/aligner-case-v1-black.webp",
     relatedProductIds: [1, 2, 10, 12],
     content: `
       <p>Choosing the right aligner case for your dental clinic isn't just about storage—it's about patient satisfaction, brand perception, and treatment compliance. With so many options on the market, how do you know which style to stock?</p>
