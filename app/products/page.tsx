@@ -4,6 +4,19 @@ import ProductCard from "@/components/ProductCard";
 import CategoryDescription from "@/components/CategoryDescription";
 import { products } from "@/lib/products";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Custom Aligner Care Products | B2B Manufacturer & Supplier | Uvcare",
+  description: "Explore Uvcare's B2B aligner care products: dental impression kits, retainer cases, cleaning products, gift packaging, and orthodontic accessories for labs, clinics, brands, and distributors.",
+  alternates: { canonical: "https://www.dentalcarepack.com/products" },
+  openGraph: {
+    title: "Custom Aligner Care Products | Uvcare",
+    description: "B2B manufacturer and supplier of aligner care products for dental labs, clinics, brands, and distributors.",
+    url: "https://www.dentalcarepack.com/products",
+    type: "website",
+  },
+};
 
 export default function ProductsPage() {
   const categories = [
@@ -20,8 +33,8 @@ export default function ProductsPage() {
       <main className="pt-24 bg-gray-50 min-h-screen">
         <section className="bg-white border-b border-gray-100 py-16 px-4">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-blue-600">Premium Aligner Care Master Collection</h1>
-            <p className="text-gray-500 text-lg max-w-2xl">Professional manufacturing solutions for dental clinics. Explore our complete range of aligner accessories.</p>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-blue-600">Custom Aligner Care Products from One Manufacturer</h1>
+            <p className="text-gray-500 text-lg max-w-2xl">B2B sourcing for dental labs, clinics, aligner brands, distributors, and private-label buyers.</p>
           </div>
         </section>
 
