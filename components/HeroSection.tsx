@@ -25,16 +25,9 @@ const buyerEntries = [
   },
 ] as const;
 
-const processSteps = [
-  { step: "01", title: "Share Your Logo & Idea", desc: "Send us your brand logo (vector format) and a brief description of what you need." },
-  { step: "02", title: "We Design & Prototype", desc: "Our in-house team creates mockups, confirms specs, and produces samples for evaluation." },
-  { step: "03", title: "Production & QC", desc: "From tooling to assembly, we manage production with photo/video updates throughout." },
-  { step: "04", title: "Global Shipping", desc: "Worldwide delivery via DHL, FedEx, UPS. 7-30 day lead times depending on product." },
-] as const;
-
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative pt-16 min-h-[720px] flex items-center bg-white overflow-hidden">
+    <section id="hero" className="relative pt-16 min-h-[600px] flex items-center bg-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-bg.webp"
@@ -47,7 +40,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/15" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full text-gray-900">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 w-full text-gray-900">
         <div className="space-y-7 max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">
             Uvcare, operating at DentalCarePack.com — B2B Manufacturer
@@ -86,29 +79,32 @@ export default function HeroSection() {
           </dl>
         </div>
       </div>
+    </section>
+  );
+}
 
-      {/* Three buyer entry cards */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 hidden lg:block">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-          <div className="grid grid-cols-3 gap-4">
-            {buyerEntries.map((entry) => (
-              <Link
-                key={entry.label}
-                href={entry.href}
-                className="group block bg-white/95 backdrop-blur-md rounded-2xl border border-gray-100 shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-2xl" aria-hidden="true">{entry.icon}</span>
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600">{entry.label}</span>
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{entry.title}</h3>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">{entry.desc}</p>
-                <span className="mt-3 inline-flex items-center text-sm font-bold text-blue-600">
-                  Explore <span aria-hidden="true" className="ml-1 transition-transform group-hover:translate-x-1">→</span>
-                </span>
-              </Link>
-            ))}
-          </div>
+export function BuyerEntries() {
+  return (
+    <section className="bg-white border-b border-gray-100 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {buyerEntries.map((entry) => (
+            <Link
+              key={entry.label}
+              href={entry.href}
+              className="group block bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-xl hover:-translate-y-1 transition-all"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-2xl" aria-hidden="true">{entry.icon}</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-600">{entry.label}</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{entry.title}</h3>
+              <p className="mt-2 text-sm text-gray-600 leading-relaxed">{entry.desc}</p>
+              <span className="mt-3 inline-flex items-center text-sm font-bold text-blue-600">
+                Explore <span aria-hidden="true" className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
