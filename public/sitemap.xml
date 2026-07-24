@@ -135,6 +135,32 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Landing pages -->
+  <url>
+    <loc>https://www.dentalcarepack.com/retainer-case-manufacturer-china</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dentalcarepack.com/uv-retainer-case-manufacturer</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dentalcarepack.com/custom-dental-product-development-partner</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dentalcarepack.com/why-choose-uvcare</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- llms.txt for AI crawlers -->
   <url>
     <loc>https://www.dentalcarepack.com/llms.txt</loc>
