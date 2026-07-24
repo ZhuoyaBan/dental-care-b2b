@@ -43,13 +43,16 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 w-full text-gray-900">
         <div className="space-y-7 max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">
-            Uvcare, operating at DentalCarePack.com — B2B Manufacturer
+            UVCARE | DentalCarePack
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-gray-900">
-            Custom Aligner Care Solutions <span className="text-blue-600">Manufacturer</span> for Dental Labs, Clinics and Brands
+            Custom Aligner Care Solutions <span className="text-blue-600">Manufacturer</span>
           </h1>
+          <p className="text-xl font-semibold text-gray-800 leading-relaxed max-w-2xl">
+            OEM &amp; ODM for Dental Labs, Clinics and Brands
+          </p>
           <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">
-            Uvcare specializes in OEM retainer cases, UV-C sterilizing cases, ultrasonic cleaners, orthodontic accessories, impression kits, and private-label dental products for global dental companies. From impression to maintenance — one manufacturer, complete solutions.
+            We develop customized retainer cases, UV-C sterilizing cases, and orthodontic accessories for dental brands worldwide.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a
