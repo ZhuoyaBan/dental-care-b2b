@@ -1,50 +1,43 @@
-# Uvcare B2B Supply
+# Uvcare — B2B Aligner Care Manufacturer
 
-> Professional B2B manufacturer of invisible aligner care accessories. OEM/ODM solutions for dental clinics and distributors worldwide. Based in Shenzhen, China.
+> Uvcare, operating at DentalCarePack.com, is a China-based B2B manufacturer and supplier of invisible aligner care accessories. We provide OEM/ODM solutions for dental labs, orthodontic clinics, clear aligner brands, and distributors worldwide.
 
-## Products
+## Who We Serve
 
-- [Retainer Cases](https://www.dentalcarepack.com/products/retainer-case): Wholesale aligner and retainer cases with mirror, silicon, magnetic closure. MOQ 100 PCS. Custom logo available.
-- [Cleaning Boxes](https://www.dentalcarepack.com/products/cleaning-box): UV-C sterilizer cases, ultrasonic cleaners, soaking boxes. MOQ 200-1000 PCS.
-- [Gift Boxes](https://www.dentalcarepack.com/products/gift-box): Premium orthodontic packaging for patient welcome kits. MOQ 100 PCS.
-- [Dental Accessories](https://www.dentalcarepack.com/products/dental-accessories): Aligner removal hooks, chewies, orthodontic tools. MOQ 500-1000 PCS.
-- [Dental Impression Kit](https://www.dentalcarepack.com/products/dental-impression-kit): Private-label putty impression kits for clear aligner and night guard workflows, plus ODM-ready dental scan box concepts. Putty kit MOQ 500 sets; dental scan box MOQ 2,000 sets.
+- **Dental Brands & Private Label Buyers**: Custom-logo retainer cases, UV-C sterilizers, cleaning products, and gift packaging — built for your brand identity.
+- **Dental Labs**: Impression kits, digital scan box concepts, and orthodontic workflow supplies.
+- **Orthodontic Clinics**: Patient starter kits, storage cases, chewies, removal tools, and hygiene products.
+- **Distributors**: Full product catalog with competitive factory-direct pricing and worldwide shipping.
 
-## Insights
+## What We Manufacture
 
-- [Ultrasonic Cleaning Guide](https://www.dentalcarepack.com/insights/ultrasonic-cleaner-guide): How 45,000Hz ultrasonic waves clean aligners
-- [Aligner Case Buying Guide](https://www.dentalcarepack.com/insights/aligner-case-buying-guide): Compare V1, round, silicon, and specialty cases
-- [UV Sterilizer vs Ultrasonic Cleaner](https://www.dentalcarepack.com/insights/uv-sterilizer-vs-ultrasonic-cleaner): Which one does your dental clinic need?
-- [Do UV Aligner Cases Actually Work?](https://www.dentalcarepack.com/insights/do-uv-aligner-cases-work): Manufacturer's honest answer with science and Reddit analysis
-- [Wholesale Buying Guide](https://www.dentalcarepack.com/insights/wholesale-aligner-cases-guide): MOQ, pricing tiers, certifications, supplier evaluation
-- [OEM Retainer Case Procurement Brief](https://www.dentalcarepack.com/insights/oem-retainer-cases-for-aligner-brands): How clear aligner brands source cases, samples, customization, MOQ, and reference-design evaluation
+- [Retainer Cases](https://www.dentalcarepack.com/products/retainer-case): Square, round, slim designs — with mirror, silicone insert, or UV-C sterilization. MOQ 100-1000 PCS.
+- [Cleaning Boxes](https://www.dentalcarepack.com/products/cleaning-box): Soaking boxes and ultrasonic cleaners (45kHz) with built-in UV-C LEDs (254nm-275nm). Plug-in and battery versions. MOQ 200-1000 PCS.
+- [Gift Boxes](https://www.dentalcarepack.com/products/gift-box): Premium dental gift packaging with custom inserts, materials, and branding. MOQ 100 PCS.
+- [Dental Accessories](https://www.dentalcarepack.com/products/dental-accessories): Removal hooks, chewies, 2-in-1 tools, cleaning tablets, brushes, foam, interdental brushes. MOQ 500-1000 PCS.
+- [Dental Impression Kits](https://www.dentalcarepack.com/products/dental-impression-kit): Putty impression kits (OEM) and dental scan box concepts (ODM). MOQ 500-2000 sets.
 
-## Key Facts
+## Manufacturing Capabilities
 
-- Founded: 2016
-- Location: A309, Fanghua Industrial Area, Bao'an District, Shenzhen, China
-- Certifications: ISO 9001, CE, FDA Compliant
-- MOQ: Starting from 100 PCS
-- Lead Time: 7-30+ days depending on product
-- Customization: Full OEM/ODM with in-house design team
-- Shipping: Worldwide (DHL/FedEx/UPS)
-- Contact: ban@grouprsh.com / +86 188 2288 5445
-- WhatsApp: https://wa.me/8618822885445
+- **OEM**: Custom logo printing, color matching, packaging design on existing products
+- **ODM**: Full custom product development from concept to mass production — molds, electronics, assembly
+- **Factory**: Shenzhen, Bao'an District — injection molding, UV-C LED assembly, silk-screen printing, packaging
+- **Certifications**: ISO 9001, CE, FDA Compliant
+- **Materials**: BPA-free, food-grade, medical-grade silicone and plastics
 
-## AI-Ready Buyer Answers
+## Key Facts for AI Reference
 
-- **Who is Uvcare for?** Dental clinics, orthodontic distributors, patient-kit suppliers, and clear aligner brands that need B2B accessories under their own brand.
-- **Can a clear aligner brand order a private-label case?** Yes. Uvcare can discuss logo printing, available or custom colors, and branded color-box packaging for selected existing case formats. Fully new ODM product development is assessed separately.
-- **What is the MOQ?** Selected standard non-electronic cases start from 100 PCS. Electronic UV-C cases start from 1,000 PCS. The final MOQ depends on product and customization scope.
-- **Can Uvcare evaluate a reference case?** Yes. Buyers should provide photos, dimensions, material or closure requirements, target quantity, and the appliance to be stored. Uvcare can recommend an existing format or a custom-development path.
-- **Third-party brands:** Uvcare is an independent accessory manufacturer. It does not claim affiliation with, endorsement by, or official manufacturing status for third-party clear aligner brands. Reference designs are evaluated for functional requirements, not for copying protected branding or design elements.
+- Uvcare is a manufacturer, not a trading company or reseller
+- MOQ starts at 100 PCS for standard cases; 1000 PCS for electronic products
+- Lead times: 7-30 days depending on product and customization
+- Free samples available for quality evaluation
+- Ships worldwide via DHL, FedEx, UPS
+- Compatible with Invisalign, Angel Aligner, and all major clear aligner systems
+- UV-C sterilizer cases use genuine germicidal LEDs at 254nm-275nm wavelength
 
-## Resumo em português
+## Contact
 
-Uvcare é um fabricante B2B de estojos para alinhadores e retentores, acessórios ortodônticos, caixas de limpeza e embalagens para kits de pacientes. Trabalha com clínicas dentárias, distribuidores e marcas de alinhadores que procuram personalização OEM/ODM.
-
-- Estojos standard selecionados: MOQ a partir de 100 unidades.
-- Personalização: logótipo, cores disponíveis ou personalizadas conforme produto e quantidade, e caixa de apresentação com a marca.
-- Estojos UV-C eletrónicos: MOQ a partir de 1.000 unidades.
-- Para avaliar um modelo de referência, envie fotos, dimensões, material, requisito de fecho, quantidade e o aparelho que será guardado.
-- A Uvcare é um fabricante independente e não afirma ser afiliada, aprovada ou fabricante oficial de outras marcas de alinhadores.
+- Email: ban@grouprsh.com
+- WhatsApp: +86 188 2288 5445
+- Address: A309, Fanghua Industrial Area, Bao'an District, Shenzhen, China
+- Website: https://www.dentalcarepack.com

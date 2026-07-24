@@ -10,24 +10,25 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dentalcarepack.com"),
-  title: "Uvcare | Professional B2B Supplier for Aligner Care Accessories",
-  description: "Uvcare is a premier wholesale manufacturer of premium invisible aligner accessories, including UV sterilizers, ultrasonic cleaners, and custom cases. Support OEM/ODM with low MOQ.",
+  title: "Uvcare | Custom Aligner Care Solutions Manufacturer for Dental Labs, Clinics & Brands",
+  description: "Uvcare is a B2B manufacturer of OEM retainer cases, UV-C sterilizers, ultrasonic cleaners, orthodontic accessories, and private-label dental products. ISO 9001, CE, FDA compliant. Low MOQ, worldwide shipping.",
   keywords: [
-    "aligner case",
-    "UV sterilizer aligner case",
-    "ultrasonic cleaner",
-    "chewies",
-    "effervescent tablets",
-    "B2B dental supply",
-    "OEM aligner accessories",
+    "aligner case manufacturer",
+    "retainer case manufacturer China",
+    "UV-C sterilizer case manufacturer",
+    "OEM dental products",
+    "private label aligner accessories",
+    "orthodontic accessories supplier",
+    "dental lab supplies manufacturer",
+    "custom dental product development",
   ],
   alternates: {
     canonical: "https://www.dentalcarepack.com/",
   },
   openGraph: {
-    title: "Uvcare | B2B Wholesale Aligner Care Accessories Manufacturer",
+    title: "Uvcare | Custom Aligner Care Solutions Manufacturer",
     description:
-      "Trusted B2B supplier for invisible aligner care accessories. UV sterilizers, ultrasonic cleaners, retainer cases. Low MOQ, OEM/ODM custom branding.",
+      "B2B manufacturer of OEM retainer cases, UV-C sterilizers, ultrasonic cleaners, and private-label dental products. For dental labs, clinics, and brands worldwide.",
     type: "website",
     url: "https://www.dentalcarepack.com/",
   },
@@ -41,8 +42,8 @@ export default function RootLayout({
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Uvcare B2B Supply",
-    description: "Professional B2B manufacturer of invisible aligner care accessories. OEM/ODM solutions for dental clinics and distributors worldwide.",
+    name: "Uvcare",
+    description: "Uvcare, operating at DentalCarePack.com, is a China-based B2B manufacturer of invisible aligner care accessories. OEM/ODM solutions for dental labs, orthodontic clinics, clear aligner brands, and distributors worldwide.",
     url: "https://www.dentalcarepack.com",
     logo: "https://www.dentalcarepack.com/logo.png",
     email: "ban@grouprsh.com",

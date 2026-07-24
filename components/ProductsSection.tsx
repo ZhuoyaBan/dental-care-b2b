@@ -48,10 +48,10 @@ export default function ProductsSection() {
             Source by Product Category
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Build a Complete Aligner Care Line
+            One Manufacturer, Complete Aligner Care Product Line
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Start with a proven product category, then tailor materials, colors, logo printing and packaging around your market.
+            From dental impression to daily maintenance — source every product category from a single B2B manufacturer with OEM/ODM customization.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
