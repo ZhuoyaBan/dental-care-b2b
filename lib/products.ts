@@ -396,15 +396,15 @@ export const products: Product[] = [
     slug: "dental-model",
     name: "Dental Model",
     tagline: "Patient Education & Brushing Demonstration",
-    description: "Life-size hinged dental model for oral-health education, brushing demonstrations, and chairside patient explanations. Suitable for children’s dental education, clinic consultation rooms, and training displays. Approximate size: 67 × 58 × 65 mm; approximate weight: 196 g. Contact Uvcare to confirm available configurations, branding, MOQ, and lead time.",
+    description: "Life-size hinged dental model for oral-health education, brushing demonstrations, and chairside patient explanations. Suitable for children’s dental education, clinic consultation rooms, and training displays. Approximate size: 67 × 58 × 65 mm; approximate weight: 196 g. MOQ: 100 PCS. Lead time: 15 days. Contact Uvcare to confirm available configurations and branding options.",
     images: [
       "/images/products/dental-model-main.webp",
       "/images/products/dental-model-dimensions.webp"
     ],
     video: "/videos/dental-model.mp4",
     category: "dental-accessories",
-    moq: "On Request",
-    leadTime: "On Request",
+    moq: "100 PCS",
+    leadTime: "15 Days",
     customLogo: false,
     features: ["Hinged Jaw", "Brushing Demonstration", "Patient Education", "Approx. 196 g"],
     badges: ["Clinic Education", "Training Display"]
