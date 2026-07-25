@@ -6,11 +6,14 @@ export interface Product {
   tagline: string;
   description: string;
   images: string[];
+  /** Optional product demonstration shown after the product images. */
+  video?: string;
   category: "retainer-case" | "cleaning-box" | "gift-box" | "dental-accessories" | "dental-impression-kit";
   moq: string;
   leadTime: string;
   customLogo: boolean;
   features: string[];
+  badges?: string[];
 }
 
 export function getProductById(id: number): Product | undefined {
@@ -387,5 +390,23 @@ export const products: Product[] = [
     leadTime: "From 30 Days",
     customLogo: true,
     features: ["ODM Development", "Camera Capture", "Software Integration"]
+  },
+  {
+    id: 52,
+    slug: "dental-model",
+    name: "Dental Model",
+    tagline: "Patient Education & Brushing Demonstration",
+    description: "Life-size hinged dental model for oral-health education, brushing demonstrations, and chairside patient explanations. Suitable for children’s dental education, clinic consultation rooms, and training displays. Approximate size: 67 × 58 × 65 mm; approximate weight: 196 g. Contact Uvcare to confirm available configurations, branding, MOQ, and lead time.",
+    images: [
+      "/images/products/dental-model-main.webp",
+      "/images/products/dental-model-dimensions.webp"
+    ],
+    video: "/videos/dental-model.mp4",
+    category: "dental-accessories",
+    moq: "On Request",
+    leadTime: "On Request",
+    customLogo: false,
+    features: ["Hinged Jaw", "Brushing Demonstration", "Patient Education", "Approx. 196 g"],
+    badges: ["Clinic Education", "Training Display"]
   }
 ];

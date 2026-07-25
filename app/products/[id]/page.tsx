@@ -47,16 +47,19 @@ function ProductDetailContent({
   nextProduct: Product | null;
 }) {
   const router = useRouter();
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
   const categoryUrl = getProductCategoryUrl(product);
   const categoryName = getProductCategoryName(product);
+  const mediaCount = product.images.length + (product.video ? 1 : 0);
+  const isVideo = Boolean(product.video) && currentMediaIndex === product.images.length;
+  const badges = product.badges ?? ["BPA Free", "Food Grade", "ODM Available"];
 
-  const handlePrevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + product.images.length) % product.images.length);
+  const handlePrevMedia = () => {
+    setCurrentMediaIndex((prev) => (prev - 1 + mediaCount) % mediaCount);
   };
 
-  const handleNextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % product.images.length);
+  const handleNextMedia = () => {
+    setCurrentMediaIndex((prev) => (prev + 1) % mediaCount);
   };
 
   // Click background → return to this product's category.
@@ -88,29 +91,43 @@ function ProductDetailContent({
             {/* Left: Image area */}
             <div className="lg:col-span-7 bg-gray-50 relative flex items-center justify-center min-h-[400px] lg:min-h-0">
               <div className="relative w-full h-full aspect-square lg:aspect-auto lg:min-h-[500px]">
-                <Image
-                  src={product.images[currentImageIndex]}
-                  alt={`${product.name} - Wholesale Dental Supply by Uvcare`}
-                  fill
-                  className="object-contain p-8"
-                  sizes="(max-width: 1024px) 100vw, 60vw"
-                  priority
-                />
+                {isVideo && product.video ? (
+                  <video
+                    src={product.video}
+                    poster={product.images[0]}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="h-full w-full object-contain p-8"
+                    aria-label={`${product.name} product video`}
+                  >
+                    Your browser does not support the product video.
+                  </video>
+                ) : (
+                  <Image
+                    src={product.images[currentMediaIndex]}
+                    alt={`${product.name} - Wholesale Dental Supply by Uvcare`}
+                    fill
+                    className="object-contain p-8"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                    priority
+                  />
+                )}
               </div>
 
-              {/* Image navigation arrows */}
-              {product.images.length > 1 && (
+              {/* Image and video navigation arrows */}
+              {mediaCount > 1 && (
                 <>
                   <button
-                    onClick={handlePrevImage}
-                    aria-label="Previous product image"
+                    onClick={handlePrevMedia}
+                    aria-label="Previous product media"
                     className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center hover:bg-white transition-all z-10"
                   >
                     <ChevronLeft size={22} className="text-gray-700" aria-hidden="true" />
                   </button>
                   <button
-                    onClick={handleNextImage}
-                    aria-label="Next product image"
+                    onClick={handleNextMedia}
+                    aria-label="Next product media"
                     className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-md flex items-center justify-center hover:bg-white transition-all z-10"
                   >
                     <ChevronRight size={22} className="text-gray-700" aria-hidden="true" />
@@ -118,17 +135,17 @@ function ProductDetailContent({
                 </>
               )}
 
-              {/* Image dots indicator */}
-              {product.images.length > 1 && (
+              {/* Image and video dots indicator */}
+              {mediaCount > 1 && (
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                  {product.images.map((_, idx) => (
+                  {Array.from({ length: mediaCount }, (_, idx) => (
                     <button
                       key={idx}
-                      onClick={() => setCurrentImageIndex(idx)}
-                      aria-label={`View image ${idx + 1} of ${product.images.length}`}
-                      aria-current={idx === currentImageIndex}
+                      onClick={() => setCurrentMediaIndex(idx)}
+                      aria-label={idx === product.images.length && product.video ? "Play product video" : `View image ${idx + 1} of ${product.images.length}`}
+                      aria-current={idx === currentMediaIndex}
                       className={`w-2.5 h-2.5 rounded-full transition-all ${
-                        idx === currentImageIndex ? "bg-blue-600 w-6" : "bg-gray-300"
+                        idx === currentMediaIndex ? "bg-blue-600 w-6" : "bg-gray-300"
                       }`}
                     />
                   ))}
@@ -140,7 +157,7 @@ function ProductDetailContent({
             <div className="lg:col-span-5 bg-[#1a1a2e] text-white p-8 lg:p-10 flex flex-col">
               {/* Eco badge */}
               <div className="inline-flex items-center gap-1.5 bg-green-500/20 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full mb-6 w-fit">
-                <span>🌿</span> BPA-FREE & FOOD GRADE
+                <span>{product.badges ? "🦷" : "🌿"}</span> {product.badges ? "DENTAL EDUCATION MODEL" : "BPA-FREE & FOOD GRADE"}
               </div>
 
               <h1 className="text-2xl lg:text-3xl font-bold mb-4">{product.name}</h1>
@@ -160,7 +177,7 @@ function ProductDetailContent({
                 </div>
                 <div className="bg-white/10 rounded-xl p-4 text-center">
                   <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-1">CUSTOM</p>
-                  <p className="text-sm font-bold text-green-400">✓ Logo</p>
+                  <p className="text-sm font-bold text-green-400">{product.customLogo ? "✓ Logo" : "On Request"}</p>
                 </div>
               </div>
 
@@ -171,9 +188,9 @@ function ProductDetailContent({
                   {product.features.map((feature, idx) => (
                     <span key={idx} className="text-xs bg-white/10 text-gray-200 px-3 py-1.5 rounded-full">{feature}</span>
                   ))}
-                  <span className="text-xs bg-white/10 text-gray-200 px-3 py-1.5 rounded-full">BPA Free</span>
-                  <span className="text-xs bg-white/10 text-gray-200 px-3 py-1.5 rounded-full">Food Grade</span>
-                  <span className="text-xs bg-white/10 text-gray-200 px-3 py-1.5 rounded-full">ODM Available</span>
+                  {badges.map((badge) => (
+                    <span key={badge} className="text-xs bg-white/10 text-gray-200 px-3 py-1.5 rounded-full">{badge}</span>
+                  ))}
                 </div>
               </div>
 

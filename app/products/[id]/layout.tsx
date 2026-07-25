@@ -95,7 +95,11 @@ export default function ProductRouteLayout({ children, params }: ProductRouteLay
             additionalProperty: [
               { "@type": "PropertyValue", name: "MOQ", value: product.moq },
               { "@type": "PropertyValue", name: "Lead Time", value: product.leadTime },
-              { "@type": "PropertyValue", name: "Customization", value: "OEM/ODM logo printing available" },
+              {
+                "@type": "PropertyValue",
+                name: "Customization",
+                value: product.customLogo ? "OEM/ODM logo printing available" : "Confirm available customization options with Uvcare",
+              },
             ],
           },
           {
@@ -106,6 +110,16 @@ export default function ProductRouteLayout({ children, params }: ProductRouteLay
               { "@type": "ListItem", position: 3, name: product.name, item: `${siteUrl}${getProductUrl(product)}` },
             ],
           },
+          ...(product.video
+            ? [{
+                "@type": "VideoObject",
+                name: `${product.name} product video`,
+                description: product.description,
+                thumbnailUrl: `${siteUrl}${product.images[0]}`,
+                contentUrl: `${siteUrl}${product.video}`,
+                encodingFormat: "video/mp4",
+              }]
+            : []),
         ],
       }
     : category
