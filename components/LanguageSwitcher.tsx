@@ -5,7 +5,6 @@ import { useState, useEffect, useRef } from "react";
 const languages = [
   { code: "en", name: "English", flag: "🇺🇸" },
   { code: "pt", name: "Português", flag: "🇵🇹" },
-  { code: "pt-BR", name: "Português (BR)", flag: "🇧🇷" },
   { code: "es", name: "Español", flag: "🇪🇸" },
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
@@ -20,18 +19,51 @@ const languages = [
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState("en");
+  const [translateReady, setTranslateReady] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  // Detect Google Translate's current language
+  // Inject Google Translate script once
+  useEffect(() => {
+    if (document.getElementById("google-translate-script")) return;
+
+    // Define callback before loading script
+    window.googleTranslateElementInit = () => {
+      try {
+        new window.google.translate.TranslateElement({
+          pageLanguage: "en",
+          includedLanguages: languages.map(l => l.code).join(","),
+          autoDisplay: false,
+        }, "google-translate-widget");
+        setTranslateReady(true);
+      } catch (e) {
+        console.error("Google Translate init error:", e);
+      }
+    };
+
+    const script = document.createElement("script");
+    script.id = "google-translate-script";
+    script.type = "text/javascript";
+    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+    document.head.appendChild(script);
+  }, []);
+
+  // Monitor translate state via cookie
   useEffect(() => {
     const checkLang = setInterval(() => {
+      // Google Translate stores language in cookie "googtrans"
+      const match = document.cookie.match(/googtrans=\/[^/]+\/([^;]+)/);
+      if (match && match[1] !== currentLang) {
+        setCurrentLang(match[1]);
+      }
+      // Also check if select exists now
       const select = document.querySelector<HTMLSelectElement>(".goog-te-combo");
-      if (select && select.value) {
-        setCurrentLang(select.value);
+      if (select && !translateReady) {
+        setTranslateReady(true);
       }
     }, 1000);
     return () => clearInterval(checkLang);
-  }, []);
+  }, [currentLang, translateReady]);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -44,31 +76,33 @@ export default function LanguageSwitcher() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  // Inject Google Translate script once
-  useEffect(() => {
-    if (document.getElementById("google-translate-script")) return;
-    const script = document.createElement("script");
-    script.id = "google-translate-script";
-    script.type = "text/javascript";
-    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    document.head.appendChild(script);
-
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement({
-        pageLanguage: "en",
-        includedLanguages: languages.map(l => l.code).join(","),
-        autoDisplay: false,
-      }, "google-translate-widget");
-    };
-  }, []);
-
   const switchLanguage = (langCode: string) => {
+    if (langCode === "en") {
+      // Restore original language
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+      window.location.reload();
+      return;
+    }
+
+    // Set the googtrans cookie directly
+    const cookieValue = `/en/${langCode}`;
+    document.cookie = `googtrans=${cookieValue}; path=/`;
+    document.cookie = `googtrans=${cookieValue}; path=/; domain=.${window.location.hostname}`;
+
+    // Also try to trigger via select element
     const select = document.querySelector<HTMLSelectElement>(".goog-te-combo");
     if (select) {
       select.value = langCode;
-      select.dispatchEvent(new Event("change"));
-      setCurrentLang(langCode);
+      select.dispatchEvent(new Event("change", { bubbles: true }));
     }
+
+    // Reload to apply translation
+    setTimeout(() => {
+      window.location.reload();
+    }, 300);
+
+    setCurrentLang(langCode);
     setIsOpen(false);
   };
 
