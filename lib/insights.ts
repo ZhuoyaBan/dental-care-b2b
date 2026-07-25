@@ -137,7 +137,7 @@ export const posts: Post[] = [
     excerpt: "A head-to-head comparison of UV-C sterilizers and ultrasonic cleaners for aligner care. Learn which one to stock for your dental clinic or retail line.",
     date: "June 30, 2026",
     category: "Comparison Guide",
-    image: "/images/products/uv-sterilizer-case-black.webp",
+    image: "/images/blog/uv-sterilizer-vs-ultrasonic-cleaner.webp",
     relatedProductIds: [3, 4, 5],
     content: `
       <p>If you're sourcing aligner care accessories, two products always come up: <strong>UV-C sterilizers</strong> and <strong>ultrasonic cleaners</strong>. Both clean aligners—but they work in completely different ways, and they serve different customer needs. So which one should you stock?</p>
@@ -362,7 +362,7 @@ export const posts: Post[] = [
     excerpt: "Everything a dental clinic or distributor needs to know before ordering aligner cases in bulk: MOQ, pricing tiers, customization options, certifications, and how to choose the right manufacturer.",
     date: "July 9, 2026",
     category: "Buying Guide",
-    image: "/images/products/aligner-case-v1-blue.webp",
+    image: "/images/blog/various-retainer-cases.webp",
     relatedProductIds: [1, 2, 3, 10, 12],
     content: `
       <p>Whether you run a single dental clinic or manage a multi-location distribution network, buying aligner cases at wholesale requires understanding MOQ structures, customization options, material safety standards, and lead times. This guide covers everything you need to know before placing your first bulk order.</p>
@@ -536,7 +536,7 @@ export const posts: Post[] = [
     excerpt: "Zima Dental makes great products, but the price adds up fast. Here's how dental clinics can get the same UV-C and ultrasonic cleaning technology at factory-direct wholesale prices.",
     date: "July 18, 2026",
     category: "Comparison Guide",
-    image: "/images/products/uv-sterilizer-case-black.webp",
+    image: "/images/blog/zima-vs-uvcare-retainer-case.webp",
     relatedProductIds: [3, 4, 5],
     content: `
       <p>If you've searched Reddit's r/Invisalign for aligner cleaning recommendations, you've seen the same name come up again and again: <strong>Zima Dental</strong>. The Zima Dental Pod and UV Case are popular — but they're also expensive, and many users on Reddit complain about durability issues and customer service. As a manufacturer of UV-C sterilizer cases and ultrasonic cleaners, we want to give dental clinics an honest comparison and a cost-effective alternative.</p>
@@ -659,7 +659,7 @@ export const posts: Post[] = [
     excerpt: "A practical sourcing brief for clear aligner brands and dental groups: case formats, logo and color customization, MOQ, samples, and how to evaluate a reference design.",
     date: "July 23, 2026",
     category: "OEM / ODM Guide",
-    image: "/images/products/aligner-case-v1-blue.webp",
+    image: "/images/blog/silver-premium-design-vs-uvcare-retainer-case.webp",
     relatedProductIds: [1, 2, 7, 8, 9, 10, 12],
     content: `
       <p>Clear aligner brands and dental groups need more than a generic plastic box. A retainer case is part of the patient kit, a daily brand touchpoint, and a practical storage solution for aligners, retainers, and night guards. This brief explains how to source an OEM case without creating avoidable quality, branding, or supply-chain problems.</p>
