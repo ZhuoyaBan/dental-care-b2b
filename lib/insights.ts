@@ -725,7 +725,7 @@ export const posts: Post[] = [
     excerpt: "Reddit users constantly compare the $40 iSonic DS180 with the $90 Zima Dental Pod. We tested both and compared them — plus the best ultrasonic cleaner under $50 and wholesale alternatives for dental brands.",
     date: "July 24, 2026",
     category: "Comparison Guide",
-    image: "/images/blog/uv-sterilizer-vs-ultrasonic-cleaner.webp",
+    image: "/images/blog/isonic-ds180-vs-zima-dental-pod.webp",
     relatedProductIds: [4, 5, 6],
     content: `
       <p>If you've spent any time on Reddit's r/Invisalign, you've seen the same debate play out again and again: <strong>"Should I buy the iSonic DS180 or the Zima Dental Pod?"</strong> It's one of the most frequently asked questions in the aligner community, and for good reason — both are popular ultrasonic cleaners, but the price difference is significant ($40 vs $90+). As a manufacturer of ultrasonic cleaners and aligner care products, we'll give you an honest, data-driven comparison.</p>
