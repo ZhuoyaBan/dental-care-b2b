@@ -32,7 +32,7 @@ export default function Header() {
             </div>
             <div className="leading-tight hidden sm:block">
               <span className="block text-base font-bold text-gray-800 tracking-tight">Uv<span className="text-blue-600">care</span></span>
-              <span className="block text-[9px] text-gray-400 font-semibold tracking-[0.15em] uppercase">B2B Supply</span>
+              <span className="block text-[9px] text-gray-500 font-semibold tracking-[0.15em] uppercase">B2B Supply</span>
             </div>
           </Link>
 

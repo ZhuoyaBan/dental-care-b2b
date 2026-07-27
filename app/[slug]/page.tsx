@@ -134,7 +134,7 @@ export default function LandingPage({ params }: { params: { slug: string } }) {
                     </div>
                     <div className="p-3">
                       <p className="font-semibold text-sm text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">{product.name}</p>
-                      <p className="text-xs text-gray-400 mt-1">MOQ: {product.moq}</p>
+                      <p className="text-xs text-gray-500 mt-1">MOQ: {product.moq}</p>
                     </div>
                   </Link>
                 ))}

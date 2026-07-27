@@ -141,9 +141,9 @@ export default function ContactSection() {
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-0.5">{item.title}</p>
+                  <p className="text-[10px] text-gray-500 font-semibold uppercase tracking-wider mb-0.5">{item.title}</p>
                   <p className="font-semibold text-gray-800 text-sm">{item.value}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">{item.sub}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{item.sub}</p>
                 </div>
               </div>
             ))}

@@ -79,7 +79,7 @@ function ProductDetailContent({
       <div className="min-h-screen bg-white pt-20 cursor-pointer" onClick={handleBackgroundClick}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 cursor-default" onClick={handleCardClick}>
           {/* Breadcrumb */}
-          <nav className="text-sm text-gray-400 mb-6">
+          <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <Link href={categoryUrl} className="hover:text-blue-600 transition-colors">{categoryName}</Link>
@@ -168,22 +168,22 @@ function ProductDetailContent({
               {/* Specs */}
               <div className="grid grid-cols-3 gap-3 mb-6">
                 <div className="bg-white/10 rounded-xl p-4 text-center">
-                  <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-1">MOQ</p>
+                  <p className="text-[10px] text-gray-300 font-semibold uppercase tracking-wider mb-1">MOQ</p>
                   <p className="text-sm font-bold">{product.moq}</p>
                 </div>
                 <div className="bg-white/10 rounded-xl p-4 text-center">
-                  <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-1">LEAD TIME</p>
+                  <p className="text-[10px] text-gray-300 font-semibold uppercase tracking-wider mb-1">LEAD TIME</p>
                   <p className="text-sm font-bold">{product.leadTime}</p>
                 </div>
                 <div className="bg-white/10 rounded-xl p-4 text-center">
-                  <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-1">CUSTOM</p>
+                  <p className="text-[10px] text-gray-300 font-semibold uppercase tracking-wider mb-1">CUSTOM</p>
                   <p className="text-sm font-bold text-green-400">{product.customLogo ? "✓ Logo" : "On Request"}</p>
                 </div>
               </div>
 
               {/* Features */}
               <div className="mb-8">
-                <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-2">KEY FEATURES</p>
+                <p className="text-[10px] text-gray-300 font-semibold uppercase tracking-wider mb-2">KEY FEATURES</p>
                 <div className="flex flex-wrap gap-2">
                   {product.features.map((feature, idx) => (
                     <span key={idx} className="text-xs bg-white/10 text-gray-200 px-3 py-1.5 rounded-full">{feature}</span>
@@ -211,13 +211,13 @@ function ProductDetailContent({
               {/* Prev / Next navigation */}
               <div className="flex justify-between mt-6 pt-6 border-t border-white/10">
                 {prevProduct ? (
-                  <Link href={getProductUrl(prevProduct)} className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group">
+                  <Link href={getProductUrl(prevProduct)} className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors group">
                     <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
                     <span className="truncate max-w-[160px]">{prevProduct.name}</span>
                   </Link>
                 ) : <div />}
                 {nextProduct ? (
-                  <Link href={getProductUrl(nextProduct)} className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group">
+                  <Link href={getProductUrl(nextProduct)} className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors group">
                     <span className="truncate max-w-[160px]">{nextProduct.name}</span>
                     <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -242,7 +242,7 @@ function ProductDetailContent({
                     >
                       <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wider">{article.category}</span>
                       <h3 className="font-semibold text-gray-900 mt-2 text-sm leading-snug group-hover:text-blue-600 transition-colors">{article.title}</h3>
-                      <p className="text-xs text-gray-400 mt-2">Read article →</p>
+                      <p className="text-xs text-gray-500 mt-2">Read article →</p>
                     </Link>
                   ))}
                 </div>

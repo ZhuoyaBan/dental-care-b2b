@@ -103,7 +103,7 @@ export default function Footer() {
                 {["ISO 9001", "CE Certified", "FDA Compliant"].map((cert) => (
                   <span
                     key={cert}
-                    className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-gray-800 text-gray-400 border border-gray-700"
+                    className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-gray-800 text-gray-300 border border-gray-700"
                   >
                     {cert}
                   </span>

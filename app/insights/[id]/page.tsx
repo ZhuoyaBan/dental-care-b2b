@@ -80,7 +80,7 @@ export default function ArticleDetailPage({ params }: { params: { id: string } }
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">{post.category}</span>
-              <span className="text-gray-300">•</span>
+              <span className="text-gray-400">•</span>
               <span className="text-xs text-gray-500">{post.date}</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{post.title}</h1>
@@ -152,7 +152,7 @@ export default function ArticleDetailPage({ params }: { params: { id: string } }
                     </div>
                     <div className="p-3">
                       <p className="font-semibold text-sm text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">{product.name}</p>
-                      <p className="text-xs text-gray-400 mt-1">MOQ: {product.moq}</p>
+                      <p className="text-xs text-gray-500 mt-1">MOQ: {product.moq}</p>
                     </div>
                   </Link>
                 ))}
