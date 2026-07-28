@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -78,6 +79,29 @@ export default function AboutPage() {
               to meet your demand.
             </p>
           </div>
+
+          {/* Production floor */}
+          <section className="mb-12" aria-labelledby="production-floor-heading">
+            <div className="overflow-hidden rounded-3xl border border-gray-100 bg-gray-50 shadow-sm">
+              <Image
+                src="/images/about/uvcare-shenzhen-production-floor.webp"
+                alt="Uvcare team assembling aligner care products on the Shenzhen production floor"
+                width={1200}
+                height={900}
+                sizes="(max-width: 896px) 100vw, 896px"
+                className="h-auto w-full"
+              />
+              <div className="border-t border-gray-100 bg-white px-6 py-5 md:px-8">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-blue-600">Manufacturing in Shenzhen</p>
+                <h2 id="production-floor-heading" className="mt-2 text-xl font-bold text-gray-900">
+                  Dedicated assembly for branded aligner care products
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  Our production team assembles, inspects, and packs orders in-house — giving dental brands clearer quality control and dependable delivery from OEM sample to bulk production.
+                </p>
+              </div>
+            </div>
+          </section>
 
           {/* Mission + Factory */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
