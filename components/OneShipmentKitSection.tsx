@@ -65,7 +65,7 @@ export default function OneShipmentKitSection() {
               className="object-cover"
             />
           </div>
-          <div className="absolute left-8 top-8 max-w-[20rem] rounded-2xl bg-white/95 p-4 text-slate-900 shadow-lg backdrop-blur sm:left-10 sm:top-10 sm:p-5">
+          <div className="mt-3 rounded-2xl border border-blue-100 bg-white p-4 text-slate-900 shadow-sm sm:p-5">
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-blue-600">From SKU selection to pack-out</p>
             <p className="mt-1 text-sm font-semibold sm:text-base">A coordinated patient kit, built around your brand.</p>
           </div>

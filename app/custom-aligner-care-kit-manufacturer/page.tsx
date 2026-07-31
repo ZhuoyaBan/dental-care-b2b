@@ -107,7 +107,7 @@ export default function CustomAlignerCareKitManufacturerPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100">
                 <Image src="/images/gift-box-gallery/complete-branded-aligner-care-kit.webp" alt="Private-label aligner care kit with custom dental gift box and accessories" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
               </div>
-              <div className="absolute left-8 top-8 max-w-xs rounded-xl bg-white/95 p-4 shadow-xl backdrop-blur sm:left-10 sm:top-10">
+              <div className="mt-3 rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-blue-600">Your branded kit</p>
                 <p className="mt-1 text-sm font-semibold text-slate-900">Selected care products, designed packaging and one consistent handover.</p>
               </div>
