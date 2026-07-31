@@ -72,25 +72,25 @@ export default function DentalGiftBoxDesignGalleryPage() {
     <>
       <Header />
       <main>
-        <section className="overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 pt-32 pb-20 sm:pt-40 sm:pb-24">
+        <section className="overflow-hidden bg-gradient-to-br from-blue-50 via-white to-sky-50 pt-32 pb-20 sm:pt-40 sm:pb-24">
           <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_1.04fr] lg:items-center lg:px-8">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-300">Private-label packaging inspiration</p>
-              <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-600">Private-label packaging inspiration</p>
+              <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
                 Dental Gift Box Design Gallery for Clear Aligner Brands
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
                 Explore real packaging concepts for aligner patient kits—from compact case-and-accessory boxes to full branded welcome kits. Use the gallery to choose a direction, then we help adapt the structure, artwork and insert layout to your programme.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href="#design-gallery" className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-blue-500">
                   Browse 21 Kit Concepts
                 </a>
-                <Link href="/custom-aligner-care-kit-manufacturer" className="inline-flex items-center justify-center rounded-xl border border-slate-600 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:border-blue-300 hover:text-blue-200">
+                <Link href="/custom-aligner-care-kit-manufacturer" className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition-colors hover:border-blue-400 hover:text-blue-700">
                   Plan a Branded Care Kit
                 </Link>
               </div>
-              <p className="mt-5 text-sm text-slate-400">For dental brands, clear aligner labs, orthodontic clinics and distributors.</p>
+              <p className="mt-5 text-sm text-slate-500">For dental brands, clear aligner labs, orthodontic clinics and distributors.</p>
             </div>
             <div className="relative rounded-3xl bg-white p-3 shadow-2xl shadow-black/30 sm:p-5">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100">

@@ -84,21 +84,21 @@ export default function CustomAlignerCareKitManufacturerPage() {
     <>
       <Header />
       <main>
-        <section className="overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 pt-32 pb-20 sm:pt-40 sm:pb-24">
+        <section className="overflow-hidden bg-gradient-to-br from-blue-50 via-white to-sky-50 pt-32 pb-20 sm:pt-40 sm:pb-24">
           <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:px-8">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-300">Private label • OEM • coordinated pack-out</p>
-              <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Custom Aligner Care Kit Manufacturer for Dental Brands</h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">Build a branded patient-care kit with one B2B supplier: retainer cases, orthodontic accessories, custom gift boxes and a consolidated shipment. Uvcare helps dental brands, labs and clinics turn the products they need into one cohesive delivery experience.</p>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-600">Private label • OEM • coordinated pack-out</p>
+              <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Custom Aligner Care Kit Manufacturer for Dental Brands</h1>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">Build a branded patient-care kit with one B2B supplier: retainer cases, orthodontic accessories, custom gift boxes and a consolidated shipment. Uvcare helps dental brands, labs and clinics turn the products they need into one cohesive delivery experience.</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a href="https://wa.me/8618822885445" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-950/40 transition-colors hover:bg-blue-500">Discuss Your Kit on WhatsApp</a>
-                <Link href="/dental-gift-box-design-gallery" className="inline-flex items-center justify-center rounded-xl border border-slate-600 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:border-blue-300 hover:text-blue-200">View Gift Box Design Gallery</Link>
+                <a href="https://wa.me/8618822885445" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-200 transition-colors hover:bg-blue-500">Discuss Your Kit on WhatsApp</a>
+                <Link href="/dental-gift-box-design-gallery" className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition-colors hover:border-blue-400 hover:text-blue-700">View Gift Box Design Gallery</Link>
               </div>
               <div className="mt-8 grid max-w-2xl grid-cols-3 gap-3 text-center">
                 {[['One supplier', 'Products + packaging'], ['Free assembly', 'For Uvcare order items'], ['One shipment', 'One coordinated delivery']].map(([title, description]) => (
-                  <div key={title} className="rounded-xl border border-slate-700 bg-slate-900/70 px-3 py-4">
-                    <p className="text-sm font-bold text-white">{title}</p>
-                    <p className="mt-1 text-xs leading-5 text-slate-400">{description}</p>
+                  <div key={title} className="rounded-xl border border-blue-100 bg-white px-3 py-4 shadow-sm">
+                    <p className="text-sm font-bold text-slate-900">{title}</p>
+                    <p className="mt-1 text-xs leading-5 text-slate-500">{description}</p>
                   </div>
                 ))}
               </div>
