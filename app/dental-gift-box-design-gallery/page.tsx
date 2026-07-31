@@ -103,7 +103,7 @@ export default function DentalGiftBoxDesignGalleryPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute bottom-8 left-8 rounded-xl bg-white/95 px-4 py-3 shadow-lg backdrop-blur sm:bottom-10 sm:left-10">
+              <div className="absolute left-8 top-8 max-w-[23rem] rounded-xl bg-white/95 px-4 py-3 shadow-lg backdrop-blur sm:left-10 sm:top-10">
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-blue-600">One brand system</p>
                 <p className="mt-1 text-sm font-semibold text-slate-900">Packaging, accessories and presentation aligned</p>
               </div>

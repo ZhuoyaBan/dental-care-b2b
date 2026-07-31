@@ -6,7 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const productCategories = [
   { label: "Retainer Cases", href: "/products/retainer-case" },
   { label: "Cleaning Boxes", href: "/products/cleaning-box" },
-  { label: "Gift Boxes", href: "/products/gift-box" },
+  { label: "Dental Gift Box", href: "/products/gift-box" },
   { label: "Dental Accessories", href: "/products/dental-accessories" },
   { label: "Dental Impression Kit", href: "/products/dental-impression-kit" },
 ];
@@ -61,6 +61,9 @@ export default function Header() {
 
           <div className="hidden md:flex items-center gap-3">
             <LanguageSwitcher />
+            <a href="mailto:ban@grouprsh.com" className="hidden lg:inline-flex whitespace-nowrap text-xs font-medium text-gray-500 transition-colors hover:text-blue-600">
+              ban@grouprsh.com
+            </a>
             <Link href="/#contact" className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm">
               Get a Quote
             </Link>
