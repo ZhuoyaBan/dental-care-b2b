@@ -53,6 +53,7 @@ export default function Header() {
                 </div>
               )}
             </div>
+            <Link href="/dental-gift-box-design-gallery" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Gift Box Gallery</Link>
             <Link href="/about" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">About</Link>
             <Link href="/insights" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Insights</Link>
             <Link href="/faq" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">FAQ</Link>

@@ -4,6 +4,8 @@ import { products } from "@/lib/products";
 
 const companyLinks = [
   { label: "About Us",         href: "/about" },
+  { label: "Gift Box Gallery", href: "/dental-gift-box-design-gallery" },
+  { label: "Branded Care Kits", href: "/custom-aligner-care-kit-manufacturer" },
   { label: "Our Products",     href: "/products" },
   { label: "OEM / ODM",        href: "/about" },
   { label: "FAQ",              href: "/faq" },

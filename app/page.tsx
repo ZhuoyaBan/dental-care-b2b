@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection, { BuyerEntries } from "@/components/HeroSection";
 import ProcurementOverview from "@/components/ProcurementOverview";
 import ProductsSection from "@/components/ProductsSection";
+import OneShipmentKitSection from "@/components/OneShipmentKitSection";
 import SourcingProcess from "@/components/SourcingProcess";
 import LandingPageEntries from "@/components/LandingPageEntries";
 import HomeFaq from "@/components/HomeFaq";
@@ -17,6 +18,7 @@ export default function Home() {
         <BuyerEntries />
         <ProcurementOverview />
         <ProductsSection />
+        <OneShipmentKitSection />
         <SourcingProcess />
         <LandingPageEntries />
         <HomeFaq />
