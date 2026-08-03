@@ -59,7 +59,7 @@ export default function InsightsPage() {
                 className="group flex flex-col border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all"
               >
                 <div className="relative aspect-video overflow-hidden">
-                  <Image src={post.image} alt={`${post.title} | Uvcare Dental Care Guide`} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                  <Image src={post.image} alt={`${post.title} | Uvcare Dental Care Guide`} fill unoptimized className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 mb-3">
