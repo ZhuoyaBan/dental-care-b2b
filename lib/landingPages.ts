@@ -9,6 +9,7 @@ export interface LandingPageData {
   sections: { heading: string; body: string }[];
   faq: { question: string; answer: string }[];
   relatedProductIds: number[];
+  relatedLinks?: { title: string; description: string; href: string }[];
 }
 
 export const landingPages: LandingPageData[] = [
@@ -174,5 +175,73 @@ export const landingPages: LandingPageData[] = [
       },
     ],
     relatedProductIds: [42, 3, 51, 50],
+  },
+  {
+    slug: "dental-lab-supplies-manufacturer",
+    title: "Dental Lab Supplies Manufacturer",
+    metaTitle: "Dental Lab Supplies Manufacturer | Custom Orthodontic Accessories | Uvcare",
+    metaDescription: "Uvcare manufactures dental lab supplies for clear aligner workflows: impression kits, retainer cases, orthodontic accessories, branded patient kits and custom packaging.",
+    h1: "Dental Lab Supplies Manufacturer for Clear Aligner Workflows",
+    subtitle: "OEM and private-label aligner care products, dental impression kits, orthodontic accessories and branded patient kits for dental labs, clinics and clear-aligner brands.",
+    keyFacts: [
+      "One supplier for impression, storage, hygiene, accessory and patient-kit product categories",
+      "OEM customization for existing products: logo, color, packaging and presentation",
+      "ODM support for new product and digital workflow concepts, subject to project requirements",
+      "Standard product MOQs start from 100 PCS; final MOQ and lead time depend on the selected products and customization",
+      "Coordinated kit assembly is available for Uvcare products included in one order before a consolidated shipment",
+    ],
+    sections: [
+      {
+        heading: "A Dental Lab Supplier Built Around the Clear Aligner Journey",
+        body: "Clear aligner workflows need more than an impression or scan. Labs, clinics and aligner brands may also need patient storage, hygiene and handover products that match their own treatment experience. Uvcare manufactures dental impression kits, retainer cases, cleaning solutions, orthodontic accessories and presentation packaging so buyers can source the patient-facing pieces of a clear aligner programme from one B2B supplier.",
+      },
+      {
+        heading: "Build a Branded Lab-to-Patient Care Kit",
+        body: "A practical private-label care kit can combine a retainer case, aligner remover, chewie, cleaning accessory, care instructions and a branded gift box or bag. Existing products can be customized with a logo, while box structure, inserts, materials, colors and artwork can be developed around the brand. When the selected Uvcare products are ordered together, we can coordinate pack-out into the agreed gift box before one consolidated shipment.",
+      },
+      {
+        heading: "Choose the Right OEM or ODM Route",
+        body: "Choose OEM when you want to launch quickly with an established product format and your own logo or packaging. Choose ODM when the workflow, form factor or feature set needs to be developed around a new brief. A complete sourcing discussion should cover the patient use case, the target market, required products, quantity, customization level, delivery window and any applicable compliance requirements.",
+      },
+      {
+        heading: "What to Include in a Dental Lab Sourcing Brief",
+        body: "To receive a focused recommendation, share your logo files, the markets you serve, which products you want in the kit, expected quantity, preferred packaging style and timing. If you are evaluating a new concept such as a digital scan box, include a functional brief, compatible software requirements and the intended user workflow. This helps us recommend an OEM product mix or scope an ODM project efficiently.",
+      },
+    ],
+    faq: [
+      {
+        question: "What dental lab supplies can Uvcare manufacture for clear aligner workflows?",
+        answer: "Uvcare supplies patient-facing products used around clear aligner workflows, including putty impression kits, retainer cases, UV sterilizer cases, cleaning products, orthodontic accessories, branded gift boxes and selected ODM concepts such as dental scan boxes.",
+      },
+      {
+        question: "Can a dental lab order individual products or a complete patient care kit?",
+        answer: "Both options are available. Buyers can source individual SKUs or plan a coordinated care kit that combines compatible Uvcare products. The recommended approach depends on your patient journey, desired presentation and planned quantity.",
+      },
+      {
+        question: "Can you customize dental lab supplies with our brand?",
+        answer: "Yes. OEM options can include product logo printing, selected colors and custom packaging. For gift boxes and bags, customization can also include structure, materials, artwork and inserts. Final options depend on the product and order quantity.",
+      },
+      {
+        question: "What are the MOQ and lead time for dental lab supplies?",
+        answer: "MOQ and lead time vary by product and customization. Standard cases can start from 100 PCS, while impression kits, electronic products and fully custom projects require different minimums. Share your product list and quantity for a project-specific recommendation.",
+      },
+      {
+        question: "Do you support both traditional dental impressions and digital scan projects?",
+        answer: "Yes. Uvcare offers a private-label putty impression kit for tray-and-putty workflows and can discuss ODM projects for dental scan box concepts that are designed around compatible software and technical requirements.",
+      },
+    ],
+    relatedProductIds: [50, 51, 1, 42, 30],
+    relatedLinks: [
+      {
+        title: "Custom Aligner Care Kits",
+        description: "Plan a coordinated private-label patient kit and one consolidated shipment.",
+        href: "/custom-aligner-care-kit-manufacturer",
+      },
+      {
+        title: "Branded Box Gallery",
+        description: "Review gift-box structures, inserts and presentation references for aligner brands.",
+        href: "/dental-gift-box-design-gallery",
+      },
+    ],
   },
 ];

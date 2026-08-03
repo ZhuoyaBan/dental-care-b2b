@@ -794,7 +794,7 @@ export const posts: Post[] = [
 
       <h3>The Real Question: Why Are Both Missing UV-C?</h3>
       <p>Here's the thing — neither the iSonic DS180 nor the Zima Dental Pod includes UV-C sterilization. They both only do ultrasonic cleaning (removing physical debris). For actual germ killing, you'd need to buy a separate UV-C case ($50-70 from Zima) on top of the ultrasonic cleaner. That's $90 + $60 = $150 total for what should be one device.</p>
-      <p>As a manufacturer, we find this odd. Our <a href="/products/4">Professional Ultrasonic Cleaner (Plug-in)</a> and <a href="/products/5">Portable Ultrasonic Cleaner (Battery)</a> both include built-in UV-C LEDs (254nm-275nm) — meaning you get ultrasonic cleaning AND UV-C sterilization in one device, in one cycle. No need to buy two separate products.</p>
+      <p>As a manufacturer, we find this odd. Our <a href="/products/professional-ultrasonic-cleaner-plug-in">Professional Ultrasonic Cleaner (Plug-in)</a> and <a href="/products/portable-ultrasonic-cleaner-black">Portable Ultrasonic Cleaner (Battery)</a> both include built-in UV-C LEDs (254nm-275nm) — meaning you get ultrasonic cleaning AND UV-C sterilization in one device, in one cycle. No need to buy two separate products.</p>
 
       <h3>Best Ultrasonic Cleaner Under $50: Our Top Pick</h3>
       <p>If you're a patient looking for the best value, here's our honest recommendation:</p>
@@ -807,7 +807,7 @@ export const posts: Post[] = [
 
       <h3>For Dental Brands and Clinics: The Wholesale Perspective</h3>
       <p>If you're a dental brand, clinic, or distributor reading this comparison, here's what matters to you: <strong>you don't need to buy from Zima or iSonic at retail prices.</strong> Both devices are simple ultrasonic cleaners manufactured in China. As a B2B manufacturer, Uvcare produces ultrasonic cleaners with the same 45kHz technology — plus built-in UV-C LEDs — at factory-direct wholesale prices.</p>
-      <p><a href="/products/4">View our Ultrasonic Cleaner (Plug-in) →</a> &nbsp;|&nbsp; <a href="/products/5">View our Ultrasonic Cleaner (Battery) →</a></p>
+      <p><a href="/products/professional-ultrasonic-cleaner-plug-in">View our Ultrasonic Cleaner (Plug-in) →</a> &nbsp;|&nbsp; <a href="/products/portable-ultrasonic-cleaner-black">View our Ultrasonic Cleaner (Battery) →</a></p>
       <p>Why source from a manufacturer instead of a retail brand?</p>
       <ul>
         <li><strong>Factory-direct pricing:</strong> No retail markup. You pay what Zima pays their factory — or less.</li>
@@ -984,5 +984,81 @@ export const posts: Post[] = [
         answer: "Yes. Uvcare offers full OEM logo printing (silk-screen, laser engraving, UV printing) on all products. You choose the model, color, and packaging — we print your logo. For completely custom designs, our ODM service develops new products from concept to mass production. This lets you build a complete premium dental accessory line under your own brand identity."
       }
     ]
+  },
+  {
+    id: "private-label-aligner-care-kit-guide",
+    title: "How to Build a Private-Label Aligner Care Kit: Products, Packaging and One-Shipment Sourcing",
+    excerpt: "A B2B planning guide for dental brands, aligner labs and clinics sourcing a branded patient kit—from core products and packaging to coordinated assembly and one shipment.",
+    date: "August 3, 2026",
+    category: "B2B Sourcing",
+    image: "/images/gift-box-gallery/complete-branded-aligner-care-kit.webp",
+    relatedProductIds: [1, 42, 30, 20, 50],
+    content: `
+      <p>A private-label aligner care kit is more than a collection of accessories. For a clear aligner brand, dental lab or clinic, it is a patient handover system: the products need to be useful, the presentation needs to feel coherent, and the sourcing process needs to be manageable. This guide explains how to plan a branded kit around the patient journey and how to source the relevant products, packaging and pack-out through one supplier.</p>
+
+      <h3>Start With the Patient Moment You Want to Improve</h3>
+      <p>Most kit decisions become easier when the intended patient moment is clear. A welcome kit can help a new aligner patient understand daily care. A premium treatment package can reinforce the value of the brand at handover. A clinic replenishment pack can focus on practical hygiene and compliance. Write down the intended users, the market, the treatment stage and the message your brand should communicate before selecting products.</p>
+
+      <h3>Choose the Core Products for Your Aligner Care Kit</h3>
+      <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+        <tr><th>Kit component</th><th>Patient role</th><th>Typical customization</th></tr>
+        <tr><td><a href="/products/retainer-case">Retainer or aligner case</a></td><td>Daily storage between meals and during travel</td><td>Logo, selected color, packaging</td></tr>
+        <tr><td><a href="/products/dental-accessories">Aligner remover and chewie</a></td><td>Removal and seating support</td><td>Logo, color, product combination</td></tr>
+        <tr><td><a href="/products/cleaning-box">Cleaning products</a></td><td>Routine soaking, cleaning or hygiene support</td><td>Product selection, outer packaging</td></tr>
+        <tr><td><a href="/products/dental-impression-kit">Dental impression kit</a></td><td>Selected at-home or lab workflow projects</td><td>Box, components and logo according to the brief</td></tr>
+        <tr><td><a href="/products/gift-box">Gift box and bag</a></td><td>Organized presentation and brand visibility</td><td>Structure, insert, material, color and artwork</td></tr>
+      </table>
+      <p>Not every kit needs every item. A useful first version often starts with a case, a removal/seating tool and a branded box. Add cleaning or impression products only when they support the treatment workflow or the brand promise.</p>
+
+      <h3>Use Packaging to Make Separate SKUs Feel Like One Brand System</h3>
+      <p>Packaging is where individual products become a recognizable patient kit. With a custom dental gift box, the outer structure, opening method, material, logo treatment and internal insert can be developed around the selected products. Review the <a href="/dental-gift-box-design-gallery">Branded Box Gallery</a> to compare box formats, inserts, gift bags and visual directions before choosing a route. Provide your logo, target color references, product list and any examples that match the intended brand tone.</p>
+
+      <h3>Plan One Supplier and One Consolidated Shipment</h3>
+      <p>When the products and packaging are sourced through Uvcare in the same order, the agreed components can be coordinated into the selected gift box before shipment. This approach can reduce separate supplier handoffs and helps the finished kit arrive as a coordinated set rather than a collection of disconnected cartons. The final pack-out method, timing and freight arrangement should be confirmed for each project based on quantities, product readiness and destination.</p>
+      <p>For a project-specific overview of the process, see <a href="/custom-aligner-care-kit-manufacturer">Custom Aligner Care Kit Manufacturer</a>.</p>
+
+      <h3>Send a Sourcing Brief That Produces Useful Options</h3>
+      <ol>
+        <li><strong>Describe the buyer and use case:</strong> dental lab, clinic, aligner brand or distributor; new-patient kit, premium handover or replenishment pack.</li>
+        <li><strong>List the products:</strong> identify required items and optional additions.</li>
+        <li><strong>Share your brand assets:</strong> logo files, brand colors and packaging examples.</li>
+        <li><strong>State quantity and timing:</strong> this allows MOQ and lead-time recommendations to be matched to the right route.</li>
+        <li><strong>Confirm destination and desired delivery model:</strong> this helps plan a consolidated shipment.</li>
+      </ol>
+      <p>Dental labs sourcing a wider patient-care programme can also review our <a href="/dental-lab-supplies-manufacturer">Dental Lab Supplies Manufacturer</a> page for impression, accessory and packaging options.</p>
+
+      <h3>OEM First, ODM When the Product Itself Must Change</h3>
+      <p>OEM is normally the right starting point when the goal is to customize established products with a logo, selected color and brand-specific packaging. ODM is appropriate when the product itself needs a new form, function or technical specification. Keeping the distinction clear makes the first sourcing conversation faster and helps set realistic product-development, MOQ and timing expectations.</p>
+      <p><a href="/#contact">Share your kit brief with Uvcare for a product and packaging recommendation →</a></p>
+    `,
+    keyFacts: [
+      "A private-label aligner care kit can combine storage, removal, seating, hygiene and presentation products",
+      "Existing products can be customized with a logo, selected colors and packaging; box structure and inserts can be developed around the kit",
+      "A smaller, focused kit is often a more practical launch than adding every possible accessory",
+      "Uvcare products ordered together can be coordinated into an agreed gift box before a consolidated shipment",
+      "A sourcing brief should include the use case, product mix, logo files, quantity, timing and destination",
+    ],
+    faq: [
+      {
+        question: "Who typically buys a private-label aligner care kit?",
+        answer: "Private-label aligner care kits are commonly planned by clear aligner brands, dental labs, orthodontic clinics and distributors that want a coordinated patient handover or branded accessory programme.",
+      },
+      {
+        question: "Which products normally go in an aligner care kit?",
+        answer: "Common items include a retainer case, aligner remover, chewie, cleaning accessory, care instructions and a branded gift box or bag. The final mix should be based on the patient journey and the brand's intended positioning.",
+      },
+      {
+        question: "Can Uvcare customize both the products and the packaging?",
+        answer: "Yes. Existing products can be customized with a logo and selected colors where available. Gift boxes and bags can be developed with custom structure, materials, artwork and inserts, subject to the selected format and order quantity.",
+      },
+      {
+        question: "Can the kit be assembled before shipment?",
+        answer: "For Uvcare products included in the same order, coordinated assembly into the agreed gift box can be arranged before a consolidated shipment. Final packing and shipping details are confirmed for each project.",
+      },
+      {
+        question: "What information is needed to quote a branded aligner care kit?",
+        answer: "Share your product list, quantity, logo files, preferred packaging direction, delivery window and destination. If you have reference images or an existing brand guide, include them so the recommendation can match your intended presentation.",
+      },
+    ],
   }
 ];

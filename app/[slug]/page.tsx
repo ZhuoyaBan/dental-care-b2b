@@ -142,6 +142,26 @@ export default function LandingPage({ params }: { params: { slug: string } }) {
             </div>
           )}
 
+          {/* Related sourcing resources */}
+          {page.relatedLinks && page.relatedLinks.length > 0 && (
+            <div className="mt-12 pt-8 border-t border-gray-200">
+              <h2 className="text-xl font-bold text-gray-900 mb-6">Plan Your Sourcing Project</h2>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {page.relatedLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block rounded-2xl border border-blue-100 bg-blue-50/60 p-5 transition-all hover:border-blue-300 hover:bg-white hover:shadow-md"
+                  >
+                    <h3 className="font-bold text-gray-900">{link.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-600">{link.description}</p>
+                    <span className="mt-3 inline-flex text-sm font-bold text-blue-600">Explore options →</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* CTA */}
           <div className="mt-16 p-8 bg-blue-600 rounded-3xl text-center">
             <h3 className="text-xl font-bold text-white mb-2">Ready to source from a manufacturer?</h3>
