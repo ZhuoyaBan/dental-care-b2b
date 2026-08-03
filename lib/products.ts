@@ -408,5 +408,25 @@ export const products: Product[] = [
     customLogo: false,
     features: ["Hinged Jaw", "Brushing Demonstration", "Patient Education", "Approx. 196 g"],
     badges: ["Clinic Education", "Training Display"]
+  },
+  {
+    id: 53,
+    slug: "custom-clear-aligner-zip-lock-packaging-bags",
+    name: "Clear Aligner Zip Lock Packaging Bags",
+    tagline: "Custom Flat Pouches for Aligner Brands",
+    description: "Flat zip lock retainer bags for storing and transporting clear aligners, retainers and dental accessories. Material and barrier construction can be specified from PA/PE, OPP/CPP, PET/VMPET/PE, PET/AL/PE, BOPP, PVC and other options according to the packaging brief. Choose a custom size, thickness, color, logo and printed artwork to match your brand. The resealable pouch helps protect aligners from dust, moisture and handling contamination while keeping the pack lightweight and space-efficient. Unprinted bags have no MOQ; custom printing starts from 5,000 PCS. Suitable for orthodontic clinics, dental laboratories and private-label clear aligner brands.",
+    images: [
+      "/images/products/clear-aligner-zip-lock-bags-main.webp",
+      "/images/products/clear-aligner-zip-lock-bags-frosted.webp",
+      "/images/products/clear-aligner-zip-lock-bags-custom-print.webp",
+      "/images/products/clear-aligner-zip-lock-bags-assortment.webp",
+      "/images/products/clear-aligner-zip-lock-bags-material-options.webp"
+    ],
+    video: "/videos/clear-aligner-zip-lock-bags.mp4",
+    category: "dental-accessories",
+    moq: "No MOQ / 5,000 Custom",
+    leadTime: "From 7 Days",
+    customLogo: true,
+    features: ["Zip Lock Closure", "Custom Size & Thickness", "Logo & Print Options", "Barrier Material Options"]
   }
 ];
