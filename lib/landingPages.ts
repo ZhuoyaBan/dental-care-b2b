@@ -244,4 +244,160 @@ export const landingPages: LandingPageData[] = [
       },
     ],
   },
+  {
+    slug: "private-label-aligner-accessories-north-america",
+    title: "Private-Label Aligner Accessories for North America",
+    metaTitle: "Private-Label Aligner Accessories for North American Dental Brands | Uvcare",
+    metaDescription: "Source private-label retainer cases, aligner tools, custom packaging and coordinated care kits for U.S. and Canadian dental brands, labs and distributors.",
+    h1: "Private-Label Aligner Accessories for North American Dental Brands",
+    subtitle: "A B2B sourcing route for U.S. and Canadian dental brands, labs and distributors building branded clear-aligner care products, packaging and patient kits.",
+    keyFacts: [
+      "One manufacturer for selected retainer cases, hygiene products, orthodontic accessories and branded packaging",
+      "OEM options for existing products can include logo printing, selected colors and project-specific packaging",
+      "Choose a focused multi-SKU patient kit rather than managing separate accessory suppliers",
+      "For Uvcare products ordered together, agreed pack-out into a branded box can be coordinated before one consolidated shipment",
+      "MOQ, lead time, freight and any market-entry requirements are confirmed for the selected products and destination",
+    ],
+    sections: [
+      {
+        heading: "Build a Branded Aligner Care Range Without Fragmenting Suppliers",
+        body: "North American dental brands and distributors often need a coordinated accessory range rather than a single generic case. Uvcare can help buyers select compatible retainer cases, aligner removers, chewies, cleaning products, zip-lock packaging and presentation boxes from one manufacturing partner. This creates a clearer route from product selection to branded patient handover, while keeping the product mix, packaging and pack-out discussion in one project brief.",
+      },
+      {
+        heading: "Select the Patient Kit, Then Match the Packaging",
+        body: "Start with the patient experience you want to offer: an everyday storage kit, a new-treatment welcome kit, a premium handover set or a distributor-ready accessory programme. A practical kit may combine a retainer case, removal and seating tool, care pouch and branded box. The product logo, colour direction, box structure, insert layout and gift bag can then be planned as one visual system instead of unrelated SKUs.",
+      },
+      {
+        heading: "Use OEM for a Faster Brand Launch; Scope ODM When the Product Must Change",
+        body: "OEM is normally the efficient choice when an established product format fits the intended use and the buyer needs a logo, selected colour or custom packaging. ODM is a different route for a new shape, feature set, material requirement or technical concept that needs development before production. Sharing the intended user, target product range, quantity and packaging direction helps determine which route is appropriate.",
+      },
+      {
+        heading: "Prepare a North American Sourcing Brief",
+        body: "To receive useful options, share the products you want to evaluate, expected quantity, logo files, brand references, delivery window and destination. Buyers should also identify their own labelling, import, regulatory and market requirements for the products they intend to offer. Uvcare can then recommend a suitable product and packaging route, while final specifications, MOQ, lead time and shipment details are confirmed project by project.",
+      },
+    ],
+    faq: [
+      {
+        question: "Can Uvcare supply private-label aligner accessories to U.S. and Canadian dental brands?",
+        answer: "Yes. Uvcare supports international B2B projects for dental brands, labs and distributors that need private-label aligner accessories, packaging or coordinated patient kits. Share the product list, quantity, branding needs and destination so the suitable sourcing route can be discussed.",
+      },
+      {
+        question: "Which products can be included in a private-label aligner care kit?",
+        answer: "A kit can include selected retainer cases, aligner removers, chewies, cleaning products, care pouches, instructions, gift boxes and gift bags. The best mix depends on the patient journey, brand positioning and order quantity.",
+      },
+      {
+        question: "Can the same logo and visual direction be used across multiple SKUs?",
+        answer: "Yes. Existing Uvcare products can be evaluated for logo and selected colour customization, while the packaging project can align box structure, artwork, inserts and bags around the same brand direction. Available options depend on the product and quantity.",
+      },
+      {
+        question: "What should a North American buyer provide before requesting a quote?",
+        answer: "Provide the intended product mix, expected order quantity, logo files, packaging references, delivery window and destination. Buyers should also clarify any import, labelling, compliance or market requirements that apply to their own programme.",
+      },
+      {
+        question: "Can Uvcare coordinate selected products into one branded shipment?",
+        answer: "For Uvcare products included in the same order, agreed components can be coordinated into the selected branded box before a consolidated shipment. Packing, timing and freight are confirmed for each project based on the final product mix and destination.",
+      },
+    ],
+    relatedProductIds: [1, 42, 53, 30, 20],
+    relatedLinks: [
+      {
+        title: "Custom Aligner Care Kits",
+        description: "Plan a coordinated private-label patient kit, pack-out and consolidated shipment.",
+        href: "/custom-aligner-care-kit-manufacturer",
+      },
+      {
+        title: "Branded Box Gallery",
+        description: "Compare custom box structures, inserts, gift bags and presentation directions.",
+        href: "/dental-gift-box-design-gallery",
+      },
+      {
+        title: "Dental Lab Supplies",
+        description: "Review clear-aligner workflow supplies for labs, clinics and brand programmes.",
+        href: "/dental-lab-supplies-manufacturer",
+      },
+      {
+        title: "North American Sourcing Guide",
+        description: "Read a procurement checklist for U.S. dental brands and distributors.",
+        href: "/insights/private-label-aligner-kits-for-us-dental-brands",
+      },
+    ],
+  },
+  {
+    slug: "aligner-care-kit-supplier-australia",
+    title: "Aligner Care Kit Supplier for Australia",
+    metaTitle: "Aligner Care Kit Supplier for Australian Orthodontic Clinics | Uvcare",
+    metaDescription: "Plan branded clear-aligner patient kits for Australian orthodontic clinics and dental brands: cases, accessories, custom packaging and coordinated pack-out.",
+    h1: "Aligner Care Kit Supplier for Australian Orthodontic Clinics",
+    subtitle: "A B2B planning route for Australian orthodontic clinics and clear-aligner brands creating coordinated patient handover kits with custom accessories and packaging.",
+    keyFacts: [
+      "Curated patient handover kits for orthodontic clinics, aligner brands and dental distributors",
+      "Choose cases, aligner tools, cleaning accessories, pouches and presentation packaging around the patient journey",
+      "Custom options can include product logo printing, selected colours, box design, inserts and bags",
+      "For Uvcare products included in one order, agreed kit assembly can be coordinated before a consolidated shipment",
+      "Project-specific MOQ, production timing, freight and destination requirements are confirmed before production",
+    ],
+    sections: [
+      {
+        heading: "Start With the Patient Handover Experience",
+        body: "A branded aligner care kit gives an orthodontic clinic or dental brand a practical way to make the first patient handover more consistent. Rather than providing a loose collection of accessories, buyers can plan a set around daily storage, removal, seating, hygiene and care instructions. The products and presentation can be selected to match a clinic's treatment experience or a brand's positioning.",
+      },
+      {
+        heading: "Build a Practical Kit for Clear Aligner Patients",
+        body: "A focused starter kit commonly begins with a retainer case, an aligner remover or chewie, and care packaging. Depending on the programme, it can also add a cleaning product, zip-lock pouch, gift bag or premium box. Uvcare helps buyers select compatible products and avoid adding items that do not serve the patient workflow. The final assortment should reflect the intended patient use, desired presentation and planned quantity.",
+      },
+      {
+        heading: "Make the Packaging Carry the Clinic or Brand",
+        body: "Branded packaging makes the handover set feel intentional long after the appointment. Existing products can be reviewed for logo and colour customization, while gift-box projects can include outer structure, materials, artwork, opening style and internal inserts. A suitable box can keep a case, accessory and care card organized while reinforcing the clinic or aligner brand at a memorable treatment moment.",
+      },
+      {
+        heading: "Plan a Clear Australia-Focused Project Brief",
+        body: "Start with the users, product list, quantity, logo files, brand references, delivery window and destination. If the kit will be supplied as part of a clinical or retail programme, buyers should identify their own packaging, labelling, import and market requirements. This allows Uvcare to recommend a realistic OEM or ODM route and confirm the applicable specifications, MOQ, production schedule and shipment plan for the project.",
+      },
+    ],
+    faq: [
+      {
+        question: "Who can source branded aligner care kits for Australia from Uvcare?",
+        answer: "Uvcare works with orthodontic clinics, clear-aligner brands, dental labs and distributors that need a coordinated B2B accessory and packaging programme. The suitable product mix depends on the intended patient journey and project scope.",
+      },
+      {
+        question: "What can be included in an orthodontic patient handover kit?",
+        answer: "Common kit components include a retainer case, aligner remover, chewie, cleaning accessory, zip-lock pouch, care instructions and a branded gift box or bag. A smaller, focused kit is often a practical launch point.",
+      },
+      {
+        question: "Can the case, accessories and gift box all carry the same brand direction?",
+        answer: "Yes. Product logo options and selected colours can be planned alongside gift-box artwork, materials, insert layout and bags. The available customization route depends on the selected products and order quantity.",
+      },
+      {
+        question: "What information is needed to plan an Australian aligner care kit?",
+        answer: "Share the intended users, product list, quantity, logo files, visual references, delivery window and destination. Buyers should also provide any project-specific labelling, import or market requirements that apply to their programme.",
+      },
+      {
+        question: "Can the kit be assembled before shipment?",
+        answer: "For Uvcare products included in the same order, coordinated assembly into the agreed branded gift box can be arranged before a consolidated shipment. Final packing, timing and freight details are confirmed for each project.",
+      },
+    ],
+    relatedProductIds: [1, 42, 53, 30, 21],
+    relatedLinks: [
+      {
+        title: "Custom Aligner Care Kits",
+        description: "See how selected accessories, packaging and pack-out can be planned together.",
+        href: "/custom-aligner-care-kit-manufacturer",
+      },
+      {
+        title: "Branded Box Gallery",
+        description: "Review presentation-box, insert and gift-bag directions for a patient handover kit.",
+        href: "/dental-gift-box-design-gallery",
+      },
+      {
+        title: "Dental Lab Supplies",
+        description: "Explore broader clear-aligner workflow products for labs and clinic programmes.",
+        href: "/dental-lab-supplies-manufacturer",
+      },
+      {
+        title: "Australian Clinic Planning Guide",
+        description: "Read a practical guide to creating a branded aligner patient handover kit.",
+        href: "/insights/branded-aligner-care-kits-for-australian-clinics",
+      },
+    ],
+  },
 ];

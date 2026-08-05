@@ -154,6 +154,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.dentalcarepack.com/insights/private-label-aligner-kits-for-us-dental-brands</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dentalcarepack.com/insights/branded-aligner-care-kits-for-australian-clinics</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Landing pages -->
   <url>
@@ -189,6 +201,18 @@
   <url>
     <loc>https://www.dentalcarepack.com/dental-lab-supplies-manufacturer</loc>
     <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dentalcarepack.com/private-label-aligner-accessories-north-america</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dentalcarepack.com/aligner-care-kit-supplier-australia</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
