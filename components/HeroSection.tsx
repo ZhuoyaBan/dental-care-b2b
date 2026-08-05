@@ -56,12 +56,10 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a
-              href="https://wa.me/8618822885445?text=Hi%2C%20I%27m%20looking%20for%20a%20dental%20product%20manufacturer%20for%20OEM%2FODM%20custom%20branding."
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-200 text-center"
             >
-              Request OEM Pricing
+              Request a Wholesale Quote
             </a>
             <a href="#products" className="bg-white/80 hover:bg-white border border-gray-200 text-gray-700 font-bold py-4 px-8 rounded-xl backdrop-blur-sm transition-all shadow-sm text-center">
               Browse Product Categories

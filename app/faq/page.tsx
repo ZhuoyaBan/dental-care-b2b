@@ -170,15 +170,13 @@ export default function FAQPage() {
           {/* CTA */}
           <div className="p-8 bg-blue-600 rounded-3xl text-center">
             <h3 className="text-xl font-bold text-white mb-2">Still have questions?</h3>
-            <p className="text-blue-100 mb-6">Contact us on WhatsApp for personalized answers, free samples, and OEM pricing.</p>
-            <a
-              href="https://wa.me/8618822885445"
-              target="_blank"
-              rel="noopener noreferrer"
+            <p className="text-blue-100 mb-6">Send a sourcing brief for personalized answers, free samples and OEM pricing by email.</p>
+            <Link
+              href="/#contact"
               className="inline-block bg-white text-blue-600 font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors"
             >
-              Chat on WhatsApp
-            </a>
+              Request a Wholesale Quote
+            </Link>
           </div>
 
           {/* Internal links */}

@@ -203,7 +203,7 @@ export default function DentalGiftBoxDesignGalleryPage() {
           <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold tracking-tight text-white">Have a concept, product list or brand guideline?</h2>
             <p className="mx-auto mt-4 max-w-2xl text-blue-100">Send it to our team. We will help you determine a practical kit configuration, packaging direction and next sourcing step.</p>
-            <a href="https://wa.me/8618822885445" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-blue-700 transition-colors hover:bg-blue-50">Discuss Your Gift Box Project on WhatsApp</a>
+            <Link href="/#contact" className="mt-7 inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-blue-700 transition-colors hover:bg-blue-50">Request a Packaging Proposal</Link>
           </div>
         </section>
       </main>

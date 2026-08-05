@@ -26,9 +26,12 @@ interface FormData {
   name: string;
   email: string;
   company: string;
+  businessType: string;
+  country: string;
   product: string;
   quantity: string;
   customization: string;
+  contactPreference: string;
   message: string;
 }
 
@@ -36,9 +39,12 @@ const emptyForm: FormData = {
   name: "",
   email: "",
   company: "",
+  businessType: "",
+  country: "",
   product: "",
   quantity: "",
   customization: "",
+  contactPreference: "Email",
   message: "",
 };
 
@@ -67,14 +73,14 @@ export default function ContactSection() {
           email: formData.email,
           company: formData.company,
           product: formData.product,
-          message: `Estimated order volume: ${formData.quantity || "Not specified"}\nBranding / packaging: ${formData.customization || "Not specified"}\n\nRequirements:\n${formData.message}`,
+          message: `Business type: ${formData.businessType || "Not specified"}\nCountry / region: ${formData.country || "Not specified"}\nEstimated order volume: ${formData.quantity || "Not specified"}\nBranding / packaging: ${formData.customization || "Not specified"}\nPreferred reply channel: ${formData.contactPreference}\n\nRequirements:\n${formData.message}`,
         },
         'eIl_NgNmKxDja7-iv'
       );
       setSubmitted(true);
     } catch (error) {
       console.error('EmailJS Error:', error);
-      alert('Failed to send inquiry. Please contact us via WhatsApp.');
+      alert('Your inquiry could not be sent. Please email ban@grouprsh.com or contact us on WhatsApp.');
     } finally {
       setSubmitting(false);
     }
@@ -88,10 +94,10 @@ export default function ContactSection() {
             Get In Touch
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Send a Clear Sourcing Brief
+            Request a Wholesale Quote
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">
-            Tell us the product direction, approximate quantity and branding needs. We will use those details to prepare the right quotation path.
+            Send your sourcing brief for a product, MOQ and customization recommendation. We reply by email; choose WhatsApp too if it is convenient.
           </p>
         </div>
 
@@ -106,7 +112,7 @@ export default function ContactSection() {
                 ),
                 title: "Email",
                 value: "ban@grouprsh.com",
-                sub: "Reply within 24 hours",
+                sub: "Reply by email within one business day",
                 bg: "bg-blue-50",
                 color: "text-blue-600",
               },
@@ -161,7 +167,7 @@ export default function ContactSection() {
                   "Logo, color and packaging discussions for OEM / ODM projects",
                   "Sample requirements can be included in your inquiry",
                   "Current product lead times range from 5–20 days",
-                  "Share your delivery needs for a more relevant quote",
+                  "Share your destination for a more relevant quote",
                 ].map((point) => (
                   <li key={point} className="flex items-center gap-2 text-sm text-blue-700">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0" />
@@ -181,14 +187,14 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Inquiry Sent! 🎉</h3>
-                <p className="text-gray-500 max-w-sm">Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+                <p className="text-gray-500 max-w-sm">Thank you for reaching out. Our team will reply by email within one business day, using your preferred contact method where possible.</p>
                 <button className="mt-8 text-sm text-blue-600 hover:underline font-medium" onClick={() => setSubmitted(false)}>← Send another inquiry</button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm space-y-5">
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">Request a Wholesale Quote</h3>
-                  <p className="mt-1 text-sm text-gray-500">The more sourcing details you provide, the more accurately we can respond.</p>
+                  <p className="mt-1 text-sm text-gray-500">The more sourcing details you provide, the more accurately we can respond. Your information is used only to reply to this request.</p>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
@@ -203,6 +209,23 @@ export default function ContactSection() {
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">Company Name *</label>
                   <input type="text" name="company" required value={formData.company} onChange={handleChange} placeholder="Your Dental Clinic" className={inputCls} />
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Business Type</label>
+                    <select name="businessType" value={formData.businessType} onChange={handleChange} className={inputCls}>
+                      <option value="">— Select business type —</option>
+                      <option value="Dental Brand">Dental Brand</option>
+                      <option value="Dental Lab">Dental Lab</option>
+                      <option value="Orthodontic Clinic">Orthodontic Clinic</option>
+                      <option value="Distributor">Distributor</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-1.5">Country / Region</label>
+                    <input type="text" name="country" value={formData.country} onChange={handleChange} placeholder="United States" className={inputCls} />
+                  </div>
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">Product of Interest</label>
@@ -239,8 +262,16 @@ export default function ContactSection() {
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">Requirements *</label>
                   <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="For example: target market, reference product, preferred material, target delivery date or sample request." className={`${inputCls} resize-none`} />
                 </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">Preferred Reply Method</label>
+                  <select name="contactPreference" value={formData.contactPreference} onChange={handleChange} className={inputCls}>
+                    <option value="Email">Email</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Email and WhatsApp">Email and WhatsApp</option>
+                  </select>
+                </div>
                 <button type="submit" disabled={submitting} className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-3.5 px-6 rounded-xl transition-colors flex items-center justify-center gap-2">
-                  {submitting ? "Sending..." : "Request a Quote"}
+                  {submitting ? "Sending..." : "Submit Quote Request"}
                 </button>
               </form>
             )}

@@ -143,14 +143,12 @@ export default function WhyChooseUvcarePage() {
           <div className="p-8 bg-blue-600 rounded-3xl text-center">
             <h3 className="text-2xl font-bold text-white mb-2">Ready to partner with a manufacturer?</h3>
             <p className="text-blue-100 mb-6">Contact us for free samples, OEM pricing, and custom product development.</p>
-            <a
-              href="https://wa.me/8618822885445?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20partnering%20with%20Uvcare%20for%20OEM%2FODM%20dental%20products."
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/#contact"
               className="inline-block bg-white text-blue-600 font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors"
             >
-              Get a Free Quote
-            </a>
+              Request a Wholesale Quote
+            </Link>
           </div>
 
           {/* Internal links */}

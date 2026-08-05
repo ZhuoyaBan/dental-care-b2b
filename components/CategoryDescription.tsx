@@ -96,14 +96,12 @@ export default function CategoryDescription({ categoryKey }: CategoryDescription
 
         <div className="mt-10 rounded-2xl border border-blue-100 bg-blue-50 p-6 text-center">
           <p className="mb-4 font-medium text-gray-700">{desc.ctaText}</p>
-          <a
-            href={`https://wa.me/8618822885445?text=${encodeURIComponent(desc.whatsAppMessage)}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/#contact"
             className="inline-block rounded-xl bg-blue-600 px-8 py-3 font-bold text-white transition-colors hover:bg-blue-700"
           >
-            Discuss This Category
-          </a>
+            Request a Category Quote
+          </Link>
         </div>
       </div>
     </section>

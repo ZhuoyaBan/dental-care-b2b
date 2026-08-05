@@ -166,14 +166,12 @@ export default function LandingPage({ params }: { params: { slug: string } }) {
           <div className="mt-16 p-8 bg-blue-600 rounded-3xl text-center">
             <h3 className="text-xl font-bold text-white mb-2">Ready to source from a manufacturer?</h3>
             <p className="text-blue-100 mb-6">Contact us for free samples, OEM pricing, and custom product development.</p>
-            <a
-              href="https://wa.me/8618822885445"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/#contact"
               className="inline-block bg-white text-blue-600 font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors"
             >
-              Get a Free Quote
-            </a>
+              Request a Wholesale Quote
+            </Link>
           </div>
         </article>
       </main>

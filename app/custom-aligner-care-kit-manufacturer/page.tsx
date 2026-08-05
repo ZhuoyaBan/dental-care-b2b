@@ -91,7 +91,7 @@ export default function CustomAlignerCareKitManufacturerPage() {
               <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Custom Aligner Care Kit Manufacturer for Dental Brands</h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">Build a branded patient-care kit with one B2B supplier: retainer cases, orthodontic accessories, custom gift boxes and a consolidated shipment. Uvcare helps dental brands, labs and clinics turn the products they need into one cohesive delivery experience.</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a href="https://wa.me/8618822885445" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-200 transition-colors hover:bg-blue-500">Discuss Your Kit on WhatsApp</a>
+                <Link href="/#contact" className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-200 transition-colors hover:bg-blue-500">Request a Kit Quote</Link>
                 <Link href="/dental-gift-box-design-gallery" className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition-colors hover:border-blue-400 hover:text-blue-700">View Gift Box Design Gallery</Link>
               </div>
               <div className="mt-8 grid max-w-2xl grid-cols-3 gap-3 text-center">
@@ -204,7 +204,7 @@ export default function CustomAlignerCareKitManufacturerPage() {
           <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold tracking-tight text-white">Ready to turn your product list into a branded aligner care kit?</h2>
             <p className="mx-auto mt-4 max-w-2xl text-slate-300">Send us your logo, product ideas or a reference packaging concept. We will help you define the next practical sourcing step.</p>
-            <a href="https://wa.me/8618822885445" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-blue-500">Start Your Kit Inquiry on WhatsApp</a>
+            <Link href="/#contact" className="mt-7 inline-flex rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-blue-500">Send Your Kit Brief</Link>
           </div>
         </section>
       </main>

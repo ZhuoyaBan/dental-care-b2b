@@ -74,15 +74,13 @@ export default function ProductsSection() {
             Need a product combination or custom development plan? Share your market and target quantity with us.
           </p>
           <a
-            href="https://wa.me/8618822885445?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20dental%20accessory%20sourcing%20plan."
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors shadow-sm"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
             </svg>
-            Discuss Your Sourcing Plan
+            Send Your Sourcing Brief
           </a>
         </div>
       </div>
