@@ -3,20 +3,6 @@
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
 
-const productOptions = [
-  "Aligner Case",
-  "UV Sterilizer Aligner Case",
-  "Ultrasonic Cleaning Case",
-  "Regular Cleaning Case",
-  "Aligner Removal Hook",
-  "Chewies",
-  "Aligner Bag",
-  "Aligner Gift Box",
-  "Effervescent Cleaning Tablets",
-  "Aligner Cleaning Brush",
-  "Multiple Products / Custom OEM",
-];
-
 const inputCls =
   "w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 " +
   "placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 " +
@@ -28,10 +14,8 @@ interface FormData {
   company: string;
   businessType: string;
   country: string;
-  product: string;
   quantity: string;
   customization: string;
-  contactPreference: string;
   message: string;
 }
 
@@ -41,10 +25,8 @@ const emptyForm: FormData = {
   company: "",
   businessType: "",
   country: "",
-  product: "",
   quantity: "",
   customization: "",
-  contactPreference: "Email",
   message: "",
 };
 
@@ -72,8 +54,8 @@ export default function ContactSection() {
           name: formData.name,
           email: formData.email,
           company: formData.company,
-          product: formData.product,
-          message: `Business type: ${formData.businessType || "Not specified"}\nCountry / region: ${formData.country || "Not specified"}\nEstimated order volume: ${formData.quantity || "Not specified"}\nBranding / packaging: ${formData.customization || "Not specified"}\nPreferred reply channel: ${formData.contactPreference}\n\nRequirements:\n${formData.message}`,
+          product: "Not specified — see requirements",
+          message: `Business type: ${formData.businessType || "Not specified"}\nCountry / region: ${formData.country || "Not specified"}\nEstimated order volume: ${formData.quantity || "Not specified"}\nBranding / packaging: ${formData.customization || "Not specified"}\n\nRequirements:\n${formData.message}`,
         },
         'eIl_NgNmKxDja7-iv'
       );
@@ -97,7 +79,7 @@ export default function ContactSection() {
             Request a Wholesale Quote
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">
-            Send your sourcing brief for a product, MOQ and customization recommendation. We reply by email; choose WhatsApp too if it is convenient.
+            Send your sourcing brief for a product, MOQ and customization recommendation. We reply by email, with WhatsApp also available if you prefer to contact us directly.
           </p>
         </div>
 
@@ -187,7 +169,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Inquiry Sent! 🎉</h3>
-                <p className="text-gray-500 max-w-sm">Thank you for reaching out. Our team will reply by email within one business day, using your preferred contact method where possible.</p>
+                <p className="text-gray-500 max-w-sm">Thank you for reaching out. Our team will reply by email within one business day.</p>
                 <button className="mt-8 text-sm text-blue-600 hover:underline font-medium" onClick={() => setSubmitted(false)}>← Send another inquiry</button>
               </div>
             ) : (
@@ -227,13 +209,6 @@ export default function ContactSection() {
                     <input type="text" name="country" value={formData.country} onChange={handleChange} placeholder="United States" className={inputCls} />
                   </div>
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">Product of Interest</label>
-                  <select name="product" value={formData.product} onChange={handleChange} className={inputCls}>
-                    <option value="">— Select a product —</option>
-                    {productOptions.map((opt) => (<option key={opt} value={opt}>{opt}</option>))}
-                  </select>
-                </div>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">Estimated Order Volume</label>
@@ -261,14 +236,6 @@ export default function ContactSection() {
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">Requirements *</label>
                   <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="For example: target market, reference product, preferred material, target delivery date or sample request." className={`${inputCls} resize-none`} />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">Preferred Reply Method</label>
-                  <select name="contactPreference" value={formData.contactPreference} onChange={handleChange} className={inputCls}>
-                    <option value="Email">Email</option>
-                    <option value="WhatsApp">WhatsApp</option>
-                    <option value="Email and WhatsApp">Email and WhatsApp</option>
-                  </select>
                 </div>
                 <button type="submit" disabled={submitting} className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-3.5 px-6 rounded-xl transition-colors flex items-center justify-center gap-2">
                   {submitting ? "Sending..." : "Submit Quote Request"}
