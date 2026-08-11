@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import emailjs from '@emailjs/browser';
 
 const inputCls =
   "w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 " +
@@ -47,6 +46,7 @@ export default function ContactSection() {
     e.preventDefault();
     setSubmitting(true);
     try {
+      const { default: emailjs } = await import('@emailjs/browser');
       await emailjs.send(
         'service_ybqavzp',
         'template_q81j0t6',

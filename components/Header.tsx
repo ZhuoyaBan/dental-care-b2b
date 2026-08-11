@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -18,7 +19,7 @@ export default function Header() {
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -27,8 +28,16 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="h-12 w-auto">
-              <img src="/logo.png" alt="Uvcare B2B Supply Logo - Wholesale Dental Aligner Accessories" className="h-full w-auto object-contain" />
+            <div className="h-12 w-12 shrink-0">
+              <Image
+                src="/logo.png"
+                alt="Uvcare B2B Supply Logo - Wholesale Dental Aligner Accessories"
+                width={48}
+                height={48}
+                sizes="48px"
+                priority
+                className="h-12 w-12 object-contain"
+              />
             </div>
             <div className="leading-tight hidden sm:block">
               <span className="block text-base font-bold text-gray-800 tracking-tight">Uv<span className="text-blue-600">care</span></span>
@@ -37,41 +46,37 @@ export default function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" prefetch={false} className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Home</Link>
             <div className="relative" onMouseEnter={() => setProductsOpen(true)} onMouseLeave={() => setProductsOpen(false)}>
-              <Link href="/products" className="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
+              <Link href="/products" prefetch={false} className="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
                 Products
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
               </Link>
               {productsOpen && (
                 <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
                   {productCategories.map((cat) => (
-                    <Link key={cat.href} href={cat.href} className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    <Link key={cat.href} href={cat.href} prefetch={false} className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
                       {cat.label}
                     </Link>
                   ))}
                 </div>
               )}
             </div>
-            <Link href="/dental-gift-box-design-gallery" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Branded Box Gallery</Link>
-            <Link href="/about" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">About</Link>
-            <Link href="/insights" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Insights</Link>
-            <Link href="/faq" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">FAQ</Link>
+            <Link href="/dental-gift-box-design-gallery" prefetch={false} className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Branded Box Gallery</Link>
+            <Link href="/about" prefetch={false} className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">About</Link>
+            <Link href="/insights" prefetch={false} className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Insights</Link>
+            <Link href="/faq" prefetch={false} className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">FAQ</Link>
           </nav>
 
-          <div className="hidden md:flex items-center gap-3">
+          <div className="flex items-center gap-1 md:gap-3">
             <LanguageSwitcher />
             <a href="mailto:ban@grouprsh.com" className="hidden lg:inline-flex whitespace-nowrap text-xs font-medium text-gray-500 transition-colors hover:text-blue-600">
               ban@grouprsh.com
             </a>
-            <Link href="/#contact" className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm">
+            <Link href="/#contact" prefetch={false} className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm">
               Get a Quote
             </Link>
-          </div>
-
-          <div className="md:hidden flex items-center gap-1">
-            <LanguageSwitcher />
-            <button className="p-2 rounded-lg text-gray-600 hover:bg-gray-100" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation menu" aria-expanded={menuOpen}>
+            <button className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 md:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation menu" aria-expanded={menuOpen}>
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
           </div>

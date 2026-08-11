@@ -19,14 +19,19 @@ const languages = [
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState("en");
-  const [translateReady, setTranslateReady] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  // Inject Google Translate script once
+  // Keep the default English page free of Google Translate's third-party
+  // script. A translated visit still initializes it from the googtrans cookie.
   useEffect(() => {
-    if (document.getElementById("google-translate-script")) return;
+    const match = document.cookie.match(/googtrans=\/[^/]+\/([^;]+)/);
+    const savedLanguage = match?.[1] || "en";
+    setCurrentLang(savedLanguage);
 
-    // Define callback before loading script
+    if (savedLanguage === "en" || document.getElementById("google-translate-script")) {
+      return;
+    }
+
     window.googleTranslateElementInit = () => {
       try {
         new window.google.translate.TranslateElement({
@@ -34,7 +39,6 @@ export default function LanguageSwitcher() {
           includedLanguages: languages.map(l => l.code).join(","),
           autoDisplay: false,
         }, "google-translate-widget");
-        setTranslateReady(true);
       } catch (e) {
         console.error("Google Translate init error:", e);
       }
@@ -47,23 +51,6 @@ export default function LanguageSwitcher() {
     script.async = true;
     document.head.appendChild(script);
   }, []);
-
-  // Monitor translate state via cookie
-  useEffect(() => {
-    const checkLang = setInterval(() => {
-      // Google Translate stores language in cookie "googtrans"
-      const match = document.cookie.match(/googtrans=\/[^/]+\/([^;]+)/);
-      if (match && match[1] !== currentLang) {
-        setCurrentLang(match[1]);
-      }
-      // Also check if select exists now
-      const select = document.querySelector<HTMLSelectElement>(".goog-te-combo");
-      if (select && !translateReady) {
-        setTranslateReady(true);
-      }
-    }, 1000);
-    return () => clearInterval(checkLang);
-  }, [currentLang, translateReady]);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -90,20 +77,8 @@ export default function LanguageSwitcher() {
     document.cookie = `googtrans=${cookieValue}; path=/`;
     document.cookie = `googtrans=${cookieValue}; path=/; domain=.${window.location.hostname}`;
 
-    // Also try to trigger via select element
-    const select = document.querySelector<HTMLSelectElement>(".goog-te-combo");
-    if (select) {
-      select.value = langCode;
-      select.dispatchEvent(new Event("change", { bubbles: true }));
-    }
-
-    // Reload to apply translation
-    setTimeout(() => {
-      window.location.reload();
-    }, 300);
-
-    setCurrentLang(langCode);
     setIsOpen(false);
+    window.location.reload();
   };
 
   const current = languages.find(l => l.code === currentLang) || languages[0];

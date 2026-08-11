@@ -93,6 +93,7 @@ export function BuyerEntries() {
             <Link
               key={entry.label}
               href={entry.href}
+              prefetch={false}
               className="group block bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-xl hover:-translate-y-1 transition-all"
             >
               <div className="flex items-center gap-2 mb-3">
