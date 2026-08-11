@@ -196,6 +196,8 @@ export const categoryDescriptions: Record<string, CategoryDescription> = {
       { label: "Professional Dental Hook", href: "/products/professional-dental-hook" },
       { label: "Orthodontic Teether", href: "/products/orthodontic-teether" },
       { label: "Aligner Remover & Chewie", href: "/products/aligner-remover-and-chewie" },
+      { label: "Orthodontic Accessories Supplier", href: "/orthodontic-accessories-supplier" },
+      { label: "Dental Care Packaging Supplier", href: "/dental-care-packaging-supplier" },
     ],
     faqs: [
       { question: "Which orthodontic accessories are currently shown in the catalog?", answer: "The current catalog shows a professional dental hook, orthodontic teether, and an aligner remover-and-chewie combination tool." },

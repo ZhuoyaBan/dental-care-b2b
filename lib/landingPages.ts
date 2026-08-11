@@ -400,4 +400,160 @@ export const landingPages: LandingPageData[] = [
       },
     ],
   },
+  {
+    slug: "orthodontic-accessories-supplier",
+    title: "Orthodontic Accessories Supplier",
+    metaTitle: "Orthodontic Accessories Supplier | OEM & Private Label | Uvcare",
+    metaDescription: "Uvcare is an orthodontic accessories supplier for clear-aligner brands, dental labs, clinics and distributors. Source OEM removers, chewies, dental models, packaging and coordinated care kits.",
+    h1: "Orthodontic Accessories Supplier for Clear Aligner Brands and Clinics",
+    subtitle: "Source practical aligner removal, seating, care and patient-education accessories from one B2B supplier, with product branding, packaging and coordinated kit planning available for selected projects.",
+    keyFacts: [
+      "One B2B supplier for aligner removal, seating, care, storage and supporting packaging products",
+      "Existing accessories can be reviewed for logo, color and packaging customization",
+      "Selected accessories can be combined with retainer cases, care pouches and gift boxes in one brand programme",
+      "For Uvcare products included in one order, agreed pack-out can be coordinated before a consolidated shipment",
+      "MOQ and lead time depend on the selected accessory and customization route",
+    ],
+    sections: [
+      {
+        heading: "Choose Accessories Around the Patient Workflow",
+        body: "Clear-aligner accessories should make daily treatment routines easier to follow. Uvcare's catalog includes aligner removal tools, chewies and combined remover-and-chewie formats, while dental models can support patient education in clinics and schools. These accessories can be selected individually or planned alongside a retainer case, cleaning product and storage pouch when the buyer needs a more complete patient-care range.",
+      },
+      {
+        heading: "Create a Consistent Private-Label Accessory Range",
+        body: "For an existing accessory, an OEM route may include the buyer's logo, available color direction and agreed packaging. For a new function, format or material requirement, the project should begin with a clear development brief so the appropriate ODM route can be assessed. Keeping the accessories, case and presentation packaging aligned helps an orthodontic brand deliver a more consistent patient handover experience.",
+      },
+      {
+        heading: "Add Accessories to a Branded Aligner Care Kit",
+        body: "Rather than sourcing every item from separate vendors, buyers can select relevant Uvcare products and plan a coordinated kit with a retainer case, removal or seating tool, clear-aligner pouch and branded gift box. For products included in the same Uvcare order, the agreed kit pack-out can be arranged before one consolidated shipment. The final product mix, packaging, MOQ and delivery plan are confirmed during quotation.",
+      },
+      {
+        heading: "Prepare a Focused Orthodontic Accessories Brief",
+        body: "To receive a practical recommendation, share the intended users, required accessories, target quantity, logo files, preferred packaging, destination and target delivery date. If the range will be sold or supplied in a specific market, buyers should also identify their own labeling, import, safety and regulatory requirements. This information helps determine whether an existing product, private-label route or custom development path is the right fit.",
+      },
+    ],
+    faq: [
+      {
+        question: "Which orthodontic accessories can Uvcare supply?",
+        answer: "The current catalog includes aligner removal hooks, chewies, combined remover-and-chewie tools, dental models and clear-aligner packaging bags. Buyers can also share requirements for other orthodontic accessories so the suitable sourcing or development route can be assessed.",
+      },
+      {
+        question: "Can an aligner brand customize accessories with its logo?",
+        answer: "Logo, color and packaging options can be discussed for selected existing products. The available customization method, MOQ and timing depend on the chosen item, material and project scope.",
+      },
+      {
+        question: "Can accessories be sourced as part of a multi-SKU aligner care kit?",
+        answer: "Yes. Selected Uvcare accessories can be planned with cases, pouches and branded gift boxes. For Uvcare products in the same order, agreed kit assembly can be coordinated before a consolidated shipment.",
+      },
+      {
+        question: "What should I send for an orthodontic accessories quote?",
+        answer: "Share the required products or references, quantity, logo files, color or packaging preference, delivery destination and target date. Include any project-specific market, labeling or import requirements that apply to your programme.",
+      },
+      {
+        question: "Can Uvcare provide both accessories and patient-kit packaging?",
+        answer: "Yes. Uvcare can discuss accessories together with clear-aligner pouches, gift boxes, gift bags and internal pack-out so the selected components support one coordinated brand presentation.",
+      },
+    ],
+    relatedProductIds: [42, 40, 41, 52, 53],
+    relatedLinks: [
+      {
+        title: "Dental Accessories",
+        description: "Browse current aligner removal, seating, packaging and patient-education products.",
+        href: "/products/dental-accessories",
+      },
+      {
+        title: "Custom Aligner Care Kits",
+        description: "Plan selected accessories, cases and branded pack-out as one patient-care programme.",
+        href: "/custom-aligner-care-kit-manufacturer",
+      },
+      {
+        title: "Dental Lab Supplies",
+        description: "Explore a broader B2B product range for clear-aligner workflow and patient handover projects.",
+        href: "/dental-lab-supplies-manufacturer",
+      },
+      {
+        title: "Dental Care Packaging Supplier",
+        description: "Pair orthodontic accessories with branded pouches, gift boxes and coordinated presentation packaging.",
+        href: "/dental-care-packaging-supplier",
+      },
+    ],
+  },
+  {
+    slug: "dental-care-packaging-supplier",
+    title: "Dental Care Packaging Supplier",
+    metaTitle: "Dental Care Packaging Supplier | Custom Aligner Packaging | Uvcare",
+    metaDescription: "Uvcare supplies custom dental care packaging for clear-aligner brands, clinics and labs: zip-lock pouches, gift boxes, bags, inserts and coordinated patient-kit pack-out.",
+    h1: "Dental Care Packaging Supplier for Clear Aligner Brands",
+    subtitle: "Plan custom clear-aligner pouches, dental gift boxes, gift bags and internal presentation packaging with the accessories and cases your patient programme needs.",
+    keyFacts: [
+      "One B2B supplier for aligner pouches, gift boxes, gift bags, inserts and related patient-care accessories",
+      "Packaging projects can discuss logo, artwork, color, materials, structure and internal product layout",
+      "Clear-aligner zip-lock pouch projects can be reviewed for custom size, printing, material and barrier requirements",
+      "For Uvcare products included in one order, agreed products can be coordinated into the selected gift box before shipment",
+      "MOQ, lead time and final specifications depend on the packaging format and customization route",
+    ],
+    sections: [
+      {
+        heading: "Turn Individual Dental Accessories Into One Brand System",
+        body: "Dental care packaging is more than an outer box. It gives an aligner brand or clinic a practical way to present cases, removers, chewies, care instructions and other agreed items as one recognizable patient handover set. By planning the selected accessories and packaging together, buyers can reduce fragmented sourcing and create a more consistent brand experience from the first appointment onward.",
+      },
+      {
+        heading: "Choose Packaging for the Intended Patient Journey",
+        body: "A clear-aligner zip-lock pouch is a lightweight option for hygienic storage and transport, while a structured dental gift box can organize a more complete handover kit. Gift bags, printed inserts and internal trays can be considered when the programme needs a stronger presentation or several products in one set. The right format depends on the products being packed, the desired patient experience, quantity and intended distribution channel.",
+      },
+      {
+        heading: "Customize the Box, Bag and Pack-out Around Your Programme",
+        body: "Existing packaging can be reviewed for logo and artwork adaptation, while a custom box project can discuss structure, opening style, materials, colors and internal layout. For selected Uvcare products sourced in the same order, the agreed case, accessory and packaging combination can be coordinated into the chosen gift box before one consolidated shipment. Final feasibility, print method and assembly details are confirmed before production.",
+      },
+      {
+        heading: "Provide a Packaging Brief That Supports Production",
+        body: "Begin with the items to be packed, target quantity, logo files, visual references, preferred packaging format, destination and target delivery date. Buyers should provide the dimensions and any project-specific labeling, import, safety or market requirements that apply to their own programme. This gives Uvcare the information needed to recommend a realistic existing, OEM or custom packaging route.",
+      },
+    ],
+    faq: [
+      {
+        question: "What dental care packaging can Uvcare supply?",
+        answer: "Uvcare can discuss clear-aligner zip-lock pouches, dental gift boxes, gift bags, printed inserts, internal trays and pack-out for selected retainer cases and orthodontic accessories.",
+      },
+      {
+        question: "Can I add my own logo and artwork to dental packaging?",
+        answer: "Yes. Logo, artwork, color and print options can be reviewed for the selected pouch, box or bag. A custom box project can also discuss structure, materials and the internal layout for the agreed products.",
+      },
+      {
+        question: "Are the gift-box designs in the gallery fixed options?",
+        answer: "The Branded Box Gallery is a reference for possible formats, materials, opening styles and presentation directions. The practical option for a project is confirmed from the product list, dimensions, branding requirements, quantity and timing.",
+      },
+      {
+        question: "Can I source pouches, accessories and a gift box in one order?",
+        answer: "Yes. Buyers can plan selected Uvcare cases, accessories, pouches and gift packaging together. For Uvcare products in the same order, agreed items can be coordinated into the selected gift box before a consolidated shipment.",
+      },
+      {
+        question: "What is needed for a dental packaging quotation?",
+        answer: "Share the packaging type, items to be packed, dimensions, quantity, logo or artwork files, material or finish preference, destination and target date. Include any program-specific labeling or market requirements for assessment.",
+      },
+    ],
+    relatedProductIds: [30, 53, 1, 42],
+    relatedLinks: [
+      {
+        title: "Branded Box Gallery",
+        description: "Review patient-kit box, insert and gift-bag directions for clear-aligner programmes.",
+        href: "/dental-gift-box-design-gallery",
+      },
+      {
+        title: "Dental Gift Boxes",
+        description: "Explore B2B gift-box packaging for branded dental patient handover kits.",
+        href: "/products/gift-box",
+      },
+      {
+        title: "Custom Aligner Care Kits",
+        description: "Combine selected packaging, cases and accessories around one patient-care programme.",
+        href: "/custom-aligner-care-kit-manufacturer",
+      },
+      {
+        title: "Orthodontic Accessories Supplier",
+        description: "Find accessories that can be planned with your packaging and patient handover system.",
+        href: "/orthodontic-accessories-supplier",
+      },
+    ],
+  },
 ];

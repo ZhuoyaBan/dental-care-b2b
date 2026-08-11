@@ -37,6 +37,18 @@ const landingPageEntries = [
     href: "/aligner-care-kit-supplier-australia",
     icon: "🦘",
   },
+  {
+    title: "Orthodontic Accessories Supplier",
+    desc: "OEM aligner removal, seating, care and patient-education accessories for brands, labs and clinics.",
+    href: "/orthodontic-accessories-supplier",
+    icon: "🧰",
+  },
+  {
+    title: "Dental Care Packaging Supplier",
+    desc: "Custom aligner pouches, gift boxes, bags and coordinated pack-out for branded patient programmes.",
+    href: "/dental-care-packaging-supplier",
+    icon: "📦",
+  },
 ] as const;
 
 export default function LandingPageEntries() {
@@ -45,7 +57,7 @@ export default function LandingPageEntries() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-xl font-bold text-gray-900 mb-2">Sourcing & Manufacturing Guides</h2>
         <p className="text-sm text-gray-500 mb-8">Looking for a manufacturer or OEM partner? Start with these procurement guides.</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {landingPageEntries.map((entry) => (
             <Link
               key={entry.href}
