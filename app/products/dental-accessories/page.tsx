@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Wholesale Aligner Accessories | Orthodontic Tools OEM | Uvcare",
   description: "Wholesale aligner removal hooks, chewies, and orthodontic accessories for dental clinics and distributors. OEM/ODM branding and global delivery.",
   alternates: { canonical: "https://www.dentalcarepack.com/products/dental-accessories" },
+  openGraph: {
+    title: "Wholesale Aligner Accessories | Orthodontic Tools OEM | Uvcare",
+    description: "Wholesale aligner removal hooks, chewies and orthodontic accessories with OEM/ODM branding for B2B buyers.",
+    url: "https://www.dentalcarepack.com/products/dental-accessories",
+    type: "website",
+  },
 };
 
 export default function DentalAccessoriesPage() {

@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Custom Orthodontic Gift Boxes | Dental Welcome Kit Packaging | Uvcare",
   description: "Custom wholesale orthodontic gift boxes and dental patient welcome-kit packaging. OEM logo printing, low MOQs, and worldwide B2B supply.",
   alternates: { canonical: "https://www.dentalcarepack.com/products/gift-box" },
+  openGraph: {
+    title: "Custom Orthodontic Gift Boxes | Dental Welcome Kit Packaging | Uvcare",
+    description: "Custom wholesale orthodontic gift boxes and dental patient welcome-kit packaging for B2B brands and clinics.",
+    url: "https://www.dentalcarepack.com/products/gift-box",
+    type: "website",
+  },
 };
 
 export default function GiftBoxPage() {

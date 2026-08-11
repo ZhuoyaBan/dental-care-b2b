@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Dental Impression Kits | Putty & Digital Scan ODM | Uvcare",
   description: "Wholesale putty dental impression kits for clear aligner and night guard workflows, plus ODM-ready dental scan box concepts. Custom logo and packaging support.",
   alternates: { canonical: "https://www.dentalcarepack.com/products/dental-impression-kit" },
+  openGraph: {
+    title: "Dental Impression Kits | Putty & Digital Scan ODM | Uvcare",
+    description: "Wholesale putty dental impression kits and ODM-ready dental scan box concepts for clear aligner workflows.",
+    url: "https://www.dentalcarepack.com/products/dental-impression-kit",
+    type: "website",
+  },
 };
 
 export default function DentalImpressionKitPage() {

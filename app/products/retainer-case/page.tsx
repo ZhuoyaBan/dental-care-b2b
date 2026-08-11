@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Wholesale Retainer Cases | Custom Aligner Cases | Uvcare",
   description: "Wholesale retainer and aligner cases for dental clinics, orthodontic distributors, and clear aligner brands. Low MOQ, custom logo printing, and OEM/ODM support.",
   alternates: { canonical: "https://www.dentalcarepack.com/products/retainer-case" },
+  openGraph: {
+    title: "Wholesale Retainer Cases | Custom Aligner Cases | Uvcare",
+    description: "Wholesale retainer and aligner cases for dental clinics, orthodontic distributors, and clear aligner brands.",
+    url: "https://www.dentalcarepack.com/products/retainer-case",
+    type: "website",
+  },
 };
 
 export default function RetainerCasePage() {

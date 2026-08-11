@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Wholesale Aligner Cleaning Boxes | UV & Ultrasonic Solutions | Uvcare",
   description: "Wholesale aligner and retainer cleaning boxes, UV sterilizer cases, and ultrasonic cleaner solutions. OEM/ODM supply for dental clinics and distributors.",
   alternates: { canonical: "https://www.dentalcarepack.com/products/cleaning-box" },
+  openGraph: {
+    title: "Wholesale Aligner Cleaning Boxes | UV & Ultrasonic Solutions | Uvcare",
+    description: "Wholesale aligner and retainer cleaning boxes, UV sterilizer cases, and ultrasonic cleaner solutions for B2B buyers.",
+    url: "https://www.dentalcarepack.com/products/cleaning-box",
+    type: "website",
+  },
 };
 
 export default function CleaningBoxPage() {
