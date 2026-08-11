@@ -45,7 +45,7 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">
             UVCARE | DentalCarePack
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-gray-900">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-[system-ui] sm:font-sans font-bold leading-[1.08] tracking-tight text-gray-900">
             Custom Aligner Care Solutions <span className="text-blue-600">Manufacturer</span>
           </h1>
           <p className="text-xl font-semibold text-gray-800 leading-relaxed max-w-2xl">
