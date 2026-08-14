@@ -782,7 +782,16 @@ export const posts: Post[] = [
           <td>Limited</td>
           <td>Limited (Reddit reports of poor service)</td>
         </tr>
+        <tr>
+          <td>OEM / Wholesale Available?</td>
+          <td>No (retail brand only)</td>
+          <td>No (retail brand only)</td>
+        </tr>
       </table>
+
+      <div style="background: #eff6ff; border-left: 4px solid #2563eb; padding: 16px 20px; margin: 20px 0; border-radius: 0 12px 12px 0;">
+        <p style="margin: 0; font-size: 14px;"><strong>Are you a dental brand, clinic, or distributor?</strong> Both the iSonic and Zima are retail products — you can't put your own logo on them or buy at wholesale prices. Uvcare manufactures ultrasonic cleaners with the same technology (plus built-in UV-C) at factory-direct pricing with full OEM branding. <a href="/products/professional-ultrasonic-cleaner-plug-in">View wholesale ultrasonic cleaners →</a></p>
+      </div>
 
       <h3>iSonic DS180: The Budget Champion</h3>
       <p>The iSonic DS180 is the <strong>best ultrasonic cleaner under $50</strong> for aligners. It uses the same 42kHz ultrasonic technology as more expensive models but costs half the price. Reddit users consistently report that the DS180 cleans aligners just as effectively as the Zima Pod. The main downsides: basic design, plug-in only (not portable), and no UV-C sanitization. But if you want clean aligners without spending $90, the DS180 delivers.</p>
@@ -823,11 +832,12 @@ export const posts: Post[] = [
       <p>Ready to source? <a href="/#contact">Contact us for free samples and OEM pricing →</a></p>
     `,
     keyFacts: [
-      "iSonic DS180 (~$40) uses the same 42kHz ultrasonic technology as the Zima Dental Pod (~$90) — cleaning performance is equivalent",
-      "Neither iSonic DS180 nor Zima Dental Pod includes UV-C sterilization — both only remove physical debris",
+      "iSonic DS180 (~$40) uses the same 42kHz ultrasonic technology as the Zima Dental Pod (~$90) - cleaning performance is equivalent",
+      "Neither iSonic DS180 nor Zima Dental Pod includes UV-C sterilization - both only remove physical debris",
+      "Neither iSonic nor Zima offers OEM branding or wholesale pricing - both are retail-only brands",
       "Reddit users report Zima Dental Pod durability issues: stops working in 3-6 months, customer service often unresponsive",
-      "Uvcare's ultrasonic cleaners include built-in UV-C LEDs (254nm-275nm) — ultrasonic cleaning + sterilization in one device",
-      "Uvcare offers factory-direct wholesale pricing with OEM/ODM custom branding — MOQ from 500 PCS",
+      "Uvcare's ultrasonic cleaners include built-in UV-C LEDs (254nm-275nm) - ultrasonic cleaning + sterilization in one device",
+      "Uvcare offers factory-direct wholesale pricing with OEM/ODM custom branding - MOQ from 500 PCS",
       "Best ultrasonic cleaner under $50: iSonic DS180 for patients; Uvcare ultrasonic+UV-C for dental brands and clinics",
     ],
     faq: [
@@ -846,6 +856,10 @@ export const posts: Post[] = [
       {
         question: "Can I buy ultrasonic cleaners with my own brand logo?",
         answer: "Yes. Uvcare is a B2B manufacturer that offers full OEM logo printing on ultrasonic cleaners. Unlike retail brands (Zima, iSonic) that only sell under their own name, Uvcare lets you print your clinic or brand logo. MOQ starts at 500 PCS (battery) or 1,000 PCS (plug-in). See our ultrasonic cleaner products for details."
+      },
+      {
+        question: "Can I get iSonic or Zima ultrasonic cleaners at wholesale price with my own brand?",
+        answer: "No. Both iSonic and Zima are retail brands — they do not offer OEM branding, wholesale pricing, or bulk supply for distributors. If you're a dental brand or clinic that wants to sell ultrasonic cleaners under your own logo, you need a manufacturer, not a retail brand. Uvcare manufactures ultrasonic cleaners (with built-in UV-C) at factory-direct pricing with full OEM customization. MOQ starts at 500 PCS. Contact us for free samples and wholesale pricing."
       },
       {
         question: "Why should dental brands source from a manufacturer instead of buying retail?",
