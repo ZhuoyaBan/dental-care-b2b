@@ -11,7 +11,20 @@ This file is the shared handover for everyone working on `dental-care-b2b`. Read
 - Verify every code change with `npm run build`; `main` auto-deploys through Vercel.
 - Do not remove permanent redirects for old numeric product URLs. They protect historical search listings and backlinks.
 
-## 2026-08-11 — Canonical signal cleanup
+## 2026-08-12 - B2B conversion path in iSonic vs Zima article
+
+- Commit: `082ea9d` - `Conversion: strengthen B2B path in iSonic vs Zima article`
+- Updated URLs/files: `/insights/isonic-ds180-vs-zima-dental-pod`, `lib/insights.ts`
+- Purpose: Convert C-end traffic from popular search queries (isonic vs zima, isonic dental pod, sonic dental vs zima dental, zima vs isonic) into B2B inquiries.
+- Changes:
+  - Added "OEM / Wholesale Available?" row to comparison table (both iSonic and Zima = No, retail-only)
+  - Added B2B callout box after table targeting dental brands/clinics/distributors
+  - Added Key Fact: "Neither iSonic nor Zima offers OEM branding or wholesale pricing"
+  - Added FAQ: "Can I get iSonic or Zima ultrasonic cleaners at wholesale price with my own brand?"
+- Verified: Build passed, pushed to main.
+- Follow-up: Monitor GSC to see if B2B inquiry conversion improves from isonic/zima traffic.
+
+## 2026-08-11 - Canonical signal cleanup
 
 - Commit: `f426b74` — `Align category social URLs with canonicals`
 - Updated URLs:
