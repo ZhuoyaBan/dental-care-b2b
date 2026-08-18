@@ -11,6 +11,15 @@ This file is the shared handover for everyone working on `dental-care-b2b`. Read
 - Verify every code change with `npm run build`; `main` auto-deploys through Vercel.
 - Do not remove permanent redirects for old numeric product URLs. They protect historical search listings and backlinks.
 
+## 2026-08-18 — Evidence-conscious clear-aligner care guide
+
+- Commit: `734301b` — `Add evidence-conscious aligner care guide`
+- Updated URLs/files: `/insights/how-to-clean-clear-aligners`, `lib/insights.ts`, `public/sitemap.xml`
+- Purpose: Add a patient-education insight that covers clear-aligner care while retaining relevant internal links to Retainer Cases, Cleaning Boxes, the UV-C product page, the care-kit landing page, and the contact form.
+- Compliance review: Removed unsubstantiated numerical efficacy, disease/infection, treatment, price, fixed-frequency, and universal-best-method claims. The page now defers to the treating clinician, aligner manufacturer instructions, product-specific evidence, safety information, and local market authorization.
+- Verified: `npm run build` passed. Production verification pending Vercel deployment.
+- Follow-up: Keep UV-C, ultrasonic, and cleaning-product performance claims outside this guide unless product-specific substantiation and applicable regulatory review are on file.
+
 ## 2026-08-18 — Magnetic Lid & Drawer Box Gallery image
 
 - Commit: `baf39ef` — `Update magnetic drawer gift box gallery image`
