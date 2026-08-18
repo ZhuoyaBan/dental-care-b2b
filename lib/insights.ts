@@ -1501,5 +1501,142 @@ export const posts: Post[] = [
         answer: "Check for: ISO 9001 / CE / FDA certifications (available on request), factory photos and videos (we provide on request), free product samples for quality evaluation, verifiable client references in 50+ countries, and direct communication with the production team via WhatsApp. A real manufacturer will always provide these — a trading company cannot."
       }
     ]
+  },
+  {
+    id: "how-to-clean-clear-aligners",
+    title: "How to Clean Clear Aligners: The Complete Daily Care Routine",
+    excerpt: "A practical, evidence-conscious guide to everyday clear-aligner care: rinsing, approved cleaning products, storage, and questions to ask before using ultrasonic or UV-C devices.",
+    date: "August 18, 2026",
+    category: "Patient Guide",
+    image: "/images/blog/various-retainer-cases.webp",
+    relatedProductIds: [3, 4, 5, 20, 21],
+    content: `
+      <p>Clear aligners are worn close to the teeth and are handled frequently, so keeping them visibly clean and storing them carefully matters. This is a general care guide, not medical advice: <strong>always follow the instructions from your treating clinician and aligner manufacturer</strong>, especially when choosing a cleaning product or device.</p>
+
+      <h3>What routine care can help with</h3>
+      <p>Saliva and food residue can leave visible film, odour, or staining on clear plastic. A consistent, manufacturer-approved routine can help keep aligners presentable between planned tray changes and avoid avoidable damage from unsuitable cleaning methods.</p>
+      <ul>
+        <li>Remove loose residue after meals or drinks.</li>
+        <li>Reduce the chance of visible staining or surface film.</li>
+        <li>Keep the storage case tidy for transport.</li>
+        <li>Identify changes in fit, damage, or persistent odour that should be discussed with the treating clinician.</li>
+      </ul>
+
+      <h3>A conservative everyday care framework</h3>
+      <p>Your clinician or aligner manufacturer may prescribe a different schedule. In general, these steps are commonly compatible with clear-aligner care instructions:</p>
+      <ol>
+        <li><strong>Remove and rinse</strong> — rinse with cool or lukewarm water. Avoid hot water unless the product instructions specifically permit it, as heat may affect the material.</li>
+        <li><strong>Clean your teeth as instructed</strong> — follow the oral-hygiene advice from your dental professional before reinserting aligners.</li>
+        <li><strong>Clean the aligners gently</strong> — use only a soft brush and a cleaning method approved by the aligner manufacturer. Abrasive toothpaste can dull or scratch clear plastics.</li>
+        <li><strong>Rinse thoroughly</strong> — remove any cleaning-product residue according to its instructions for use.</li>
+        <li><strong>Store carefully</strong> — use a clean <a href="/products/retainer-case">retainer case</a> when aligners are out of the mouth; do not wrap them in a napkin where they can be lost or damaged.</li>
+      </ol>
+
+      <h3>Choosing a deeper-cleaning method</h3>
+      <p>There is no universal "best" method or schedule. Check the aligner manufacturer&apos;s care instructions and the cleaning-product label first. If an appliance is damaged, no longer fits, or has a persistent issue, contact the treating clinician rather than trying to correct it with stronger cleaning methods.</p>
+
+      <h4>Approved soaking products</h4>
+      <p>Some aligner owners use purpose-made cleansing tablets or solutions. Use only a product that the aligner manufacturer or clinician considers suitable, and follow its dilution, soak time, and rinsing instructions. Do not assume that a denture product, mouthwash, or household cleaner is compatible with your aligner material.</p>
+
+      <h4>Ultrasonic cleaning devices</h4>
+      <p>Ultrasonic devices are used by some consumers to assist with removal of loose surface residue. Their suitability, cycle settings, water level, and any cleaning additive are device- and aligner-specific. Use one only when both sets of instructions permit it; never use an unapproved solution in the tank.</p>
+      <p><a href="/products/professional-ultrasonic-cleaner-plug-in">Explore Uvcare&apos;s plug-in ultrasonic cleaner</a> or the <a href="/products/portable-ultrasonic-cleaner-black">portable version</a> for product specifications and intended-use information.</p>
+      <p>For a detailed comparison of popular ultrasonic cleaners, see our <a href="/insights/isonic-ds180-vs-zima-dental-pod">iSonic DS180 vs Zima Dental Pod guide</a>.</p>
+
+      <h3>UV-C cases: use claims and instructions carefully</h3>
+      <p>Some enclosed cases include UV-C components and are marketed with sanitization-related features. Physical cleaning and rinsing are still separate steps: a light-based device does not remove visible residue. Any performance claim depends on the specific device, test method, loading arrangement, cycle, and market authorization.</p>
+      <p>Only use an enclosed UV-C product as directed, keep the safety features intact, and do not make medical, infection-prevention, or numerical efficacy claims unless they are supported by product-specific substantiation and required local approvals. <a href="/products/uv-c-sterilizer-case">View Uvcare&apos;s UV-C case</a> for its applicable product documentation; see also our <a href="/insights/do-uv-aligner-cases-work">UV aligner case explainer</a>.</p>
+
+      <h3>Cleaning Method Comparison</h3>
+      <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+        <tr>
+          <th>Method</th>
+          <th>Typical role</th>
+          <th>Key consideration</th>
+        </tr>
+        <tr>
+          <td>Gentle rinse and soft brush</td>
+          <td>Everyday visible-residue care</td>
+          <td>Use only approved, non-abrasive products.</td>
+        </tr>
+        <tr>
+          <td>Approved cleansing tablet or solution</td>
+          <td>Occasional deeper-cleaning option</td>
+          <td>Confirm material compatibility, soak time, and rinsing requirements.</td>
+        </tr>
+        <tr>
+          <td>Ultrasonic cleaner</td>
+          <td>Optional device-assisted cleaning</td>
+          <td>Follow both the device and aligner instructions; compatibility varies.</td>
+        </tr>
+        <tr>
+          <td>Enclosed UV-C case</td>
+          <td>Optional feature in certain products</td>
+          <td>Does not replace physical cleaning; rely on product-specific documentation and safety instructions.</td>
+        </tr>
+      </table>
+      <p>Choose the simplest routine that is approved for the aligner system and that the patient can follow consistently. A treating clinician is the right person to advise on individual needs.</p>
+
+      <h3>Don't Forget Your Retainer Case</h3>
+      <p>A storage case is part of the care routine. Keep it visibly clean and dry, and inspect it for cracks, wear, or damaged closures.</p>
+      <ul>
+        <li>Clean the case according to its manufacturer&apos;s instructions, particularly when visibly soiled.</li>
+        <li>Allow it to dry as directed before storing aligners.</li>
+        <li>Replace it if it is cracked, cannot close securely, or no longer keeps the aligners protected.</li>
+      </ul>
+      <p>Uvcare offers <a href="/products/retainer-case">retainer cases</a> with different formats, mirrors, and silicone inserts, with custom branding available for dental brands.</p>
+
+      <h3>Common Cleaning Mistakes to Avoid</h3>
+      <ul>
+        <li><strong>Using hot water</strong> — heat can affect plastic components; use the temperature stated in the aligner instructions.</li>
+        <li><strong>Using abrasive toothpaste or brushes</strong> — these may scratch or dull clear plastic.</li>
+        <li><strong>Using unapproved household cleaners</strong> — check material compatibility before soaking or treating an aligner.</li>
+        <li><strong>Ignoring a damaged or poor-fitting aligner</strong> — contact the treating clinician for advice.</li>
+        <li><strong>Wrapping aligners in a napkin</strong> — use a protective storage case instead.</li>
+      </ul>
+
+      <h3>Building a practical care kit</h3>
+      <p>The contents should reflect the aligner system&apos;s instructions and the local market. A kit may include:</p>
+      <ul>
+        <li>A soft brush or other approved cleaning accessory.</li>
+        <li>Compatible cleansing tablets or solution, if specified by the aligner manufacturer.</li>
+        <li>A protective <a href="/products/retainer-case">retainer case</a>.</li>
+        <li>Optional device-based products only where the intended use, instructions, and required evidence support their sale.</li>
+      </ul>
+
+      <h3>For Dental Brands and Clinics</h3>
+      <p>Dental brands and clinics can source a coordinated patient-care kit with a <a href="/custom-aligner-care-kit-manufacturer">branded aligner care kit</a>, including cases, compatible accessories, custom bags, and presentation packaging. Uvcare supports OEM and private-label projects; the buyer remains responsible for product selection, local regulatory review, substantiation, labelling, and the claims used in its market.</p>
+      <p><a href="/why-choose-uvcare">Learn why dental brands choose Uvcare →</a> &nbsp;|&nbsp; <a href="/#contact">Contact us for wholesale pricing →</a></p>
+    `,
+    keyFacts: [
+      "Use the treating clinician's and aligner manufacturer's instructions as the primary source for routine care.",
+      "Cool or lukewarm water and a soft, approved cleaning method are generally more conservative choices than hot water or abrasive toothpaste.",
+      "Cleansing tablets, ultrasonic devices, and UV-C cases have different roles and require product-specific compatibility and safety checks.",
+      "UV-C features do not replace physical cleaning; efficacy and safety claims must be supported for the specific product and market.",
+      "Keep a storage case visibly clean, dry it as directed, and replace it if it is damaged.",
+      "Brands can source coordinated care-kit components from Uvcare, with local compliance, labelling, and claims retained by the buyer.",
+    ],
+    faq: [
+      {
+        question: "How often should I clean my clear aligners?",
+        answer: "Follow the schedule from your treating clinician and aligner manufacturer. Rinse and use an approved gentle cleaning method as directed; avoid hot water and any product that is not confirmed as compatible with the aligner material."
+      },
+      {
+        question: "Can I use toothpaste to clean my aligners?",
+        answer: "Check the aligner manufacturer's instructions first. Abrasive toothpaste may scratch or dull clear plastic, so a soft brush and an approved cleaning method are the more conservative choice."
+      },
+      {
+        question: "What is the best way to deep clean aligners?",
+        answer: "There is no one method that is best for every aligner system. Consider an approved cleansing product or device only when the aligner manufacturer and device instructions allow it, and ask the treating clinician if you are unsure."
+      },
+      {
+        question: "Does UV-C actually clean aligners?",
+        answer: "A UV-C feature does not remove visible residue, so it is not a substitute for physical cleaning. Use an enclosed device only as directed, and rely on the specific product's evidence, safety information, and applicable market authorization for any sanitization claim."
+      },
+      {
+        question: "How do I clean my retainer case?",
+        answer: "Follow the case manufacturer's instructions. Keep the case visibly clean and dry it as directed; replace it if it is cracked, does not close securely, or can no longer protect the aligners."
+      }
+    ]
   }
 ];
