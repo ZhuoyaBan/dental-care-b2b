@@ -17,7 +17,7 @@ This file is the shared handover for everyone working on `dental-care-b2b`. Read
 - Updated URLs/files: `/insights/how-to-clean-clear-aligners`, `lib/insights.ts`, `public/sitemap.xml`
 - Purpose: Add a patient-education insight that covers clear-aligner care while retaining relevant internal links to Retainer Cases, Cleaning Boxes, the UV-C product page, the care-kit landing page, and the contact form.
 - Compliance review: Removed unsubstantiated numerical efficacy, disease/infection, treatment, price, fixed-frequency, and universal-best-method claims. The page now defers to the treating clinician, aligner manufacturer instructions, product-specific evidence, safety information, and local market authorization.
-- Verified: `npm run build` passed. Production verification pending Vercel deployment.
+- Verified: `npm run build` passed; Vercel production page returns `200` with the new evidence-conscious copy and canonical URL, and the sitemap includes the URL with `lastmod` `2026-08-18`.
 - Follow-up: Keep UV-C, ultrasonic, and cleaning-product performance claims outside this guide unless product-specific substantiation and applicable regulatory review are on file.
 
 ## 2026-08-18 — Magnetic Lid & Drawer Box Gallery image
