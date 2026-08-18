@@ -11,6 +11,14 @@ This file is the shared handover for everyone working on `dental-care-b2b`. Read
 - Verify every code change with `npm run build`; `main` auto-deploys through Vercel.
 - Do not remove permanent redirects for old numeric product URLs. They protect historical search listings and backlinks.
 
+## 2026-08-18 — Magnetic Lid & Drawer Box Gallery image
+
+- Commit: `baf39ef` — `Update magnetic drawer gift box gallery image`
+- Updated URL/files: `/dental-gift-box-design-gallery`, `lib/giftBoxGallery.ts`, `public/images/gift-box-gallery/magnetic-lid-drawer-box-open.webp`
+- Purpose: Replace the closed yellow Magnetic Lid & Drawer Box image with the supplied open-box view, so the internal layout is visible in the Gallery card.
+- Verified: New source image converted to an 11 KB WebP; production build passed.
+- Follow-up: Confirm the Vercel production image after deployment.
+
 ## 2026-08-12 - B2B conversion path in iSonic vs Zima article
 
 - Commit: `082ea9d` - `Conversion: strengthen B2B path in iSonic vs Zima article`
