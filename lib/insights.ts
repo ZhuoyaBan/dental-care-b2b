@@ -1638,5 +1638,247 @@ export const posts: Post[] = [
         answer: "Follow the case manufacturer's instructions. Keep the case visibly clean and dry it as directed; replace it if it is cracked, does not close securely, or can no longer protect the aligners."
       }
     ]
+  },
+  {
+    id: "custom-color-retainer-cases",
+    title: "Custom Color Retainer Cases: 4 Ways to Match Your Dental Brand Colors",
+    excerpt: "Want retainer cases in your brand colors? From stock colors to full water-transfer printing, here are 4 options with different MOQs, price points, and visual effects — for dental brands and clinics.",
+    date: "August 19, 2026",
+    category: "OEM Guide",
+    image: "/images/blog/various-retainer-cases.webp",
+    relatedProductIds: [1, 2, 9, 10, 11],
+    content: `
+      <p>One of the most common questions we receive from dental brands is: <strong>"Can you make the retainer case in our brand color?"</strong> The answer is yes — but there are several ways to achieve this, each with different MOQs, pricing, and visual results. This guide explains the 4 options so you can choose the one that fits your budget and order quantity.</p>
+
+      <h3>Why Brand Color Matters</h3>
+      <p>When a patient receives their aligner starter kit, the retainer case is the product they see and use every day. A case that matches your brand color reinforces brand identity at every use. But not every brand needs 2,000+ custom-colored cases on their first order. That's why Uvcare offers a range of options from low-MOQ stock colors to full custom printing.</p>
+
+      <h3>Option 1: Stock Colors (MOQ 100 PCS)</h3>
+      <p>The fastest and most affordable option. Uvcare maintains stock in several popular colors — blue, black, pink, white, green, yellow, and purple. If one of these matches (or is close to) your brand color, you can start with just 100 PCS and add your logo on top.</p>
+      <p>This is ideal for:</p>
+      <ul>
+        <li>Brands testing the market for the first time</li>
+        <li>Clinics that need a small batch quickly</li>
+        <li>Brands whose primary color is a standard shade</li>
+      </ul>
+      <p><strong>Pros:</strong> Lowest MOQ (100 PCS), fastest lead time (7-10 days), lowest unit price.</p>
+      <p><strong>Cons:</strong> Limited to available stock colors; you can't choose an exact Pantone shade.</p>
+
+      <h3>Option 2: Custom Molded Color (MOQ 2,000 PCS)</h3>
+      <p>If stock colors don't match your brand, we can custom-mix the plastic resin in your exact Pantone color. The entire case body is molded in your brand color — not painted or printed on top, but the plastic itself is your color. This gives a consistent, durable finish that won't chip or fade.</p>
+      <p>This is ideal for:</p>
+      <ul>
+        <li>Established brands with a specific brand color</li>
+        <li>Orders of 2,000+ units</li>
+        <li>Products where color consistency across batches matters</li>
+      </ul>
+      <p><strong>Pros:</strong> Exact Pantone color match, color is part of the plastic (durable), consistent across production runs.</p>
+      <p><strong>Cons:</strong> Higher MOQ (2,000 PCS), longer lead time (15-20 days for first run).</p>
+
+      <h3>Option 3: White Case + Brand-Color Silicone Insert and Logo (MOQ 100-500 PCS)</h3>
+      <p>A smart middle-ground option. The case body stays white (low MOQ, fast production), but the <strong>silicone insert and printed logo</strong> are produced in your brand color. The visual effect is a clean white case with a branded interior and logo — the brand color is present but as an accent rather than covering the whole case.</p>
+      <p>This is ideal for:</p>
+      <ul>
+        <li>Brands that want a clean, premium look without high MOQ</li>
+        <li>Orders between 100-500 PCS</li>
+        <li>Brands whose logo color is their primary brand color</li>
+      </ul>
+      <p><strong>Pros:</strong> Lower MOQ than full custom color, premium two-tone appearance, brand color visible on interior and logo.</p>
+      <p><strong>Cons:</strong> The case exterior is white, not fully brand-colored.</p>
+
+      <h3>Option 4: Full Custom Water-Transfer Printing (MOQ 1,000 PCS)</h3>
+      <p>For brands that need a 100% custom appearance — patterns, gradients, wood grain, carbon fiber, or any complex design — we use water-transfer printing (also called hydrographics or water-dip printing). The design is printed on a water-soluble film and transferred onto the case surface, creating a full-coverage custom finish.</p>
+      <p>This is ideal for:</p>
+      <ul>
+        <li>Brands that want a unique, eye-catching design (not just a solid color)</li>
+        <li>Products targeting the premium gift market</li>
+        <li>Designs that include logos, patterns, or textures</li>
+      </ul>
+      <p><strong>Pros:</strong> Unlimited design possibilities, full-coverage custom finish, premium appearance.</p>
+      <p><strong>Cons:</strong> Higher unit price than other options, MOQ 1,000 PCS, each piece requires individual printing (longer production time).</p>
+
+      <h3>Comparison Table</h3>
+      <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+        <tr>
+          <th>Option</th>
+          <th>MOQ</th>
+          <th>Unit Price</th>
+          <th>Lead Time</th>
+          <th>Color Match</th>
+          <th>Best For</th>
+        </tr>
+        <tr>
+          <td>Stock Colors</td>
+          <td>100 PCS</td>
+          <td>Lowest</td>
+          <td>7-10 days</td>
+          <td>Closest available</td>
+          <td>Testing market, small batches</td>
+        </tr>
+        <tr>
+          <td>Custom Molded Color</td>
+          <td>2,000 PCS</td>
+          <td>Medium</td>
+          <td>15-20 days</td>
+          <td>Exact Pantone</td>
+          <td>Established brands</td>
+        </tr>
+        <tr>
+          <td>White + Color Insert/Logo</td>
+          <td>100-500 PCS</td>
+          <td>Low-Medium</td>
+          <td>10-14 days</td>
+          <td>Logo & insert only</td>
+          <td>Premium two-tone look</td>
+        </tr>
+        <tr>
+          <td>Water-Transfer Printing</td>
+          <td>1,000 PCS</td>
+          <td>Higher</td>
+          <td>20-30 days</td>
+          <td>Full custom design</td>
+          <td>Unique patterns, premium gift</td>
+        </tr>
+      </table>
+
+      <h3>How to Choose</h3>
+      <p>If you're not sure which option is right for your brand, here's a simple decision guide:</p>
+      <ul>
+        <li><strong>First order, small quantity?</strong> → Option 1 (stock) or Option 3 (white + color accent)</li>
+        <li><strong>Need exact brand color on the whole case?</strong> → Option 2 (custom molded color, 2,000+ PCS)</li>
+        <li><strong>Want a unique pattern or design?</strong> → Option 4 (water-transfer, 1,000+ PCS)</li>
+        <li><strong>On a budget but want brand identity?</strong> → Option 3 (white case + brand-color logo and insert)</li>
+      </ul>
+      <p>Talk to us about your brand color and target quantity — we'll recommend the most cost-effective option. <a href="/#contact">Contact us for color samples and OEM pricing</a>.</p>
+    `,
+    keyFacts: [
+      "4 ways to get brand-colored retainer cases: stock colors (MOQ 100), custom molded color (MOQ 2,000), white case + color accent (MOQ 100-500), water-transfer printing (MOQ 1,000)",
+      "Custom molded color means the plastic resin is mixed in your Pantone color — the color is part of the case, not painted on top",
+      "White case + brand-color silicone insert and logo is a cost-effective way to get brand identity at low MOQ",
+      "Water-transfer printing allows full-coverage custom designs including patterns, gradients, and textures — MOQ 1,000 PCS",
+      "Stock colors available: blue, black, pink, white, green, yellow, purple — MOQ just 100 PCS",
+    ],
+    faq: [
+      {
+        question: "What is the minimum order quantity for custom color retainer cases?",
+        answer: "It depends on the customization method. Stock colors start at 100 PCS. White case with brand-color insert and logo starts at 100-500 PCS. Custom molded Pantone color requires 2,000 PCS. Full water-transfer printing requires 1,000 PCS. If you're not sure which option fits your quantity, contact us and we'll recommend the best approach."
+      },
+      {
+        question: "Can I get an exact Pantone color match for my brand?",
+        answer: "Yes, with custom molded color (Option 2). We mix the plastic resin in your exact Pantone shade so the entire case body is your brand color. This requires a minimum order of 2,000 PCS. For smaller orders, consider Option 3: white case with your brand color applied to the silicone insert and logo."
+      },
+      {
+        question: "What is water-transfer printing for retainer cases?",
+        answer: "Water-transfer printing (hydrographics) is a process where a design printed on water-soluble film is transferred onto the case surface. It allows full-coverage custom designs — patterns, gradients, textures, logos — that aren't possible with simple color molding. MOQ is 1,000 PCS and unit price is higher than other options due to the individual printing process."
+      },
+      {
+        question: "Which color option is most cost-effective for a first order?",
+        answer: "If your brand color is close to one of our stock colors (blue, black, pink, white, green, yellow, purple), Option 1 is the most cost-effective at 100 PCS. If you need your specific brand color but can't meet the 2,000 PCS MOQ, Option 3 (white case + brand-color insert and logo) gives brand identity at a lower MOQ."
+      },
+      {
+        question: "Can I see color samples before placing a bulk order?",
+        answer: "Yes. We provide free samples in stock colors. For custom molded colors and water-transfer printing, we produce a pre-production sample for your approval before starting mass production. Contact us with your brand color (Pantone code if available) and we'll arrange samples."
+      }
+    ]
+  },
+  {
+    id: "retainer-case-sizes-explained",
+    title: "Retainer Case Sizes Explained: Choosing the Right Height for Your Aligners",
+    excerpt: "Square and round retainer cases come in shallow (8×8×2.6cm) and deep (8×8×3.2cm) heights. Here's how to choose the right size for standard aligners, retainers with attachments, night guards, and sports mouth guards.",
+    date: "August 19, 2026",
+    category: "Product Guide",
+    image: "/images/blog/various-retainer-cases.webp",
+    relatedProductIds: [1, 2, 10, 11, 12],
+    content: `
+      <p>Not all aligners and retainers are the same thickness. A patient finishing Invisalign treatment with thin retainers needs a different case than someone storing a thick night guard or a sports mouth guard. This guide explains the two standard retainer case heights available from Uvcare and how to choose the right one for your patients or product line.</p>
+
+      <h3>Two Standard Heights Available</h3>
+      <p>Uvcare manufactures both square and round retainer cases in two heights:</p>
+      <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+        <tr>
+          <th>Model</th>
+          <th>Dimensions</th>
+          <th>Internal Height</th>
+          <th>Best For</th>
+        </tr>
+        <tr>
+          <td>Shallow (Standard)</td>
+          <td>8 × 8 × 2.6 cm</td>
+          <td>~1.6 cm</td>
+          <td>Standard clear aligners, Essix retainers, thin Invisalign retainers</td>
+        </tr>
+        <tr>
+          <td>Deep</td>
+          <td>8 × 8 × 3.2 cm</td>
+          <td>~2.2 cm</td>
+          <td>Retainers with attachments, night guards, sports mouth guards, dual-arch setups</td>
+        </tr>
+      </table>
+      <p>Both sizes share the same 8×8 cm footprint — only the height differs. This means they fit in the same storage compartments, gift box inserts, and clinic drawers.</p>
+
+      <h3>Shallow Case (8×8×2.6cm): For Standard Aligners</h3>
+      <p>The shallow case is our most popular model. It fits standard clear aligners and Essix retainers comfortably. If your patients wear standard-thickness Invisalign or Angel Aligner retainers, the shallow case provides a snug fit — the aligners don't rattle around, and the case stays slim enough to fit in a pocket or small bag.</p>
+      <p><a href="/products/classic-aligner-case-v1">View Classic Aligner Case (V1)</a> — available in shallow height with mirror and magnetic closure.</p>
+
+      <h3>Deep Case (8×8×3.2cm): For Thicker Appliances</h3>
+      <p>The deep case adds 6mm of internal height. This matters when the appliance is thicker than a standard aligner:</p>
+      <ul>
+        <li><strong>Retainers with attachments:</strong> Some retainers have raised composite attachments or ridges that add thickness. In a shallow case, these can press against the lid.</li>
+        <li><strong>Night guards:</strong> Night guards for bruxism are typically thicker than aligners. The deep case accommodates them without forcing the lid closed.</li>
+        <li><strong>Sports mouth guards:</strong> Athletic mouth guards are the thickest dental appliance. The deep case provides enough room without compressing the material.</li>
+        <li><strong>Dual-arch storage:</strong> If a patient stores both upper and lower retainers stacked, the deep case gives enough vertical space.</li>
+      </ul>
+
+      <h3>Square vs Round: Does Shape Matter?</h3>
+      <p>Both shapes are available in shallow and deep heights. The choice is primarily aesthetic, with one practical consideration:</p>
+      <ul>
+        <li><strong>Square cases</strong> — Classic, professional look. Slightly more compact in rectangular storage. Available with mirror and magnetic closure.</li>
+        <li><strong>Round cases</strong> — Modern, premium feel. Some patients prefer the round shape for easier opening. Available with mirror or double silicone insert.</li>
+      </ul>
+      <p><a href="/products/round-retainer-case-with-mirror">View Round Retainer Case with Mirror</a> &nbsp;|&nbsp; <a href="/products/round-retainer-case-double-silicone">View Round Case with Double Silicone</a></p>
+
+      <h3>How Dental Brands Should Choose</h3>
+      <p>If you're a dental brand or clinic deciding which case size to offer your patients, consider:</p>
+      <ol>
+        <li><strong>What appliance are your patients storing?</strong> Standard aligners → shallow. Night guards or retainers with attachments → deep. If you offer both, carry both sizes.</li>
+        <li><strong>What's your product positioning?</strong> Premium brands may prefer the deep case — it feels more substantial and accommodates more appliance types.</li>
+        <li><strong>Gift box compatibility:</strong> Both sizes fit standard gift box inserts, but the insert height changes. Tell us which case height you're using when ordering gift boxes.</li>
+        <li><strong>Patient demographics:</strong> Younger patients (teens) often prefer round cases. Professional/clinical settings often prefer square. Both are available in both heights.</li>
+      </ol>
+
+      <h3>Can I Order Both Sizes in One Shipment?</h3>
+      <p>Yes. Many dental brands order a mix of shallow and deep cases in one production run. For example, 500 shallow + 500 deep, each with your brand logo. This lets you offer options to your patients without doubling your supplier count. The MOQ applies per color/size combination. Contact us to discuss mixed-size orders.</p>
+
+      <p><a href="/#contact">Contact us for size samples and OEM pricing</a>.</p>
+    `,
+    keyFacts: [
+      "Retainer cases come in two heights: shallow (8×8×2.6cm) and deep (8×8×3.2cm) — same footprint, different internal height",
+      "Shallow cases fit standard clear aligners and thin Essix retainers; deep cases accommodate thicker appliances like night guards and retainers with attachments",
+      "Both heights available in square and round shapes, with mirror, silicone insert, or UV-C sterilizer options",
+      "Deep cases add 6mm of internal height for appliances that are thicker than standard aligners",
+      "Dental brands can order mixed sizes (shallow + deep) in one production run — MOQ applies per color/size combination",
+    ],
+    faq: [
+      {
+        question: "What size retainer case do I need for Invisalign retainers?",
+        answer: "Standard Invisalign retainers and Essix retainers fit in the shallow case (8×8×2.6cm). If the retainer has raised composite attachments or ridges that add thickness, the deep case (8×8×3.2cm) provides more room so the lid closes without pressing on the appliance."
+      },
+      {
+        question: "What retainer case size is best for night guards?",
+        answer: "Night guards for bruxism are typically thicker than aligners. We recommend the deep case (8×8×3.2cm) for night guards and sports mouth guards. The extra 6mm of internal height prevents the lid from compressing the appliance."
+      },
+      {
+        question: "Are square and round retainer cases the same size?",
+        answer: "Both shapes are available in the same two heights: shallow (8×8×2.6cm) and deep (8×8×3.2cm). The 8×8cm footprint is the same. The choice between square and round is primarily aesthetic — both fit the same appliances. Square cases have a classic professional look; round cases have a modern, premium feel."
+      },
+      {
+        question: "Can I order both shallow and deep retainer cases in one order?",
+        answer: "Yes. Many dental brands order a mix of sizes — for example, 500 shallow + 500 deep — in one production run with their logo on both. The MOQ applies per color/size combination. Contact us to discuss your mixed-size requirements."
+      },
+      {
+        question: "Do both case heights fit in the same gift box?",
+        answer: "Both sizes share the same 8×8cm footprint, so they fit in the same gift box exterior. However, the internal insert height differs — the insert must match the case height. Tell us which case height you're using when ordering gift boxes and we'll adjust the insert accordingly."
+      }
+    ]
   }
 ];
