@@ -11,6 +11,14 @@ This file is the shared handover for everyone working on `dental-care-b2b`. Read
 - Verify every code change with `npm run build`; `main` auto-deploys through Vercel.
 - Do not remove permanent redirects for old numeric product URLs. They protect historical search listings and backlinks.
 
+## 2026-08-18 — Flat-Lay Aligner Care Kit Gallery image
+
+- Commit: `e4ea6f5` — `Update flat lay gift box gallery image`
+- Updated URL/files: `/dental-gift-box-design-gallery`, `public/images/gift-box-gallery/flat-lay-book-style-kit.webp`
+- Purpose: Replace the closed blue Flat-Lay Aligner Care Kit card image with the supplied open-box view, so buyers can see the internal presentation layout.
+- Verified: New source converted to a 561×584 WebP (15 KB); `npm run build` passed. Production verification pending Vercel deployment.
+- Follow-up: None.
+
 ## 2026-08-18 — Evidence-conscious clear-aligner care guide
 
 - Commit: `734301b` — `Add evidence-conscious aligner care guide`
