@@ -74,7 +74,7 @@ export const giftBoxGalleryItems: GiftBoxGalleryItem[] = [
     name: "Magnetic Lid & Drawer Box",
     format: "Two-Level Gift Box",
     description: "A layered unboxing format that separates the case and daily accessories from other patient materials.",
-    image: "/images/gift-box-gallery/magnetic-lid-drawer-box.webp",
+    image: "/images/gift-box-gallery/magnetic-lid-drawer-box-open.webp",
     highlights: ["Two layers", "EVA or foam", "Brand story card"],
   },
   {
