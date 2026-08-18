@@ -11,7 +11,19 @@ This file is the shared handover for everyone working on `dental-care-b2b`. Read
 - Verify every code change with `npm run build`; `main` auto-deploys through Vercel.
 - Do not remove permanent redirects for old numeric product URLs. They protect historical search listings and backlinks.
 
-## 2026-08-18 — Flat-Lay Aligner Care Kit Gallery image
+## 2026-08-19 - Custom color and retainer case size guides
+
+- Commit: `83f4e19` - `Blog: add custom color retainer cases guide + retainer case sizes guide`
+- New URLs:
+  - `/insights/custom-color-retainer-cases`
+  - `/insights/retainer-case-sizes-explained`
+- Updated files: `lib/insights.ts`, `public/sitemap.xml`
+- Purpose: Address real B2B inquiry scenarios — brand color matching (stock/custom molded/white+accent/water-transfer) and case height selection (shallow 8×8×2.6cm vs deep 8×8×3.2cm).
+- Connected to: retainer case product pages, round case products, contact form, sitemap.
+- Verified: `npm run build` passed; pushed to main.
+- Follow-up: Submit both URLs to GSC for faster indexing.
+
+## 2026-08-18 - Flat-Lay Aligner Care Kit Gallery image
 
 - Commit: `e4ea6f5` — `Update flat lay gift box gallery image`
 - Updated URL/files: `/dental-gift-box-design-gallery`, `public/images/gift-box-gallery/flat-lay-book-style-kit.webp`
