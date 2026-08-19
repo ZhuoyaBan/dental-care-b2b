@@ -11,6 +11,16 @@ This file is the shared handover for everyone working on `dental-care-b2b`. Read
 - Verify every code change with `npm run build`; `main` auto-deploys through Vercel.
 - Do not remove permanent redirects for old numeric product URLs. They protect historical search listings and backlinks.
 
+## 2026-08-19 - Custom logo retainer cases guide
+
+- Commit: `78f29b1` - `Blog: add custom logo retainer cases guide (printing methods, costs, MOQ)`
+- New URL: `/insights/custom-logo-retainer-cases`
+- Updated files: `lib/insights.ts`, `public/sitemap.xml`
+- Purpose: Detailed guide on logo printing methods for B2B buyers — silk-screen ($0.10/case, $40 one-time screen), color CMYK, UV printing, laser engraving, embossed/debossed. Includes real cost example, file requirements (PDF/AI), logo position options, and sampling process.
+- Connected to: retainer case product pages, contact form, sitemap.
+- Verified: `npm run build` passed; pushed to main.
+- Follow-up: Submit URL to GSC for faster indexing.
+
 ## 2026-08-19 - Custom color and retainer case size guides
 
 - Commit: `83f4e19` - `Blog: add custom color retainer cases guide + retainer case sizes guide`
