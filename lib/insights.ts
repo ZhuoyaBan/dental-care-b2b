@@ -1880,5 +1880,213 @@ export const posts: Post[] = [
         answer: "Both sizes share the same 8×8cm footprint, so they fit in the same gift box exterior. However, the internal insert height differs — the insert must match the case height. Tell us which case height you're using when ordering gift boxes and we'll adjust the insert accordingly."
       }
     ]
+  },
+  {
+    id: "custom-logo-retainer-cases",
+    title: "Custom Logo Retainer Cases: Printing Methods, Costs, and MOQ Explained",
+    excerpt: "From silk-screen printing to laser engraving to UV printing — here's how to add your brand logo to retainer cases and aligner cases, with real costs, file requirements, and the full sampling process.",
+    date: "August 19, 2026",
+    category: "OEM Guide",
+    image: "/images/blog/various-retainer-cases.webp",
+    relatedProductIds: [1, 2, 9, 10, 12],
+    content: `
+      <p>Adding your brand logo to a retainer case turns a generic plastic box into a daily brand touchpoint. Every time your patient opens their case, your logo is front and center. This guide explains every logo printing method Uvcare offers — with real per-unit costs, setup fees, file requirements, and minimum order quantities — so you can choose the right method for your brand and budget.</p>
+
+      <h3>The Starting Point: 100 PCS Gets You a Branded Case</h3>
+      <p>You don't need a massive order to get custom-logo retainer cases. Uvcare offers logo printing starting at <strong>100 PCS</strong> for standard cases (V1, V2, V3, round, silicone). That's one of the lowest MOQs in the industry for branded dental accessories. For UV-C electronic cases, the MOQ is 1,000 PCS due to the electronic components.</p>
+      <p>Here's what you need to get started:</p>
+      <ul>
+        <li>Your logo in <strong>PDF or AI (Adobe Illustrator) format</strong> — vector files allow clean scaling and color separation for printing</li>
+        <li>Your preferred logo position (most brands choose the case lid, top center — but other positions are available)</li>
+        <li>Your brand color (Pantone code if you have one, or we can match from a sample)</li>
+      </ul>
+
+      <h3>Logo Printing Methods We Offer</h3>
+      <p>Uvcare has experience with several logo printing methods. Each has different visual effects, durability, and cost:</p>
+
+      <h4>1. Silk-Screen Printing (Most Common)</h4>
+      <p>The most widely used method for retainer case branding. Ink is pressed through a mesh screen onto the case surface, creating a clean, durable logo.</p>
+      <ul>
+        <li><strong>Durability:</strong> High — the ink is cured and bonded to the surface. It withstands daily use and can be cleaned with alcohol wipes without fading or rubbing off.</li>
+        <li><strong>Best for:</strong> Simple 1-3 color logos, text logos, line-art designs</li>
+        <li><strong>Per-unit cost:</strong> Approximately <strong>$0.10</strong> per case</li>
+        <li><strong>Setup:</strong> Requires a steel mesh screen (stencil) — one-time cost of <strong>$40</strong>. The screen is reusable for future orders of the same logo.</li>
+        <li><strong>Logo position:</strong> Most commonly printed on the case lid, top center. Other positions available on request.</li>
+      </ul>
+      <p>Silk-screen is the go-to choice for most dental brands because it's cost-effective, durable, and produces a professional result at low MOQ.</p>
+
+      <h4>2. Color Printing (CMYK)</h4>
+      <p>Full-color printing using CMYK ink system. This allows photographic images, gradients, and multi-color designs that silk-screen can't achieve.</p>
+      <ul>
+        <li><strong>Durability:</strong> Good — ink is cured but may be less resistant to aggressive scrubbing than silk-screen</li>
+        <li><strong>Best for:</strong> Multi-color logos, photographic designs, complex brand artwork</li>
+        <li><strong>Per-unit cost:</strong> Higher than silk-screen (varies with design complexity)</li>
+        <li><strong>Setup:</strong> Depends on design; may require color proofing</li>
+      </ul>
+
+      <h4>3. UV Printing</h4>
+      <p>UV-cured inkjet printing that allows raised, textured effects. The ink is cured instantly under UV light, creating a durable finish that can include tactile elements.</p>
+      <ul>
+        <li><strong>Durability:</strong> High — UV-cured ink is resistant to fading, water, and abrasion</li>
+        <li><strong>Best for:</strong> Premium brands wanting a tactile, raised logo effect; designs with fine detail</li>
+        <li><strong>Per-unit cost:</strong> Higher than silk-screen and standard color printing</li>
+        <li><strong>Setup:</strong> Digital file preparation; no physical stencil needed</li>
+      </ul>
+
+      <h4>4. Laser Engraving (Laser Etching)</h4>
+      <p>A laser removes a thin layer of surface material to create the logo. The result is a permanent mark that's part of the case itself — it can never rub off because it's etched into the material.</p>
+      <ul>
+        <li><strong>Durability:</strong> Permanent — the logo is engraved into the plastic, not printed on top</li>
+        <li><strong>Best for:</strong> Brands that want maximum durability; single-color logos; premium positioning</li>
+        <li><strong>Per-unit cost:</strong> Moderate; varies with logo size and detail</li>
+        <li><strong>Setup:</strong> Digital file setup; no physical stencil</li>
+      </ul>
+
+      <h4>5. Embossed / Debossed Logo (Relief)</h4>
+      <p>The logo is raised (embossed) or recessed (debossed) directly in the plastic mold. This means the logo is formed as part of the case during injection molding — no printing involved.</p>
+      <ul>
+        <li><strong>Durability:</strong> Permanent — it's part of the molded plastic</li>
+        <li><strong>Best for:</strong> Brands ordering 3,000+ PCS who want a premium, tactile logo</li>
+        <li><strong>Per-unit cost:</strong> No per-unit printing cost, but requires a custom mold insert</li>
+        <li><strong>Setup:</strong> Mold modification or custom mold insert — one-time tooling cost</li>
+        <li><strong>MOQ:</strong> Typically 3,000+ PCS due to mold investment</li>
+      </ul>
+
+      <h3>Comparison Table</h3>
+      <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+        <tr>
+          <th>Method</th>
+          <th>Per-Unit Cost</th>
+          <th>Setup Cost</th>
+          <th>Durability</th>
+          <th>Colors</th>
+          <th>MOQ</th>
+        </tr>
+        <tr>
+          <td>Silk-Screen</td>
+          <td>~$0.10</td>
+          <td>$40 (steel screen, one-time)</td>
+          <td>High (alcohol-proof)</td>
+          <td>1-3 colors</td>
+          <td>100 PCS</td>
+        </tr>
+        <tr>
+          <td>Color (CMYK)</td>
+          <td>Higher than silk-screen</td>
+          <td>Design-dependent</td>
+          <td>Good</td>
+          <td>Full color</td>
+          <td>100 PCS</td>
+        </tr>
+        <tr>
+          <td>UV Printing</td>
+          <td>Higher than CMYK</td>
+          <td>Digital setup</td>
+          <td>High</td>
+          <td>Full color + texture</td>
+          <td>100 PCS</td>
+        </tr>
+        <tr>
+          <td>Laser Engraving</td>
+          <td>Moderate</td>
+          <td>Digital setup</td>
+          <td>Permanent (engraved)</td>
+          <td>Single color</td>
+          <td>100 PCS</td>
+        </tr>
+        <tr>
+          <td>Embossed/Debossed</td>
+          <td>No printing cost</td>
+          <td>Mold tooling (one-time)</td>
+          <td>Permanent (molded)</td>
+          <td>Single color (material color)</td>
+          <td>3,000+ PCS</td>
+        </tr>
+      </table>
+
+      <h3>The Sampling Process: Steel Screen and First Article</h3>
+      <p>For silk-screen printing (the most common method), here's how the process works:</p>
+      <ol>
+        <li><strong>You send your logo file</strong> (PDF or AI format) with your preferred position and color</li>
+        <li><strong>We make a steel mesh screen</strong> — this is a one-time cost of $40. The screen is a physical stencil with your logo cut into the mesh. It's reusable for all future orders of the same logo.</li>
+        <li><strong>We print a pre-production sample</strong> — an actual case with your logo, printed using the steel screen. You approve the sample before we start mass production.</li>
+        <li><strong>Mass production</strong> — once you approve the sample, we print your logo on all cases in the order. Lead time is 7-15 days for standard cases.</li>
+      </ol>
+      <p>The $40 steel screen is a one-time investment. On your second, third, and all future orders of the same logo, you don't pay the screen fee again — only the per-unit printing cost (~$0.10/case).</p>
+
+      <h3>Logo Position Options</h3>
+      <p>The most common logo position is the <strong>case lid, top center</strong> — this is what the patient sees every time they open the case. Other positions are available:</p>
+      <ul>
+        <li>Case lid, top center (most common)</li>
+        <li>Case lid, bottom center</li>
+        <li>Case base, bottom</li>
+        <li>Inside the lid (visible when opened)</li>
+      </ul>
+      <p>Discuss your preferred position with us when placing your order.</p>
+
+      <h3>File Requirements</h3>
+      <p>To get the cleanest printing result, send your logo in:</p>
+      <ul>
+        <li><strong>AI (Adobe Illustrator)</strong> — preferred for vector logos, allows precise color separation</li>
+        <li><strong>PDF</strong> — also accepted if the PDF contains vector artwork</li>
+        <li>Include Pantone color codes if you have specific brand colors</li>
+        <li>Raster formats (JPG, PNG) can be used but may produce less clean edges on printing</li>
+      </ul>
+      <p>If you don't have a vector file, send us what you have and we'll advise on whether it's suitable for printing.</p>
+
+      <h3>Real Cost Example</h3>
+      <p>Here's a typical order for 100 custom-logo retainer cases using silk-screen printing:</p>
+      <ul>
+        <li>100 cases × $0.10 (printing) = $10 printing cost</li>
+        <li>Steel screen (one-time) = $40</li>
+        <li>Total logo cost for first order: ~$50</li>
+        <li>On future orders: only $0.10/case (screen is reused)</li>
+      </ul>
+      <p>That's $0.50 per case for branding on a first order of 100 — and $0.10 per case on all reorders. For a product that patients use every day for months, that's a cost-effective way to keep your brand visible.</p>
+
+      <h3>Which Method Should You Choose?</h3>
+      <ul>
+        <li><strong>Just starting, 100-500 PCS?</strong> → Silk-screen ($0.10/case, $40 one-time screen)</li>
+        <li><strong>Multi-color or photographic logo?</strong> → Color printing or UV printing</li>
+        <li><strong>Want permanent, premium feel?</strong> → Laser engraving (engraved into the plastic)</li>
+        <li><strong>3,000+ PCS and want tactile logo?</strong> → Embossed/debossed (molded into the case)</li>
+      </ul>
+      <p>Talk to us about your logo and order quantity — we'll recommend the most cost-effective method. <a href="/#contact">Contact us for a logo sample and OEM pricing</a>.</p>
+    `,
+    keyFacts: [
+      "Custom logo printing starts at 100 PCS for standard retainer cases — one of the lowest MOQs in the industry",
+      "Silk-screen printing costs ~$0.10 per case with a one-time $40 steel screen setup fee (reusable for future orders)",
+      "Silk-screen ink is cured and bonded to the surface — it withstands alcohol wipes and daily use without rubbing off",
+      "5 printing methods available: silk-screen, color (CMYK), UV printing, laser engraving, and embossed/debossed",
+      "Logo files should be in PDF or AI (Adobe Illustrator) format for cleanest printing results",
+      "Most common logo position: case lid, top center — other positions available on request",
+      "The $40 steel screen is a one-time investment; future orders of the same logo only pay per-unit printing cost",
+    ],
+    faq: [
+      {
+        question: "What is the minimum order quantity for custom logo retainer cases?",
+        answer: "100 PCS for standard retainer cases (V1, V2, V3, round, silicone). 1,000 PCS for UV-C electronic sterilizer cases. This is among the lowest MOQ in the industry for branded dental accessories. You can start with 100 cases to test the market before scaling up."
+      },
+      {
+        question: "How much does it cost to add a logo to retainer cases?",
+        answer: "For silk-screen printing (the most common method): approximately $0.10 per case for printing, plus a one-time $40 steel screen setup fee. So for 100 cases, the total logo cost is about $50 ($10 printing + $40 screen). On future orders of the same logo, you only pay $0.10/case — the screen is reused. Other printing methods (UV, color, laser) have different pricing — contact us for a quote."
+      },
+      {
+        question: "Will the silk-screen logo rub off or fade over time?",
+        answer: "No. The silk-screen ink is cured and bonded to the case surface. It withstands daily use, cleaning with alcohol wipes, and normal wear without rubbing off. For brands that want even more durability, laser engraving creates a permanent mark etched into the plastic itself."
+      },
+      {
+        question: "What file format should I send for my logo?",
+        answer: "PDF or AI (Adobe Illustrator) format is preferred. These are vector file formats that allow clean scaling and color separation for printing. Include Pantone color codes if you have specific brand colors. If you only have a JPG or PNG, send it and we'll advise whether it's suitable for printing."
+      },
+      {
+        question: "What is the $40 steel screen fee and do I need to pay it every time?",
+        answer: "The steel screen is a physical stencil used for silk-screen printing. It's a one-time cost of $40. The screen is reusable — on your second, third, and all future orders of the same logo, you don't pay the screen fee again. You only pay the per-unit printing cost ($0.10/case)."
+      },
+      {
+        question: "Can I choose where the logo is printed on the case?",
+        answer: "Yes. The most common position is the case lid, top center — this is what patients see every time they open the case. Other positions are available: lid bottom center, case base, or inside the lid. Discuss your preferred position when placing your order."
+      }
+    ]
   }
 ];
